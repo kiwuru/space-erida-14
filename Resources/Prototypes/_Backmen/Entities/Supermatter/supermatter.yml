@@ -47,9 +47,9 @@
     color: "#ffe000"
   - type: Explosive
     explosionType: Supermatter
-    maxIntensity: 25000
+    maxIntensity: 10000
     intensitySlope: 5
-    totalIntensity: 25000
+    totalIntensity: 10000
   - type: GuideHelp
     guides:
     - Supermatter
