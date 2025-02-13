@@ -569,4 +569,3 @@
     - map: ["computerLayerKeys"]
       sprite: Structures/Machines/computers.rsi
       state: service_keys
-

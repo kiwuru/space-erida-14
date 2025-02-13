@@ -6,3 +6,5 @@
   category: construction-category-machines
   placementMode: SnapgridCenter
   canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
