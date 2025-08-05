@@ -9,7 +9,11 @@
   access:
   - Service
   - Maintenance
-
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: UniversalLanguageSpeaker
+    
 - type: startingGear
   id: LibrarianGear
   equipment:

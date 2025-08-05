@@ -167,6 +167,15 @@
     speedModifier: 2.5 # fast because dragon strong
     useSound:
       path: /Audio/Items/crowbar.ogg
+  - type: LanguageSpeaker
+    currentLanguage: Carp
+  - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - Carp
+    - Dragon
+    understands:
+    - Carp
+    - Dragon
 
 - type: entity
   parent: BaseMobDragon

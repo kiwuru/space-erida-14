@@ -27,7 +27,7 @@
         startValue: 0.1
         endValue: 2.0
         isLooped: true
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     spriteLayer: light
     inhandVisuals:
       left:
@@ -92,7 +92,7 @@
   - type: HandheldLight
     addPrefix: false
     wattage: 0.5
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     inhandVisuals:
       left:
       - state: inhand-left-light

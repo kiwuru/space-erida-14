@@ -631,3 +631,8 @@ binds:
   type: State
   key: MouseRight
   canFocus: true
+#start - backmen: languages
+- function: OpenLanguageMenu
+  type: State
+  key: L
+#end - backmen: languages

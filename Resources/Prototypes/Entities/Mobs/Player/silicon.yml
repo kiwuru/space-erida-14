@@ -71,6 +71,15 @@
     title: comms-console-announcement-title-station-ai
     color: "#5ed7aa"
   - type: ShowJobIcons
+  - type: LanguageSpeaker
+    currentLanguage: TauCetiBasic
+  - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - Binary
+    - TauCetiBasic
+    understands:
+    - Binary
+    - TauCetiBasic
 
 - type: entity
   id: AiHeldIntellicard

@@ -171,7 +171,16 @@
           32:
             sprite: Mobs/Species/Moth/displacement.rsi
             state: shoes
-
+  - type: LanguageSpeaker
+    currentLanguage: TauCetiBasic
+  - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - TauCetiBasic
+    - Moffic
+    understands:
+    - TauCetiBasic
+    - Moffic
+    
 - type: entity
   parent: BaseSpeciesDummy
   id: MobMothDummy

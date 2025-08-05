@@ -222,7 +222,7 @@
           map: [ "unshaded" ]
           shader: unshaded
           visible: false
-    - type: ToggleableVisuals
+    - type: ToggleVisuals
       spriteLayer: unshaded
       inhandVisuals:
         left:
@@ -270,7 +270,7 @@
           map: [ "unshaded" ]
           shader: unshaded
           visible: false
-        - type: ToggleableVisuals
+        - type: ToggleVisuals
           spriteLayer: unshaded
           inhandVisuals:
             left:
@@ -342,7 +342,7 @@
           map: [ "unshaded" ]
           shader: unshaded
           visible: false
-    - type: ToggleableVisuals
+    - type: ToggleVisuals
       spriteLayer: unshaded
       inhandVisuals:
         left:
@@ -384,7 +384,7 @@
           map: [ "unshaded" ]
           shader: unshaded
           visible: false
-    - type: ToggleableVisuals
+    - type: ToggleVisuals
       spriteLayer: unshaded
       inhandVisuals:
         left:

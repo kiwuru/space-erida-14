@@ -509,7 +509,7 @@
     action: ActionToggleJusticeHelm
     mustEquip: false
   - type: ItemTogglePointLight
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     spriteLayer: light
     clothingVisuals:
       head:

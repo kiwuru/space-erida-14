@@ -24,7 +24,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -84,7 +84,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -139,7 +139,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     clothingVisuals:
       head:
       - state: equipped-head-light
@@ -214,7 +214,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     clothingVisuals:
       head:
       - state: equipped-head-light
@@ -387,7 +387,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -719,7 +719,7 @@
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/piratecaptainhelm.rsi
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     clothingVisuals:
       head:
       - state: equipped-HELMET-light
