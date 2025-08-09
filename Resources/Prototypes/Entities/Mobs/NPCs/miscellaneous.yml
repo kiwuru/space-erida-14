@@ -134,8 +134,15 @@
         damage:
           types:
             Heat: 2
-  - type: ReplacementAccent
-    accent: tomatoKiller
+#  - type: ReplacementAccent
+#    accent: tomatoKiller
+  - type: LanguageSpeaker
+    currentLanguage: TauCetiBasic
+  - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - SpaceMob
+    understands:
+    - SpaceMo
   - type: Item
   - type: MultiHandedItem
   - type: NpcFactionMember

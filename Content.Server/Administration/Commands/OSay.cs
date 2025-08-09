@@ -1,6 +1,7 @@
 using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
+using Content.Shared.Backmen.Chat;
 using Content.Shared.Administration;
 using Content.Shared.Database;
 using Robust.Shared.Console;

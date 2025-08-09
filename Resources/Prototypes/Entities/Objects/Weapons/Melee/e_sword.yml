@@ -23,7 +23,7 @@
   - type: ItemToggleSize
     activatedSize: Huge
   - type: ItemTogglePointLight
-    toggleableVisualsColorModulatesLights: true
+    ToggleVisualsColorModulatesLights: true
   - type: ItemToggleMeleeWeapon
     activatedSoundOnHit:
       path: /Audio/Weapons/eblade1.ogg
@@ -60,7 +60,7 @@
     color: white
     netsync: false
   - type: Appearance
-  - type: ToggleableVisuals # Add support for multiple layers
+  - type: ToggleVisuals # Add support for multiple layers
     spriteLayer: blade
     inhandVisuals:
       left:
