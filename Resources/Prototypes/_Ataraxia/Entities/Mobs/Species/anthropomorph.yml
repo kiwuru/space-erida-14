@@ -61,7 +61,9 @@
   - type: LanguageKnowledge #backmen: languages
     speaks:
     - TauCetiBasic
+    - Canilunzt
     understands:
+    - Canilunzt
     - TauCetiBasic
 
 - type: entity
