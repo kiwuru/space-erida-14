@@ -6,10 +6,26 @@
   obfuscation:
     !type:SyllableObfuscation
     minSyllables: 1
-    maxSyllables: 4
+    maxSyllables: 2
     replacement:
     - näytä
     - vitun
     - katsoa
     - suuntaan
     - takaa
+    - tyttö
+    - alas
+    - miksi
+    - elämä
+    - kylä
+    - reitti
+    - tulli
+    - opas
+    - sana
+    - sivu
+    - faksi
+    - talo
+    - ovi
+    - isä
+    - otsa
+    - hymy
