@@ -1,0 +1,12 @@
+- type: damageModifierSet
+  id: FelinidSkin
+  coefficients:
+    Blunt: 1.35
+    Slash: 1.25
+    Piercing: 1.25
+    Heat: 1.2
+    Cold: 1.5
+    Cellular: 1.1
+    Bloodloss: 1.25
+    Shock: 1.25
+    Radiation: 1.1
