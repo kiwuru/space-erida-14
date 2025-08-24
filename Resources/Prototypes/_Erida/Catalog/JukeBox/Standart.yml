@@ -1,0 +1,17 @@
+- type: jukebox
+  id: AmoreAmore
+  name: Pyrokinesis - Аморе Аморе
+  path:
+    path: /Audio/_Erida/Jukebox/pyrokinesis/pyrokinesis_amore_amore.ogg
+
+- type: jukebox
+  id: GentleElectricity
+  name: Pyrokinesis - Нежное Электричество
+  path:
+    path: /Audio/_Erida/Jukebox/pyrokinesis/pyrokinesis_gentle_electricity.ogg
+
+- type: jukebox
+  id: GodLegend
+  name: Pyrokinesis - Легенда о Богине Гроз
+  path:
+    path: /Audio/_Erida/Jukebox/pyrokinesis/pyrokinesis_god_legend.ogg

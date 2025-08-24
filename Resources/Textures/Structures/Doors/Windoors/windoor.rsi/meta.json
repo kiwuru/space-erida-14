@@ -161,6 +161,10 @@
             "directions":4
         },
         {
+            "name":"base_unlit",
+            "directions":4
+        },
+        {
             "name":"welded",
             "directions":4
         },
