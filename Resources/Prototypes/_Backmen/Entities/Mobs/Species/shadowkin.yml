@@ -18,6 +18,7 @@
     eyeColor: '#ffffff'
     species: Shadowkin
   - type: Hunger
+  - type: Thirst
   - type: Icon
     sprite: Backmen/Mobs/Species/Shadowkin/parts.rsi
     state: full
