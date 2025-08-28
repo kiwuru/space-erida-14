@@ -1,7 +1,14 @@
 - type: entity
+  abstract: true
+  id: BaseDildo
+  parent: LPPClothingUnderwearBase
+  components:
+  - type: Vibrator
+
+- type: entity
   name: dildo avian
   id: LPPDildoAvian
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -15,7 +22,7 @@
 - type: entity
   name: dildo canine
   id: LPPDildoCanine
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -29,7 +36,7 @@
 - type: entity
   name: dildo double
   id: LPPDildoDouble
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -43,7 +50,7 @@
 - type: entity
   name: dildo dragon
   id: LPPDildoDragon
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -57,7 +64,7 @@
 - type: entity
   name: dildo equine
   id: LPPDildoEquine
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -71,7 +78,7 @@
 - type: entity
   name: dildo human
   id: LPPDildoHuman
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -85,7 +92,7 @@
 - type: entity
   name: dildo tentacle
   id: LPPDildoTentacle
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -99,7 +106,7 @@
 - type: entity
   name: polydildo big
   id: LPPPolydildoBig
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -114,7 +121,7 @@
 - type: entity
   name: polydildo med
   id: LPPPolydildoMed
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite
@@ -129,7 +136,7 @@
 - type: entity
   name: polydildo small
   id: LPPPolydildoSmall
-  parent: LPPClothingUnderwearBase
+  parent: BaseDildo
   description:
   components:
   - type: Sprite

@@ -16,7 +16,7 @@
     quickEquip: false
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/_Erida/Effects/whip.ogg
+      path: /Audio/_Erida/Effects/ERP/whip.ogg
       params:
         variation: 0.246
 
@@ -31,15 +31,15 @@
     damage: 5
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/_Erida/Effects/whip.ogg
+      path: /Audio/_Erida/Effects/ERP/whip.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Erida/Effects/whip.ogg
+      path: /Audio/_Erida/Effects/ERP/whip.ogg
   - type: UseDelay
     delay: 1.0
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/_Erida/Effects/whip.ogg
+      path: /Audio/_Erida/Effects/ERP/whip.ogg
     damage:
       types:
         Blunt: 0

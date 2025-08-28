@@ -1,7 +1,29 @@
 - type: entity
+  abstract: true
+  id: BaseVibrator
+  parent: LPPClothingUnderwearBase
+  components:
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+      - On
+      - Off
+      - Toggle
+  - type: Vibrator
+    isTogglable: true
+    jitterProbablity: 70
+    moanProbablity: 35
+    vibrationSound: /Audio/_Erida/Effects/ERP/vibration_loop.ogg
+  - type: ItemToggle
+
+- type: entity
   name: magicwand
   id: LPPMagicwand
-  parent: LPPClothingUnderwearBase
+  parent: BaseVibrator
   description:
   components:
   - type: Sprite
@@ -15,7 +37,7 @@
 - type: entity
   name: vibrator green
   id: LPPVibratorGreen
-  parent: LPPClothingUnderwearBase
+  parent: BaseVibrator
   description:
   components:
   - type: Sprite
@@ -29,7 +51,7 @@
 - type: entity
   name: vibrator pink
   id: LPPVibratorPink
-  parent: LPPClothingUnderwearBase
+  parent: BaseVibrator
   description:
   components:
   - type: Sprite
@@ -43,7 +65,7 @@
 - type: entity
   name: vibrator red
   id: LPPVibratorRed
-  parent: LPPClothingUnderwearBase
+  parent: BaseVibrator
   description:
   components:
   - type: Sprite
@@ -57,7 +79,7 @@
 - type: entity
   name: vibrator teal
   id: LPPVibratorTeal
-  parent: LPPClothingUnderwearBase
+  parent: BaseVibrator
   description:
   components:
   - type: Sprite
@@ -71,7 +93,7 @@
 - type: entity
   name: vibrator yellow
   id: LPPVibratorYellow
-  parent: LPPClothingUnderwearBase
+  parent: BaseVibrator
   description:
   components:
   - type: Sprite
