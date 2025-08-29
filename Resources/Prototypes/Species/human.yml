@@ -24,6 +24,7 @@
     Snout: MobHumanoidAnyMarking
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking # Erida
     Chest: MobHumanTorso
     Eyes: MobHumanoidEyes
     HeadTop: MobHumanoidAnyMarking
