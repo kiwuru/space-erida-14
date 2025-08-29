@@ -11,6 +11,15 @@
             "name": "default"
         },
         {
+            "name": "sub_department"
+        },
+        {
+            "name": "card_silver"
+        },
+        {
+            "name": "frame_head"
+        },
+        {
             "name": "centcom"
         },
         {
@@ -231,12 +240,6 @@
         },
         {
             "name": "idwizard"
-        },
-        {
-            "name": "idiaa"
-        },
-        {
-            "name": "idpilot"
         },
         {
             "name": "gold-inhand-left",
