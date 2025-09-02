@@ -1,0 +1,10 @@
+# Atmos
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
+  id: TinyFanCircuitboard
+  result: TinyFanCircuitboard
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
+  id: TinyFanDirectionalCircuitboard
+  result: TinyFanDirectionalCircuitboard

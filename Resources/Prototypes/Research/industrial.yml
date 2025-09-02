@@ -184,6 +184,22 @@
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
 
+# ERiDA-start
+- type: technology
+  id: AtmosphericFans
+  name: research-technology-atmospheric-fans
+  icon:
+    sprite: Structures/Piping/Atmospherics/tinyfan.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - TinyFanCircuitboard
+  - TinyFanDirectionalCircuitboard
+# ERiDA-end
+
+
 # Tier 3
 
 - type: technology

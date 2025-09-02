@@ -1,3 +1,4 @@
+using Content.Server._Erida.AirtightRequiresPower;
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
