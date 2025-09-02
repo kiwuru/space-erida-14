@@ -12,6 +12,7 @@
     Shock: 1.25
     Radiation: 1.3
 
+- type: damageModifierSet
   id: FelinidSkin
   coefficients:
     Blunt: 1.35
