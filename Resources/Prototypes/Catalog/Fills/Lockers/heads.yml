@@ -130,6 +130,7 @@
       # Yes they do fuck you.
     - id: ClothingBackpackIan
       prob: 0.5
+    - id: BoxPhotocopierToners # DS14
     - id: ClothingHeadsetCommand
     - id: ClothingNeckGoldmedal
     - id: DoorRemoteService

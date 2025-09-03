@@ -219,7 +219,7 @@
       startValue: 0.1
       endValue: 2.0
       isLooped: true
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     spriteLayer: light
   - type: PointLight
     enabled: false
@@ -248,6 +248,15 @@
     damageProtection:
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
+  - type: LanguageSpeaker
+    currentLanguage: TauCetiBasic
+  - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - Binary
+    - TauCetiBasic
+    understands:
+    - Binary
+    - TauCetiBasic
 
 - type: entity
   abstract: true

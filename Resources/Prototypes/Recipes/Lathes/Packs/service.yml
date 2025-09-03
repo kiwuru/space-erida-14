@@ -37,6 +37,7 @@
   - ElectricGrillMachineCircuitboard
   - BoozeDispenserMachineCircuitboard
   - SodaDispenserMachineCircuitboard
+  - PrinterDocMachineCircuitboard # DS-14
 
 ## Dynamic
 

@@ -1,6 +1,7 @@
 using Content.Server.Access.Systems;
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
+using Content.Shared.Backmen.Chat;
 using Content.Server.Interaction;
 using Content.Server.Power.EntitySystems;
 using Content.Shared.Chat;

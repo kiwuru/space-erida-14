@@ -16,23 +16,27 @@ public abstract class SharedChatSystem : EntitySystem
     public const char LocalPrefix = '>';
     public const char ConsolePrefix = '/';
     public const char DeadPrefix = '\\';
-    public const char LOOCPrefix = '(';
+    public const char LOOCPrefix = '_'; // Corvax-Localization
     public const char OOCPrefix = '[';
-    public const char EmotesPrefix = '@';
+    public const char EmotesPrefix = '%'; // Corvax-Localization
     public const char EmotesAltPrefix = '*';
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
-    public const char DefaultChannelKey = 'h';
-
+    public const char DefaultChannelKey = 'р'; // Corvax-Localization
+    public const char TelepathicPrefix = '='; // backmen: Psionic
+    // Corvax-TTS-Start: Moved from Server to Shared
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
     public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
-    public const string DefaultAnnouncementSound = "/Audio/Announcements/announce.ogg";
+    // Corvax-TTS-End
 
-    public static readonly ProtoId<RadioChannelPrototype> CommonChannel = "Common";
+    [ValidatePrototypeId<RadioChannelPrototype>]
+    public const string CommonChannel = "Common";
 
-    public static readonly string DefaultChannelPrefix = $"{RadioChannelPrefix}{DefaultChannelKey}";
-    public static readonly ProtoId<SpeechVerbPrototype> DefaultSpeechVerb = "Default";
+    public static string DefaultChannelPrefix = $"{RadioChannelPrefix}{DefaultChannelKey}";
+
+    [ValidatePrototypeId<SpeechVerbPrototype>]
+    public const string DefaultSpeechVerb = "Default";
 
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
@@ -45,7 +49,7 @@ public abstract class SharedChatSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        DebugTools.Assert(_prototypeManager.HasIndex(CommonChannel));
+        DebugTools.Assert(_prototypeManager.HasIndex<RadioChannelPrototype>(CommonChannel));
         SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypeReload);
         CacheRadios();
     }
@@ -69,13 +73,13 @@ public abstract class SharedChatSystem : EntitySystem
     public SpeechVerbPrototype GetSpeechVerb(EntityUid source, string message, SpeechComponent? speech = null)
     {
         if (!Resolve(source, ref speech, false))
-            return _prototypeManager.Index(DefaultSpeechVerb);
+            return _prototypeManager.Index<SpeechVerbPrototype>(DefaultSpeechVerb);
 
         // check for a suffix-applicable speech verb
         SpeechVerbPrototype? current = null;
         foreach (var (str, id) in speech.SuffixSpeechVerbs)
         {
-            var proto = _prototypeManager.Index(id);
+            var proto = _prototypeManager.Index<SpeechVerbPrototype>(id);
             if (message.EndsWith(Loc.GetString(str)) && proto.Priority >= (current?.Priority ?? 0))
             {
                 current = proto;
@@ -83,7 +87,7 @@ public abstract class SharedChatSystem : EntitySystem
         }
 
         // if no applicable suffix verb return the normal one used by the entity
-        return current ?? _prototypeManager.Index(speech.SpeechVerb);
+        return current ?? _prototypeManager.Index<SpeechVerbPrototype>(speech.SpeechVerb);
     }
 
     /// <summary>

@@ -110,6 +110,13 @@
     speechSounds: Slime
   - type: TypingIndicator
     proto: slime
+  - type: LanguageSpeaker
+    currentLanguage: TauCetiBasic
+  - type: LanguageKnowledge #backmen: languages
+    speaks:
+    - Slime
+    understands:
+    - Slime
 
 - type: entity
   name: basic slime

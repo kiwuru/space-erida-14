@@ -30,12 +30,12 @@
     - state: landmine
     - state: landmine-unshaded
       shader: unshaded
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: [ "enum.ToggleVisuals.Layer" ]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.ToggleableVisuals.Enabled:
-        enum.ToggleableVisuals.Layer:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
           True: {visible: true}
           False: {visible: false}
   - type: Damageable

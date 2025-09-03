@@ -679,7 +679,7 @@
     color: white
     netsync: false
   - type: Appearance
-  - type: ToggleableVisuals
+  - type: ToggleVisuals
     spriteLayer: blade
     inhandVisuals:
       left:
@@ -1035,8 +1035,8 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.ToggleableVisuals.Enabled:
-        enum.ToggleableVisuals.Layer:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
           True: { state: icon }
           False: { state: icon-off }
   - type: ItemToggle

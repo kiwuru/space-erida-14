@@ -18,6 +18,9 @@
     - Human
     - Moth
     - Reptilian
+     #backmen-species-start
+    - Felinid
+    #backmen-species-end
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox

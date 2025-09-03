@@ -385,3 +385,16 @@
     contents:
     - id: BoxLightbulbColorfulMixed
     - id: BoxLighttubeColorfulMixed
+
+#DS14-start
+
+- type: entity
+  id: CrateServicePhotocopierToners
+  parent: CrateGenericSteel
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxPhotocopierToners
+      amount: 2
+
+#DS14-end
