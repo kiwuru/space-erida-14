@@ -78,6 +78,7 @@
   - type: Tag
     tags:
     - AllowGhostShownByEvent
+  - type: UniversalLanguageSpeaker
 
 - type: entity
   parent: BaseMentalAction

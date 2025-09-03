@@ -8,7 +8,7 @@
     sprite: Clothing/Multiple/headphones.rsi
     layers:
     - state: icon
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: [ "enum.ToggleVisuals.Layer" ]
   - type: Clothing
     equippedPrefix: off
     sprite: Clothing/Multiple/headphones.rsi
@@ -16,8 +16,8 @@
     - HEAD
     - EARS
     - NECK
-  - type: ToggleableVisuals
-    spriteLayer: enum.ToggleableVisuals.Layer
+  - type: ToggleVisuals
+    spriteLayer: enum.ToggleVisuals.Layer
     clothingVisuals:
       head:
       - state: on-equipped-HELMET
@@ -28,8 +28,8 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-      enum.ToggleableVisuals.Enabled:
-        enum.ToggleableVisuals.Layer:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
           True: {state: icon-on}
           False: {state: icon}
   - type: ItemToggle
