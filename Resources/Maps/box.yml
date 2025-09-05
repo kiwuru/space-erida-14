@@ -4,8 +4,8 @@ meta:
   engineVersion: 266.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/09/2025 20:23:34
-  entityCount: 28684
+  time: 09/05/2025 13:03:36
+  entityCount: 28686
 maps:
 - 780
 grids:
@@ -14865,7 +14865,7 @@ entities:
       pos: 24.5,16.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -139849.31
+      secondsUntilStateChange: -139939.2
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -18840,92 +18840,124 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 87.5,-11.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 635
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 87.5,-3.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 7209
     components:
     - type: Transform
       pos: 36.5,-3.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 9934
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 41.5,-0.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 12478
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -77.5,-2.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 12679
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -70.5,-2.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 13399
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 36.5,1.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 13779
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -67.5,-9.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 17910
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -66.5,21.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 18039
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -44.5,-30.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 20699
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -44.5,-28.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 20800
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 87.5,-5.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 20801
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 87.5,-13.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 20825
     components:
     - type: Transform
       pos: -70.5,7.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 20854
     components:
     - type: Transform
       pos: -77.5,7.5
       parent: 8364
+    - type: Airtight
+      airBlocked: False
   - uid: 20855
     components:
     - type: Transform
       pos: -0.5,-0.5
       parent: 11906
+    - type: Airtight
+      airBlocked: False
 - proto: AtmosFixBlockerMarker
   entities:
   - uid: 110
@@ -87801,11 +87833,6 @@ entities:
     - type: Transform
       pos: 69.5,-49.5
       parent: 8364
-  - uid: 5340
-    components:
-    - type: Transform
-      pos: -9.5,-21.5
-      parent: 8364
   - uid: 7274
     components:
     - type: Transform
@@ -90140,7 +90167,7 @@ entities:
       pos: 18.5,-13.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -47080.31
+      secondsUntilStateChange: -47170.2
       state: Closing
   - uid: 13388
     components:
@@ -90148,7 +90175,7 @@ entities:
       pos: 18.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -47116.008
+      secondsUntilStateChange: -47205.9
       state: Closing
   - uid: 13389
     components:
@@ -90306,7 +90333,7 @@ entities:
       pos: -34.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -134037.84
+      secondsUntilStateChange: -134127.73
       state: Closing
   - uid: 15010
     components:
@@ -135519,6 +135546,18 @@ entities:
     - type: Transform
       pos: -9.523602,-13.459726
       parent: 8364
+- proto: PhotocopierCommand
+  entities:
+  - uid: 28685
+    components:
+    - type: Transform
+      pos: -13.5,-16.5
+      parent: 8364
+  - uid: 28686
+    components:
+    - type: Transform
+      pos: -9.5,-21.5
+      parent: 8364
 - proto: PianoInstrument
   entities:
   - uid: 5586
@@ -153630,6 +153669,13 @@ entities:
     components:
     - type: Transform
       pos: 30.5,-0.5
+      parent: 8364
+- proto: SpawnPointBlueShield
+  entities:
+  - uid: 5340
+    components:
+    - type: Transform
+      pos: 2.5,-6.5
       parent: 8364
 - proto: SpawnPointBorg
   entities:
