@@ -44,7 +44,7 @@
 - type: radioChannel
   id: Security
   name: chat-radio-security
-  keycode: 'б'
+  keycode: 'о'
   frequency: 1359
   color: "#ff4242"
 
@@ -58,7 +58,7 @@
 - type: radioChannel
   id: Supply
   name: chat-radio-supply
-  keycode: 'ю'
+  keycode: 'п'
   frequency: 1347
   color: "#b48b57"
 
@@ -81,7 +81,7 @@
 - type: radioChannel
   id: Binary
   name: chat-radio-binary
-  keycode: 'л'
+  keycode: 'д'
   frequency: 1001
   color: "#5ed7aa"
   # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
@@ -99,7 +99,7 @@
 - type: radioChannel
   id: Xenoborg
   name: chat-radio-xenoborg
-  keycode: 'д'
+  keycode: 'x'
   frequency: 2002
   color: "#2288ff"
   # long range since I don't wanna make a special xenoborg telecomm server
@@ -108,7 +108,7 @@
 - type: radioChannel
   id: Mothership
   name: chat-radio-mothership
-  keycode: 'ж'
+  keycode: 'z'
   frequency: 2003
   color: "#ff2222"
   # long range since I don't wanna make a special xenoborg telecomm server
