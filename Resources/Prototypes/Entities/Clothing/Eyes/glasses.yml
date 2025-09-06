@@ -281,10 +281,10 @@
   - type: FlashImmunity
 
 - type: entity
-  parent: ClothingEyesBase
+  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesNoir
   name: noir-tech glasses
-  description: A pair of glasses that simulate what the world looked like before the invention of color.
+  description: Stylish glasses that simulate a world before color, while also projecting a security HUD.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/noir.rsi
@@ -296,7 +296,15 @@
   - type: EyeProtection
     protectionTime: 5
   - type: NoirOverlay
+  - type: Construction
+    graph: GlassesSecHUD
+    node: glassesSec
   - type: Tag
     tags:
     - HamsterWearable
+    - PetWearable
     - WhitelistChameleon
+  - type: GuideHelp
+    guides:
+    - Security
+    - Antagonists
