@@ -77,6 +77,15 @@
   weight: 100
 
 - type: department
+  id: Law
+  name: department-Law
+  description: department-Law-description
+  color: "#d98b71"
+  roles:
+  - IAA
+  - Lawyer
+
+- type: department
   id: Engineering
   name: department-Engineering
   description: department-Engineering-description
@@ -144,3 +153,4 @@
   - Zookeeper
   - Psychologist
   primary: false
+
