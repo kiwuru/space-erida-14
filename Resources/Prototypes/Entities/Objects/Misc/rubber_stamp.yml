@@ -324,6 +324,6 @@
     - type: Stamp
       stampedName: stamp-component-stamped-name-iaa
       stampedColor: "#33CC33"
-      stampState: "paper_stamp-ok"
+      stampState: "paper_stamp-lawyer"
     - type: Sprite
       state: stamp-ok

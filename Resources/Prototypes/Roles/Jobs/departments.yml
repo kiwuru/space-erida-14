@@ -23,7 +23,6 @@
   - Clown
   - HeadOfPersonnel
   - Janitor
-  - Lawyer
   - Librarian
   - Mime
   - Musician
@@ -64,6 +63,7 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
+  - IAA
   - CentralCommandOfficial
   - CBURN
   - ERTLeader
