@@ -1,59 +1,57 @@
-<div class="header" align="center">  
-<img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg">  
+<div class="header" align="center">
+<img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg">
 </div>
 
-Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), our homegrown engine written in C#.
+Space Station 14 — это ремейк SS13, работающий на [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), собственном движке, написанном на C#.
 
-This is the primary repo for Space Station 14. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
+Это форк репозитория по Space Station 14. Чтобы предотвратить создание форков RobustToolbox, клиентом и сервером загружается «контент-пак». Этот контент-пак содержит всё необходимое для игры на конкретном сервере.
 
-If you want to host or create content for SS14, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
+Если вы хотите разместить сервер или создавать контент для SS14, то вам нужен именно этот репозиторий. Он содержит как RobustToolbox, так и контент-пак для разработки новых контент-паков.
 
-## Links
+## Ссылки
 
-<div class="header" align="center">  
+<div class="header" align="center">
 
-[Website](https://spacestation14.com/) | [Discord](https://discord.ss14.io/) | [Forum](https://forum.spacestation14.com/) | [Mastodon](https://mastodon.gamedev.place/@spacestation14) | [Lemmy](https://lemmy.spacestation14.com/) | [Patreon](https://www.patreon.com/spacestation14) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)  
+[Веб-сайт](https://wiki.deadspace14.net/%D0%AD%D1%80%D0%B8%D0%B4%D0%B0:%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0) | [Discord](https://discord.com/invite/erida)
 
 </div>
 
-## Documentation/Wiki
+## Документация / Вики
 
-Our [docs site](https://docs.spacestation14.com/) has documentation on SS14's content, engine, game design, and more.  
-Additionally, see these resources for license and attribution information:  
-- [Robust Generic Attribution](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)  
+На официальном [сайте документации](https://docs.spacestation14.com/) есть документация по контенту SS14, движку, игровому дизайну и многому другому.
+Дополнительно ознакомьтесь с этими ресурсами для получения информации о лицензиях и атрибуции:
+- [Robust Generic Attribution](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)
 - [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
 
-We also have lots of resources for new contributors to the project.
+У нас также есть множество ресурсов для новых участников проекта.
 
-## Contributing
+## Участие в разработке
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/space-wizards/space-station-14-content/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!  
-Just make sure your changes and pull requests are in accordance with the [contribution guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
+Мы рады принимать вклад от любого человека. Заходите в Discord, если хотите помочь. У нас есть [список задач (issues)](https://github.com/dead-space-server/space-erida-14/issues), которые необходимо выполнить, и любой может взять их на себя. Не бойтесь просить о помощи!
+Просто убедитесь, что ваши изменения и pull request'ы соответствуют [рекомендациям по внесению вклада](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
 
-We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language, consider creating a fork or contributing to a fork.
+## Сборка
 
-## Building
-
-1. Clone this repo:
+1. Клонируйте этот репозиторий:
 ```shell
 git clone https://github.com/space-wizards/space-station-14.git
 ```
-2. Go to the project folder and run `RUN_THIS.py` to initialize the submodules and load the engine:
+2. Перейдите в директорию проекта и запустите `RUN_THIS.py` чтобы инициализировать Саб-Модули и скачать движок игры:
 ```shell
 cd space-station-14
 python RUN_THIS.py
 ```
-3. Compile the solution:  
+3. Соберите сервер:  
 
-Build the server using `dotnet build`.
+Соберите сервер используя `dotnet build`.
 
-[More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
+[Подробнее](https://docs.spacestation14.com/en/general-development/setup.html)
 
-## License
+## Лицензия
 
-All code in this codebase is released under the AGPL-3.0-or-later license. Each file includes REUSE Specification headers or separate .license files that specify a dual license option. This dual licensing is provided to simplify the process for projects that are not using AGPL, allowing them to adopt the relevant portions of the code under an alternative license. You can review the complete texts of these licenses in the LICENSES/ directory.
+Весь код в этой кодовой базе выпущен под лицензией AGPL-3.0-or-later. Каждый файл содержит заголовки спецификации REUSE или отдельные файлы .license, которые указывают опцию двойного лицензирования. Это двойное лицензирование предоставлено для упрощения процесса для проектов, которые не используют AGPL, позволяя им использовать соответствующие части кода по альтернативной лицензии. Вы можете ознакомиться с полными текстами этих лицензий в каталоге LICENSES/.
 
-Most media assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and the copyright in the metadata file. [Example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+Большинство медиа-ресурсов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) если не указано иное. Ресурсы имеют свою лицензию и информацию об авторских правах в файле метаданных. [Пример](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
 > [!NOTE]
-> Some assets are licensed under the non-commercial [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) or similar non-commercial licenses and will need to be removed if you wish to use this project commercially.
+> Некоторые ресурсы лицензированы по некоммерческой лицензии [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичным некоммерческим лицензиям, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
