@@ -14,6 +14,13 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
 {
     private static readonly (Regex regex, string emoteKey)[] ShorthandToEmote =
     [
+        // Erida-start
+        Entry(")", "chatsan-smiles"),
+        Entry("хд", "chatsan-smiles"),
+        Entry("))", "chatsan-smiles-widely"),
+        Entry("(", "chatsan-frowns"),
+        Entry("((", "chatsan-frowns-deeply"),
+        // Erida-end
         Entry(":)", "chatsan-smiles"),
         Entry(":]", "chatsan-smiles"),
         Entry("=)", "chatsan-smiles"),
