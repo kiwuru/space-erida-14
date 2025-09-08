@@ -601,6 +601,23 @@ namespace Content.Server.Database
 
         public async Task UpdatePlayTimes(IReadOnlyCollection<PlayTimeUpdate> updates)
         {
+            // DS14 playtimeserver
+            if (_playtimeServerEnabled)
+            {
+                var data = updates.Select(x => new PlayTime()
+                {
+                    PlayerId = x.User.UserId,
+                    Tracker = x.Tracker,
+                    TimeSpent = x.Time
+                });
+                await _httpClient.PostAsJsonAsync(_playtimeServerUrl, data);
+                if (!_playtimeServerSaveLocally)
+                {
+                    return;
+                }
+            }
+            // DS14 playtimeserver
+
             await using var db = await GetDb();
 
             // Ideally I would just be able to send a bunch of UPSERT commands, but EFCore is a pile of garbage.
