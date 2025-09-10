@@ -286,3 +286,20 @@
       layers:
         - state: crypt_rusted
         - state: pirate_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyIAA
+  name: iaa encryption key
+  description: An encryption key used by the most meticulous person.
+  components:
+    - type: EncryptionKey
+      channels:
+      - Common
+      - Command
+      - Security
+      defaultChannel: Command
+    - type: Sprite
+      layers:
+      - state: crypt_silver
+      - state: nano_label
