@@ -37,6 +37,7 @@
   - Hydroponics
   - GenpopEnter
   - GenpopLeave
+  - Command
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
