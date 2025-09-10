@@ -17,12 +17,26 @@
   supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
-    - Service
-    - Brig
-    - Maintenance
-    - Command
-    - External
-    - Lawyer
+  - Cryogenics
+  - Security
+  - Brig
+  - Lawyer
+  - Engineering
+  - Medical
+  - Salvage
+  - Cargo
+  - Research
+  - Service
+  - Maintenance
+  - External
+  - Janitor
+  - Theatre
+  - Bar
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - GenpopEnter
+  - GenpopLeave
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
