@@ -78,7 +78,7 @@
     - Security
     - Service
     - Supply
-    - EncryptionKeyLaw
+    - Law
     defaultChannel: Command
   - type: Sprite
     layers:
