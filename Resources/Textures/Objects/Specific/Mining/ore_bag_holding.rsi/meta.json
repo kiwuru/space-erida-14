@@ -1,35 +1,16 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from TGStation at https://github.com/tgstation/tgstation/blob/master/icons/obj/mining.dmi, ON state sprite by PuroSlavKing (Github)",
+    "copyright": "Taken from TGStation at https://github.com/tgstation/tgstation/blob/master/icons/obj/mining.dmi, Icon sprite by PuroSlavKing (Github)",
     "size": {
       "x": 32,
       "y": 32
     },
     "states": [
       {
-        "name": "orebag_off",
+        "name": "icon",
         "delays": [
           [
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1
-          ]
-        ]
-      },
-      {
-        "name": "orebag_on",
-        "delays": [
-          [
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
               0.1,
               0.1,
               0.1,
