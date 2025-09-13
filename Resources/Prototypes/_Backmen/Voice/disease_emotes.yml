@@ -2,6 +2,7 @@
 - type: emote
   id: Mews
   category: Vocal
+  available: false
   name: chat-emote-name-mews
   whitelist:
     components:
@@ -9,7 +10,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: ["chat-emote-msg-meow"]
+  chatMessages: ["chat-emote-msg-mews"]
   chatTriggers:
     - mew
     - mew.
@@ -24,6 +25,7 @@
 - type: emote
   id: Meows
   category: Vocal
+  available: false
   name: chat-emote-name-meows
   whitelist:
     components:
@@ -49,6 +51,7 @@
 - type: emote
   id: Purrs
   category: Vocal
+  available: false
   name: chat-emote-name-purrs
   whitelist:
     components:
@@ -64,4 +67,3 @@
     - Purrs
     - Purrs.
     - Purrs!
-

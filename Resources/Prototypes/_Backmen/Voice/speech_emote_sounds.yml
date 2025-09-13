@@ -12,6 +12,8 @@
       collection: MaleSneezes
     Cough:
       collection: MaleCoughs
+    Sigh:
+      collection: MaleSigh
     Crying:
       collection: MaleCry
     Whistle:
@@ -26,10 +28,18 @@
       collection: FelinidGrowls
     Weh:
       collection: Weh
+    Hew:
+      collection: Hew
     BCatMeow:
       collection: BCatMeowSound
     Hiss: 
       collection: ReptilianHisses
+    Moan:
+      collection: MaleMoan
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
 
 - type: emoteSounds
   id: FemaleFelinid
@@ -44,6 +54,8 @@
       collection: FemaleSneezes
     Cough:
       collection: FemaleCoughs
+    Sigh:
+      collection: FemaleSigh
     Crying:
       collection: FemaleCry
     Whistle:
@@ -62,3 +74,9 @@
       collection: BCatMeowSound
     Hiss: 
       collection: ReptilianHisses
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+    Moan:
+      collection: FemaleMoan
