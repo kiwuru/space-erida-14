@@ -22,18 +22,14 @@
       collection: FelinidMews
     Meows:
       collection: FelinidMeows
-    Purrs:
-      collection: FelinidPurrs
     Growl:
       collection: FelinidGrowls
+    Purrs:
+      collection: FelinidPurrs
     Weh:
       collection: Weh
     Hew:
       collection: Hew
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: 
-      collection: ReptilianHisses
     Moan:
       collection: MaleMoan
     Gasp:
@@ -70,10 +66,6 @@
       collection: FelinidGrowls
     Weh:
       collection: Weh
-    BCatMeow:
-      collection: BCatMeowSound
-    Hiss: 
-      collection: ReptilianHisses
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
