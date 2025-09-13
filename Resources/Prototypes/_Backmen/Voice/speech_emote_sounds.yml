@@ -22,8 +22,6 @@
       collection: FelinidMews
     Meows:
       collection: FelinidMeows
-    Growl:
-      collection: FelinidGrowls
     Purrs:
       collection: FelinidPurrs
     Weh:
@@ -62,8 +60,6 @@
       collection: FelinidMeows
     Purrs:
       collection: FelinidPurrs
-    Growl:
-      collection: FelinidGrowls
     Weh:
       collection: Weh
     Gasp:
