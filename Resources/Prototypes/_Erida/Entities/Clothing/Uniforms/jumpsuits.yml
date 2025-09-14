@@ -30,4 +30,15 @@
       sprite: _Erida/Clothing/Uniforms/Jumpsuit/sheriff.rsi
     - type: Clothing
       sprite: _Erida/Clothing/Uniforms/Jumpsuit/sheriff.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformArbitr
+  name: Arbitr Uniform
+  description: An incredibly expensive Arbiter suit from an unknown corporation.
+  components:
+  - type: Sprite
+    sprite: _Erida/Clothing/Uniforms/jumpsuit/arbitr.rsi
+  - type: Clothing
+    sprite: _Erida/Clothing/Uniforms/jumpsuit/arbitr.rsi
       

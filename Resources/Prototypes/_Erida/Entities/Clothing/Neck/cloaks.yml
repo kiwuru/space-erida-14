@@ -38,3 +38,47 @@
     - type: Sprite
       sprite: _Erida/Clothing/Neck/Cloaks/white_captain_mantle.rsi
       
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakArbiter
+  name: arbiter cloak
+  description: the arbiter cloak, reminiscent of tea and blood.
+  components:
+    - type: Sprite
+      sprite: _Erida/Clothing/Neck/Cloaks/arbitr.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakBlackCloak
+  name: black church cloak
+  description: Black robe, hides secrets?
+  components:
+    - type: Sprite
+      sprite: _Erida/Clothing/Neck/Cloaks/black.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakSanabiCloak
+  name: brigadier general cloak
+  description: A tattered, yet imposing cloak, worn by elite warriors.
+  components:
+    - type: Sprite
+      sprite: _Erida/Clothing/Neck/Cloaks/sanabi.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakWhiteCloak
+  name: white church cloak
+  description: white formal robe of a priest
+  components:
+    - type: Sprite
+      sprite: _Erida/Clothing/Neck/Cloaks/white.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakTgmcwhiteCloak
+  name: white cloak
+  description: white formal cloak
+  components:
+    - type: Sprite
+      sprite: _Erida/Clothing/Neck/Cloaks/tgmcwhite.rsi
