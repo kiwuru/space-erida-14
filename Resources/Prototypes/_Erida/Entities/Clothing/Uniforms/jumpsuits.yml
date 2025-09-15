@@ -38,7 +38,7 @@
   description: An incredibly expensive Arbiter suit from an unknown corporation.
   components:
   - type: Sprite
-    sprite: _Erida/Clothing/Uniforms/jumpsuit/arbitr.rsi
+    sprite: _Erida/Clothing/Uniforms/Jumpsuit/arbitr.rsi
   - type: Clothing
-    sprite: _Erida/Clothing/Uniforms/jumpsuit/arbitr.rsi
+    sprite: _Erida/Clothing/Uniforms/Jumpsuit/arbitr.rsi
       
