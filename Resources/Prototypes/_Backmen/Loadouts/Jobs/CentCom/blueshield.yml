@@ -89,7 +89,7 @@
 #weapon
 - type: loadout
   id: WeaponSubMachineGunDrozd
-  equipment:
+  storage:
     back: 
     - WeaponSubMachineGunDrozd
     - MagazinePistolSubMachineGun
