@@ -2,7 +2,6 @@
   id: TaurCanine
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -14,7 +13,6 @@
   id: TaurCow
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -24,7 +22,6 @@
   id: TaurDeer
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -36,7 +33,6 @@
   id: TaurDrake
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph, Reptilian]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -48,7 +44,6 @@
   id: TaurSpider
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph, Arachnid]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -58,7 +53,6 @@
   id: TaurEevee
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -70,7 +64,6 @@
   id: TaurFeline
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -82,7 +75,6 @@
   id: TaurHorse
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -152,7 +144,6 @@
   id: TaurTentacle
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi
@@ -162,7 +153,6 @@
   id: TaurSynthWolf
   bodyPart: Tail
   markingCategory: Tail
-  sponsorOnly: true
   speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Ataraxia/Mobs/Customization/taur.rsi

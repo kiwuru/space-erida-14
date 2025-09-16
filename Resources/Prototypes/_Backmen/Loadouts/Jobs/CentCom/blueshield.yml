@@ -66,11 +66,6 @@
   equipment:
     back: ClothingBackpackDuffelBlueshield
 
-- type: loadout
-  id: ClothingBackpackMessengerBlueshield
-  equipment:
-    back: ClothingBackpackMessengerBlueshield
-
 #outerClothing
 - type: loadout
   id: ClothingOuterArmorBlueshield
@@ -93,14 +88,17 @@
 
 #weapon
 - type: loadout
-  id: WeaponMultiphaseEnergyGun
+  id: WeaponSubMachineGunDrozd
   equipment:
-    pocket1: WeaponMultiphaseEnergyGun
+    back: 
+    - WeaponSubMachineGunDrozd
+    - MagazinePistolSubMachineGun
+    - MagazinePistolSubMachineGun
 
 - type: loadout
-  id: WeaponPistolUCS
-  dummyEntity: WeaponPistolUCS
+  id: WeaponPistolViper
+  dummyEntity: WeaponPistolViper
   storage:
     back:
-    - WeaponPistolUCS
-    - MagazinePistol57x28Extd
+    - WeaponPistolViper
+    - MagazinePistol

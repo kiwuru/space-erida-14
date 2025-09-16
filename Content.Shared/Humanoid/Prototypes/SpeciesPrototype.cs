@@ -53,6 +53,12 @@ public sealed partial class SpeciesPrototype : IPrototype
     public Color DefaultSkinTone { get; private set; } = Color.White;
 
     /// <summary>
+    ///     Default eye tone for this species. This applies for non-human skin tones.
+    /// </summary>
+    [DataField]
+    public Color DefaultEyeTone { get; private set; } = Color.Black;
+
+    /// <summary>
     ///     Default human skin tone for this species. This applies for human skin tones.
     ///     See <see cref="SkinColor.HumanSkinTone"/> for the valid range of skin tones.
     /// </summary>
@@ -88,6 +94,14 @@ public sealed partial class SpeciesPrototype : IPrototype
 
     [DataField]
     public ProtoId<LocalizedDatasetPrototype> FemaleFirstNames { get; private set; } = "NamesFirstFemale";
+
+    // Corvax-LastnameGender-Start: Split lastname field by gender
+    [DataField]
+    public ProtoId<LocalizedDatasetPrototype> MaleLastNames { get; private set; } = "names_last_male";
+
+    [DataField]
+    public ProtoId<LocalizedDatasetPrototype> FemaleLastNames { get; private set; } = "names_last_female";
+    // Corvax-LastnameGender-End
 
     [DataField]
     public ProtoId<LocalizedDatasetPrototype> LastNames { get; private set; } = "NamesLast";
