@@ -338,13 +338,13 @@
   - type: StationEvent
     startAnnouncement: station-event-gas-leak-start-announcement
     startAudio:
-      path: /Audio/Announcements/gasleak_start.ogg # Corvax-Announcements
+      path: /Audio/Announcements/gasleak_start.ogg
       params:
         volume: -4
     endAnnouncement: station-event-gas-leak-end-announcement
     weight: 8
     endAudio:
-      path: /Audio/Announcements/gasleak_end.ogg # Corvax-Announcements
+      path: /Audio/Announcements/gasleak_end.ogg
       params:
         volume: -4
   - type: GasLeakRule
@@ -368,12 +368,12 @@
     weight: 5
     startAnnouncement: station-event-power-grid-check-start-announcement
     startAudio:
-      path: /Audio/Announcements/Power_off.ogg # Corvax-Announcements
+      path: /Audio/Announcements/power_off.ogg
       params:
         volume: -4
     endAnnouncement: station-event-power-grid-check-end-announcement
     endAudio:
-      path: /Audio/Announcements/Power_on.ogg # Corvax-Announcements
+      path: /Audio/Announcements/power_on.ogg
       params:
         volume: -4
     duration: 60
@@ -417,7 +417,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
-      path: /Audio/Announcements/ventClog.ogg
+      path: /Audio/Announcements/ventclog.ogg
     earliestStart: 15
     minimumPlayers: 15
     weight: 5

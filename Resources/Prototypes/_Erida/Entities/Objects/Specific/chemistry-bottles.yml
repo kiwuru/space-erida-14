@@ -1,19 +1,4 @@
 - type: entity
-  id: ChemistryBottleEphedrine
-  suffix: ephedrine
-  parent: BaseChemistryBottleFilled
-  components:
-  - type: Label
-    currentLabel: reagent-name-ephedrine
-  - type: SolutionContainerManager
-    solutions:
-      drink: # This solution name and target volume is hard-coded in ChemMasterComponent
-        maxVol: 30
-        reagents:
-        - ReagentId: Ephedrine
-          Quantity: 30
-
-- type: entity
   id: ChemistryBottleBicaridine
   suffix: bicaridine
   parent: BaseChemistryBottleFilled
