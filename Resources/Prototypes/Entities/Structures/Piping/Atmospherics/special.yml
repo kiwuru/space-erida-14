@@ -25,11 +25,11 @@
   - type: Tag
     tags:
       - SpreaderIgnore
-  # ERIDA-start
-  - type: ApcPowerReceiver
-    powerLoad: 80
-  - type: ExtensionCableReceiver
-  - type: AirtightRequiresPower
+  # ERIDA-start ### dont modify other components, add changes to Airtight component
+  #- type: ApcPowerReceiver
+  #  powerLoad: 80
+  #- type: ExtensionCableReceiver
+  #- type: AirtightRequiresPower
   - type: Machine
     board: TinyFanCircuitboard
   - type: ContainerContainer
@@ -93,11 +93,11 @@
   - type: Tag
     tags:
       - SpreaderIgnore
-  # ERIDA-start
-  - type: ApcPowerReceiver
-    powerLoad: 80
-  - type: ExtensionCableReceiver
-  - type: AirtightRequiresPower
+  # ERIDA-start  ### dont modify other components, add changes to Airtight component
+  #- type: ApcPowerReceiver
+  #  powerLoad: 80
+ # - type: ExtensionCableReceiver
+  #- type: AirtightRequiresPower
   - type: Machine
     board: TinyFanDirectionalCircuitboard
   - type: ContainerContainer

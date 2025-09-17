@@ -17,26 +17,11 @@
   supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
-  - Cryogenics
   - Security
   - Brig
   - Lawyer
-  - Engineering
-  - Medical
-  - Salvage
-  - Cargo
-  - Research
-  - Service
   - Maintenance
   - External
-  - Janitor
-  - Theatre
-  - Bar
-  - Kitchen
-  - Chapel
-  - Hydroponics
-  - GenpopEnter
-  - GenpopLeave
   - Command
   special:
   - !type:AddImplantSpecial
@@ -52,3 +37,16 @@
     pocket2: BookSpaceLaw
   inhand:
     - BriefcaseIAAFilled
+  
+- type: chameleonOutfit
+  id: IAAChameleonOutfit
+  job: IAA
+  hasMindShield: true
+  equipment:
+    neck: ClothingNeckLawyerbadge
+    head: ClothingHeadHatBowlerHat
+    shoes: ClothingShoesColorBlack
+    id: IAAPDA
+    eyes: ClothingEyesGlassesSunglasses
+    ears: ClothingHeadsetIAA
+    gloves: ClothingHandsGlovesColorBlack

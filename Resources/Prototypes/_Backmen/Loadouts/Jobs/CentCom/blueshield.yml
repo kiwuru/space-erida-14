@@ -86,19 +86,3 @@
   - !type:GroupLoadoutEffect
     proto: MasterBlueShield
 
-#weapon
-- type: loadout
-  id: WeaponSubMachineGunDrozd
-  storage:
-    back: 
-    - WeaponSubMachineGunDrozd
-    - MagazinePistolSubMachineGun
-    - MagazinePistolSubMachineGun
-
-- type: loadout
-  id: WeaponPistolViper
-  dummyEntity: WeaponPistolViper
-  storage:
-    back:
-    - WeaponPistolViper
-    - MagazinePistol
