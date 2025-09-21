@@ -53,6 +53,8 @@
     - TauCetiBasic
     - SpaceMob
   - type: StunVisuals
+  - type: Carriable
+    freeHandsRequired: 2
 
 - type: entity
   save: false
