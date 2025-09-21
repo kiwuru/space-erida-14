@@ -219,6 +219,8 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: Carriable
+    freeHandsRequired: 2
 
 - type: entity
   save: false
