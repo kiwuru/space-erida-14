@@ -2,5 +2,5 @@ ent-ClothingWitchHunter = Костюм охотника на ведьм.
    .desc = Убей эту ведьму!.
 ent-ClothingGlavaKylt = накидка главы 
    .desc = Странная чёрная накидка главы, выглядит мистически.
-ent-ClothingPosledKylt = розовый костюм горничной 
+ent-ClothingPosledKylt = накидка последователя 
    .desc = Странная чёрная накидка последователя, выглядит мистически.
