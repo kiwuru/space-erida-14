@@ -1,0 +1,63 @@
+- type: latheRecipe
+  id: PersonalAI
+  result: PersonalAI
+  categories:
+  -  Robotics
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 150
+
+- type: latheRecipe
+  id: ClothingEyesHudDiagnostic
+  result: ClothingEyesHudDiagnostic
+  completetime: 2
+  materials:
+    Steel: 200
+    Plastic: 300
+    Glass: 500
+# scientific
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: BorgModuleAnomaly
+  result: BorgModuleAnomaly
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: BorgModuleArtifact
+  result: BorgModuleArtifact
+# medical
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleTopicals
+  result: BorgModuleTopicals
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleChemical
+  result: BorgModuleChemical
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleRescue
+  result: BorgModuleRescue
+# engineering
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleRCD
+  result: BorgModuleRCD
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleConstruction
+  result: BorgModuleConstruction
+# service
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleGardening
+  result: BorgModuleGardening
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleHarvesting
+  result: BorgModuleHarvesting
