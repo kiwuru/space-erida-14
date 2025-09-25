@@ -120,7 +120,7 @@
     unlitRunningState: unlit-building
     staticPacks:
         - MaterialsStatic
-    Static: # Static > Dynamic | Backmen-EDIT
+    dynamicPacks: # Static > Dynamic | Backmen-EDIT
     - ToolsStatic
     - PartsStatic
     - AtmosStatic

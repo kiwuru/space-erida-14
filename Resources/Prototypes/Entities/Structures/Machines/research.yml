@@ -36,6 +36,7 @@
     - Medical
     - Service
     # Backmen-Edit-ENDer
+  - type: ApcPowerReceiver
     powerLoad: 200
   - type: ExtensionCableReceiver
   - type: WiresPanel

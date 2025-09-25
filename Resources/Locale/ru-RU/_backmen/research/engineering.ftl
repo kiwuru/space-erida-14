@@ -13,4 +13,4 @@ research-technology-engineering-machines = Базовое оборудовани
 research-technology-engineering-advanced-machines = Продвинутое оборудование
 research-technology-atmospheric-machines = Атмосферное оборудование
 research-technology-atmospheric-advanced-machines = Продвинутое атмосферное оборудование
-research-technology-portable-fission = технологии микрореакций
+research-technology-portable-fission = Питание по методу микрореакции

@@ -130,6 +130,8 @@
   recipeUnlocks:
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
+  - TinyFanCircuitboard # ERIDA-start
+  - TinyFanDirectionalCircuitboard # ERIDA-end
   technologyPrerequisites:
   - AtmosphericMachines
   position: -2,4
