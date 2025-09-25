@@ -120,7 +120,7 @@
     unlitRunningState: unlit-building
     staticPacks:
         - MaterialsStatic
-    Static: # Static > Dynamic | Backmen-EDIT
+    dynamicPacks: # Static > Dynamic | Backmen-EDIT
     - ToolsStatic
     - PartsStatic
     - AtmosStatic
@@ -210,6 +210,7 @@
     - Instruments
     - Equipment
     - FauxTiles
+    - BackmenTranslators
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -259,7 +260,6 @@
     - CargoBoardsStatic
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
-    - CircuitFloorsStatic
     # dynamicPacks: # Backmen-EDIT
     - EngineeringBoards
     - CargoBoards

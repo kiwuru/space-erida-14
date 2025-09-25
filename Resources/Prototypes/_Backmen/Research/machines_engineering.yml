@@ -6,8 +6,9 @@
     state: charger_APC
   discipline: Engineering
   tier: 1
-  cost: 800
+  cost: 5000
   recipeUnlocks:
+  - StationMapElectronics
   - IntercomElectronics
   - FirelockElectronics
   - DoorElectronics
@@ -37,7 +38,7 @@
     state: building
   discipline: Engineering
   tier: 1
-  cost: 12000
+  cost: 15000
   recipeUnlocks:
    - AutolatheHyperConvectionMachineCircuitboard
    - ProtolatheHyperConvectionMachineCircuitboard
@@ -76,7 +77,7 @@
     state: portgen0
   discipline: Engineering
   tier: 1
-  cost: 8500
+  cost: 12500
   recipeUnlocks:
   - TurboItemRechargerCircuitboard
   - PortableGeneratorSuperPacmanMachineCircuitboard
@@ -93,7 +94,7 @@
     state: base
   discipline: Engineering
   tier: 1
-  cost: 8500
+  cost: 12500
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
   technologyPrerequisites:
@@ -108,7 +109,7 @@
     state: freezerOn
   discipline: Engineering
   tier: 1
-  cost: 5500
+  cost: 8500
   recipeUnlocks:
    - ThermomachineFreezerMachineCircuitBoard
    - GasRecyclerMachineCircuitboard
@@ -126,10 +127,12 @@
     state: freezerOn
   discipline: Engineering
   tier: 1
-  cost: 8500
+  cost: 15000
   recipeUnlocks:
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
+  - TinyFanCircuitboard # ERIDA-start
+  - TinyFanDirectionalCircuitboard # ERIDA-end
   technologyPrerequisites:
   - AtmosphericMachines
   position: -2,4

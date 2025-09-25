@@ -17,6 +17,7 @@
     Plastic: 300
     Glass: 500
 # scientific
+
 - type: latheRecipe
   parent: BaseGoldBorgModuleRecipe
   id: BorgModuleAnomaly
@@ -27,37 +28,21 @@
   id: BorgModuleArtifact
   result: BorgModuleArtifact
 # medical
-- type: latheRecipe
-  parent: BaseBorgModuleRecipe
-  id: BorgModuleTopicals
-  result: BorgModuleTopicals
 
 - type: latheRecipe
   parent: BaseBorgModuleRecipe
-  id: BorgModuleChemical
-  result: BorgModuleChemical
-
-- type: latheRecipe
-  parent: BaseBorgModuleRecipe
-  id: BorgModuleRescue
-  result: BorgModuleRescue
-# engineering
-- type: latheRecipe
-  parent: BaseBorgModuleRecipe
-  id: BorgModuleRCD
-  result: BorgModuleRCD
-
-- type: latheRecipe
-  parent: BaseBorgModuleRecipe
-  id: BorgModuleConstruction
-  result: BorgModuleConstruction
+  id: BorgModuleAdvancedChemical
+  result: BorgModuleAdvancedChemical
 # service
-- type: latheRecipe
-  parent: BaseBorgModuleRecipe
-  id: BorgModuleGardening
-  result: BorgModuleGardening
 
 - type: latheRecipe
   parent: BaseBorgModuleRecipe
-  id: BorgModuleHarvesting
-  result: BorgModuleHarvesting
+  id: BorgModuleAdvancedClowning
+  result: BorgModuleAdvancedClowning
+# shaft
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleAdvancedMining
+  result: BorgModuleAdvancedMining
+
