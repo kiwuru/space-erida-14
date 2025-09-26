@@ -76,7 +76,7 @@
           Quantity: 5
   - type: Metabolizer
     maxReagents: 3
-    metabolizerTypes: [Shadowkin]
+    metabolizerTypes: [Animal]
     groups:
     - id: Food
     - id: Drink
@@ -109,3 +109,33 @@
     maxReagents: 5
     metabolizerTypes: [Shadowkin]
     removeEmpty: true
+
+- type: entity
+  id: OrganShadowkinLungs
+  parent: BaseAnimalOrgan
+  name: lungs
+  description: And these are the lungs? It's more like a joke.
+  components:
+  - type: Sprite
+    sprite: Backmen/Mobs/Species/Shadowkin/organs.rsi
+    state: lungs
+  - type: Organ
+  - type: Lung
+  - type: Metabolizer
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Lung"
+    metabolizerTypes: [ Animal ]
+    groups:
+    - id: Gas
+      rateModifier: 20.0
+  - type: SolutionContainerManager
+    solutions:
+      Lung:
+        maxVol: 100.0
+        canReact: false
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5

@@ -14,3 +14,7 @@
   - /Audio/_Erida/Voice/Human/male_moan_2.ogg
   - /Audio/_Erida/Voice/Human/male_moan_3.ogg
 
+- type: soundCollection
+  id: Wurble
+  files:
+  - /Audio/_Erida/Voice/Shadowkin/wurble.ogg

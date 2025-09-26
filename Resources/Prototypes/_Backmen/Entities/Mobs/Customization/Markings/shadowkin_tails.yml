@@ -1,0 +1,270 @@
+- type: marking
+  id: TailShadowkin
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin
+
+- type: marking
+  id: TailShadowkinBig
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big
+
+- type: marking
+  id: TailShadowkinBigFluff
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big_fluff
+
+- type: marking
+  id: TailShadowkinShorter
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails32x32.rsi
+      state: shadowkin_shorter
+
+- type: marking
+  id: TailShadowkinMedium
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails32x32.rsi
+      state: shadowkin_medium
+
+- type: marking
+  id: TailShadowkinDragon
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: default_dragon
+
+- type: marking
+  id: TailShadowkinStriped
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: default_striped
+
+
+- type: marking
+  id: TailShadowkinBigSkeleton
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: big_skeleton
+
+- type: marking
+  id: TailShadowkinBigOrbit
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: big_orbit
+
+- type: marking
+  id: TailShadowkinBigStriped
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: big_striped
+
+- type: marking
+  id: TailShadowkinBigTwoColored
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: big_twocolored
+
+- type: marking
+  id: TailShadowkinBigFluffArrowy
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big_fluff
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: bigfluff_arrowy
+
+- type: marking
+  id: TailShadowkinBigFluffSpirals
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails64x32.rsi
+      state: shadowkin_big_fluff
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: bigfluff_spirals
+
+- type: marking
+  id: TailShadowkinShorterBrush
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails32x32.rsi
+      state: shadowkin_shorter
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_32x32.rsi
+      state: shorter_brush
+
+- type: marking
+  id: TailShadowkinMediumTwoColored
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: Backmen/Mobs/Customization/tails32x32.rsi
+      state: shadowkin_medium
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_32x32.rsi
+      state: medium_twocolored
+
+- type: marking
+  id: TailShadowkinSnail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_snail
+
+- type: marking
+  id: TailShadowkinSnailGradient
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_snail
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: snail_gradient
+
+- type: marking
+  id: TailShadowkinSnailSpotty
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_snail
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: snail_spotty
+
+- type: marking
+  id: TailShadowkinSnailStriped
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_snail
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: snail_striped
+
+- type: marking
+  id: TailShadowkinFluffy
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_fluffy
+
+- type: marking
+  id: TailShadowkinFluffyStainy
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_fluffy
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: fluffy_stainy
+
+- type: marking
+  id: TailShadowkinHook
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_hook
+
+- type: marking
+  id: TailShadowkinHookLines
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_hook
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: hook_lines
+
+- type: marking
+  id: TailShadowkinHookSnake
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_hook
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: hook_snake
+
+- type: marking
+  id: TailShadowkinHookSpirals
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_hook
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: hook_spirals
+
+- type: marking
+  id: TailShadowkinHookTraced
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Anthropomorph, Shadowkin]
+  sprites:
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: tail_hook
+    - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_tails_64x32.rsi
+      state: hook_traced

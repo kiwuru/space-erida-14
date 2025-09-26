@@ -1,0 +1,18 @@
+- type: foodSequenceElement
+  id: ADTMeatShadowkin
+  sprites:
+  - sprite: _Erida/Objects/Consumable/Food/meat.rsi
+    state: shadowkin-cooked
+  tags:
+  - Cooked
+  - Meat
+
+- type: foodSequenceElement
+  id: ADTShadowkinCutlet
+  sprites:
+  - sprite: _Erida/Objects/Consumable/Food/meat.rsi
+    state: shadowkincutlet-cooked
+  tags:
+  - Cooked
+  - Cutlet
+  - Meat
