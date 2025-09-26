@@ -27,7 +27,7 @@
     - sprite: Backmen/Mobs/Customization/ears.rsi
       state: shadowkin
     - sprite: _Erida/Mobs/Customization/Shadowkin/shadowkin_ears_32x32.rsi
-      state: shadowkin_stripes
+      state: striped_secondary
 
 - type: marking
   id: EarsShadowkinElegant
