@@ -35,6 +35,11 @@
     - Robotics
     - Medical
     - Service
+    roundstartTechs:
+    - MachineParts
+    - Powercells
+    - EngineeringTools
+    - Lightning
     # Backmen-Edit-ENDer
   - type: ApcPowerReceiver
     powerLoad: 200
