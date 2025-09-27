@@ -1,0 +1,6 @@
+- type: stealTargetGroup
+  id: MedChemHUD
+  name: steal-target-groups-medchemhud
+  sprite:
+    sprite: _Erida/Clothing/Eyes/Hud/medchem.rsi
+    state: icon
