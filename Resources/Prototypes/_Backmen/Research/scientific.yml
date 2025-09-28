@@ -90,6 +90,7 @@
   cost: 10000
   recipeUnlocks:
   - DeviceQuantumSpinInverter
+  - DeviceDesynchronizer
   technologyPrerequisites:
   - GravityManipulation
   position: 3,3

@@ -55,6 +55,7 @@
 - type: latheRecipePack
   id: ScienceWeapons
   recipes:
+  - WeaponLaserSvalinn
   - WeaponPistolCHIMP
   - WeaponForceGun
   - WeaponProtoKineticAccelerator

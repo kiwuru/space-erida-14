@@ -52,12 +52,13 @@
     state: icon
   discipline: Shaft
   tier: 1
-  cost: 7500
+  cost: 10000
   recipeUnlocks:
 #   - WeaponPlasmaCutterAdvanced
    - OreBagOfHolding
    - AdvancedMineralScannerEmpty
    - MiningDrillDiamond
+   - ClothingShoesBootsJump
   technologyPrerequisites:
   - SalvageEquipment
   position: 10,4
@@ -103,8 +104,8 @@
   tier: 1
   cost: 5500
   recipeUnlocks:
-#   - HandHeldMassScanner # Removed by Lavaland
    - HandheldGPSBasic
+   - HandHeldMassScanner
   technologyPrerequisites:
   - SalvageEquipment
   position: 11,3

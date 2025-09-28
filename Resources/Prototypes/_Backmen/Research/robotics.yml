@@ -122,23 +122,6 @@
   position: 6,-2
 
 - type: technology
-  id: MechanizedTreatmentModules
-  name: research-technology-mechanized-treatment-modules
-  icon:
-   sprite: Interface/Actions/actions_borg.rsi
-   state: diagnosis-module
-  discipline: Robotics
-  tier: 1
-  cost: 5000
-  recipeUnlocks:
-  - BorgModuleTopicals
-  - BorgModuleChemical
-  - BorgModuleRescue
-  technologyPrerequisites:
-  - CyborgModules
-  position: 7,-2
-
-- type: technology
   id: AdvancedSurgeryModules
   name: research-technology-advanced-medical-modules
   icon:
@@ -150,8 +133,23 @@
   recipeUnlocks:
   - BorgModuleAdvancedChemical
   technologyPrerequisites:
-  - MechanizedTreatmentModules
-  position: 8,-2
+  - CyborgModules
+  position: 7,-2
+
+- type: technology
+  id: AdvancedMinerModules
+  name: research-technology-advanced-miner-modules
+  icon:
+   sprite: Interface/Actions/actions_borg.rsi
+   state: adv-mining-module
+  discipline: Robotics
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - BorgModuleAdvancedMining
+  technologyPrerequisites:
+  - CyborgModules
+  position: 5,-3
 
 - type: technology
   id: AdvancedToolsModules
@@ -165,58 +163,25 @@
   recipeUnlocks:
   - BorgModuleAdvancedTool
   technologyPrerequisites:
-  - EngineeringToolsModule
-#  - EngineeringAdvancedTools
-  position: 4,-2
-
-- type: technology
-  id: EngineeringToolsModule
-  name: research-technology-Engineering-tools-modules
-  icon:
-    sprite: Interface/Actions/actions_borg.rsi
-    state: rcd-module
-  discipline: Robotics
-  tier: 1
-  cost: 5000
-  recipeUnlocks:
-  - BorgModuleRCD
-  - BorgModuleConstruction
-  technologyPrerequisites:
   - CyborgModules
-#  - EngineeringAdvancedTools
   position: 5,-2
 
 - type: technology
-  id: HydroponicsModules
-  name: research-technology-hydroponics-modules
+  id: AdvancedServiceModules
+  name: research-technology-advanced-service-modules
   icon:
     sprite: Interface/Actions/actions_borg.rsi
-    state: gardening-module
-  discipline: Robotics
-  tier: 1
-  cost: 5000
-  recipeUnlocks:
-  - BorgModuleGardening
-  - BorgModuleHarvesting
-  technologyPrerequisites:
-  - CyborgModules
-  position: 7,-3
-
-- type: technology
-  id: RoboticCleanlinessModules
-  name: research-technology-robotic-cleanliness-modules
-  icon:
-    sprite: Interface/Actions/actions_borg.rsi
-    state: adv-cleaning-module
+    state: service-module
   discipline: Robotics
   tier: 1
   cost: 7500
   recipeUnlocks:
   - BorgModuleAdvancedCleaning
+  - BorgModuleAdvancedClowning
   technologyPrerequisites:
-  - HydroponicsModules
+  - CyborgModules
 #  - CleaningAdvanced
-  position: 8,-3
+  position: 7,-3
 
 - type: technology
   id: XenoArcheologyModules
@@ -232,7 +197,7 @@
   technologyPrerequisites:
   - AnomalyModules
 #  - XenoArcheologyMachines
-  position: 7,-4
+  position: 6,-4
 
 - type: technology
   id: AnomalyModules
@@ -247,4 +212,4 @@
   - BorgModuleAnomaly
   technologyPrerequisites:
   - CyborgModules
-  position: 6,-4
+  position: 6,-5

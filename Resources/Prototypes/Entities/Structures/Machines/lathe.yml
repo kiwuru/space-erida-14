@@ -210,6 +210,7 @@
     - Instruments
     - Equipment
     - FauxTiles
+    - BackmenTranslators
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -259,7 +260,6 @@
     - CargoBoardsStatic
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
-    - CircuitFloorsStatic
     # dynamicPacks: # Backmen-EDIT
     - EngineeringBoards
     - CargoBoards

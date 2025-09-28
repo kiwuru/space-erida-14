@@ -6,8 +6,9 @@
     state: charger_APC
   discipline: Engineering
   tier: 1
-  cost: 800
+  cost: 2500
   recipeUnlocks:
+  - StationMapElectronics
   - IntercomElectronics
   - FirelockElectronics
   - DoorElectronics

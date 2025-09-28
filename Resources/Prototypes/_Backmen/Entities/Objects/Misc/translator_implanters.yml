@@ -118,7 +118,7 @@
     implant: CarshnilStandardTranslatorImplant
 
 - type: entity
-  id: EvepishtuTranslatorImplanter
+  id: EvePishtuTranslatorImplanter
   parent: [ BaseTranslatorImplanter ]
   name: Eve-pishtu translator implant
   components:

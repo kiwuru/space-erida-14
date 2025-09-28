@@ -33,8 +33,9 @@
     state: high
   discipline: Engineering
   tier: 1
-  cost: 1500
+  cost: 5000
   recipeUnlocks:
+   - PowerCellHyper
    - PowerCellHigh
   technologyPrerequisites:
   - Powercells
@@ -65,6 +66,8 @@
   tier: 1
   cost: 500
   recipeUnlocks:
+  - ClothingOuterVestTank
+  - SprayPainterAmmo
   - Wirecutter
   - Screwdriver
   - Welder

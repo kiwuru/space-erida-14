@@ -28,7 +28,10 @@
   - MedkitAdvanced
   - MedkitRadiation
   - MedkitCombat
-  - WhiteCane
+  - OffsetCane
+  - OffsetCaneWood
+  - BodyBag
+  - LauncherSyringe
   position: 4,-5
 
 - type: technology
@@ -70,6 +73,8 @@
   - PillCanister
   - ChemistryEmptyBottle01
   - Syringe
+  - BaseChemistryEmptyVial
+  - MiniSyringe
   position: 3,-4
 
 - type: technology

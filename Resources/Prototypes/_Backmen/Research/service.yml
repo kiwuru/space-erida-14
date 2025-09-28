@@ -62,6 +62,7 @@
   tier: 1
   cost: 500
   recipeUnlocks:
+  - Ashtray
   - FoodPlate
   - FoodPlateSmall
   - FoodPlatePlastic
@@ -97,10 +98,11 @@
     state: icon
   discipline: Service
   tier: 1
-  cost: 3500
+  cost: 5000
   recipeUnlocks:
    - SynthesizerInstrument
    - HandheldStationMap
+   - PushHorn
   technologyPrerequisites:
   - ServiceMachines
   position: 3,10
@@ -135,6 +137,7 @@
   tier: 1
   cost: 500
   recipeUnlocks:
+   - WireBrush
    - MopItem
    - TrashBag
    - LightReplacer
