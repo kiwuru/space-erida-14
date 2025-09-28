@@ -734,7 +734,7 @@
       hadOutline: true
     - type: StealthOnMove
       passiveVisibilityRate: -0.10
-      movementVisibilityRate: 0.10
+      movementVisibilityRate: 0.90 #Erida-Edit
 
 - type: entity
   id: XenoArtifactRareMaterialSpawn
