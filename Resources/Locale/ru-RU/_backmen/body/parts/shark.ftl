@@ -1,6 +1,6 @@
 ent-PartShark = часть тела плафеима
     .desc = { ent-BaseItem.desc }
-ent-ChestShark = грудь плафеима
+ent-TorsoShark = грудь плафеима
     .desc = { ent-PartShark.desc }
 ent-GroinShark = пах плафеима
     .desc = { ent-PartShark.desc }

@@ -434,6 +434,19 @@ marking-AnthropomorphTailWolfAlt = Волк, хвост (Альтернатив�
 marking-AnthropomorphTailWolfAlt-tail_wolf_alt = Основной слой
 marking-AnthropomorphTailVulp = Вульпа, хвост
 marking-AnthropomorphTailVulp-tail_vulp = Основной слой
+marking-TailAxolotl = Хвост аксолота
+marking-TailDatashark = Хвост, синтетическая акула
+marking-TailShark = Хвост,акула
+marking-TailEasternDragon = Хвост, восточный дракон
+marking-TailFennec = Хвост, фенёк
+marking-TailFish = Хвост, рыба
+marking-TailFox = Хвост, лиса
+marking-TailGecko = Хвост, гекон
+marking-TailKitsune = Хвост, китсуне (альт.)
+marking-TailMaw = Хвост, Мав
+marking-TailSuccubus = Хвост, суккуба
+marking-TailTentacle = Тентакли
+
 
 # ГРУДЬ 
 

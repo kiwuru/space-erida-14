@@ -16,6 +16,8 @@
       collection: MaleSigh
     Crying:
       collection: MaleCry
+    Yawn:
+      collection: MaleYawn
     Whistle:
       collection: Whistles
     Mews:
@@ -68,3 +70,93 @@
       collection: FemaleDeathGasp
     Moan:
       collection: FemaleMoan
+    Yawn:
+      collection: FemaleYawn
+
+ #shadowkins
+
+- type: emoteSounds
+  id: MaleShadowkin
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Moan:
+      collection: MaleMoan
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+    Wurble:
+      collection: Wurble
+    Yawn:
+      collection: MaleYawn
+
+- type: emoteSounds
+  id: FemaleShadowkin
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FemaleScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+    Moan:
+      collection: FemaleMoan
+    Wurble:
+      collection: Wurble
+    Yawn:
+      collection: FemaleYawn
+      
+- type: emoteSounds
+  id: ShadowkinBodyEmotes
+  sounds:
+    Thump:
+      path: /Audio/Voice/Reptilian/reptilian_tailthump.ogg
+      params:
+        variation: 0.125
+    Clap:
+      collection: Claps
+    ClapSingle:
+      collection: ClapSingle
+    Snap:
+      collection: Snaps
+      params:
+        volume: -6
+    Salute:
+      collection: Salutes
+    Purse:
+      path: /Audio/Effects/thudswoosh.ogg

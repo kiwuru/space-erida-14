@@ -67,7 +67,7 @@
   id: LizardHornsAngler1
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Shark]
+  speciesRestriction: [Anthropomorph, Shark]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_angler
@@ -76,7 +76,7 @@
   id: LizardHornsCurled1
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Shark]
+  speciesRestriction: [Anthropomorph, Shark]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_curled
@@ -85,7 +85,7 @@
   id: LizardHornsRam1
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Shark]
+  speciesRestriction: [Anthropomorph, Shark]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_ram
@@ -94,7 +94,7 @@
   id: LizardHornsShort1
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Shark]
+  speciesRestriction: [Anthropomorph, Shark]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_short
@@ -103,7 +103,7 @@
   id: LizardHornsSimple1
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Shark]
+  speciesRestriction: [Anthropomorph, Shark]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_simple
@@ -112,7 +112,7 @@
   id: LizardHornsDouble1
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Shark]
+  speciesRestriction: [Anthropomorph, Shark]
   sprites:
   - sprite: Mobs/Customization/reptilian_parts.rsi
     state: horns_double

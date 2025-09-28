@@ -47,7 +47,7 @@
   id: DemonCowHorns
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Demon]
+  speciesRestriction: [Anthropomorph, Demon]
   sprites:
   - sprite: _Erida/Mobs/Demon/custom.rsi
     state: cow_horns
@@ -56,7 +56,7 @@
   id: DemonHornsDeer
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Demon]
+  speciesRestriction: [Anthropomorph, Demon]
   sprites:
   - sprite: _Erida/Mobs/Demon/custom.rsi
     state: deer_antlers_horns
@@ -65,7 +65,7 @@
   id: DemonHornsSmall
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Demon]
+  speciesRestriction: [Anthropomorph, Demon]
   sprites:
   - sprite: _Erida/Mobs/Demon/custom.rsi
     state: small_horns

@@ -19,7 +19,7 @@
       - left leg
       organs:
         heart: OrganShadowkinHeart
-        lungs: OrganAnimalLungs
+        lungs: OrganShadowkinLungs
         stomach: OrganShadowkinStomach
         liver: OrganShadowkinLiver
         kidneys: OrganShadowkinKidneys

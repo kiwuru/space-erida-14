@@ -5,6 +5,11 @@
   name: Urist McFloof
   abstract: true
   components:
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: ADTFoodMeatShadowkin
+      amount: 4
   - type: LanguageSpeaker
     currentLanguage: TauCetiBasic
   - type: LanguageKnowledge #backmen: languages
@@ -25,6 +30,15 @@
   - type: Body
     prototype: Shadowkin
     requiredLegs: 2
+  - type: Speech
+    allowedEmotes: ['Thump', 'Purse', 'Wurble']
+  - type: BodyEmotes
+    soundsId: ShadowkinBodyEmotes
+  - type: Vocal
+    sounds:
+      Male: MaleShadowkin
+      Female: FemaleShadowkin
+      Unsexed: MaleShadowkin
   - type: Flammable
     damage:
       types:
@@ -37,6 +51,7 @@
       types:
         Blunt: 1 # per second, scales with pressure and other constants.
   - type: Bloodstream
+    bloodReagent: ShadowkinBlood
     bloodlossDamage:
       types:
         Bloodloss:
@@ -47,7 +62,7 @@
           -0.25
   - type: Temperature
     heatDamageThreshold: 330
-    coldDamageThreshold: 195
+    coldDamageThreshold: 230
     currentTemperature: 310.15
     specificHeat: 46
     coldDamage:
@@ -56,6 +71,11 @@
     heatDamage:
       types:
         Heat : 0.25 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      273: 0.8
+      240: 0.6
+      200: 0.4
   - type: Fixtures
     fixtures:
       fix1:
@@ -81,11 +101,6 @@
         Blunt: 2
         Slash: 3
         Piercing: 1
-  - type: Vocal
-    sounds:
-      Male: MaleSlime
-      Female: FemaleSlime
-      Unsexed: MaleSlime
   - type: InteractionPopup
     successChance: 0.75
     interactFailureString: petting-failure-generic
@@ -96,12 +111,13 @@
     baseWalkSpeed : 2.7
     baseSprintSpeed : 4.5
   - type: Respirator
+    gaspEmote: null
     damage:
       types:
-        Asphyxiation: 2.0
+        Asphyxiation: 0.0
     damageRecovery:
       types:
-        Asphyxiation: -1.0
+        Asphyxiation: 0.0
 
 - type: entity
   save: false
@@ -109,4 +125,3 @@
   id: MobShadowkinDummy
   categories: [ HideSpawnMenu ]
   description: A dummy shadowkin meant to be used in character setup.
-

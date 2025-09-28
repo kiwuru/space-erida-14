@@ -1,7 +1,7 @@
 ent-PartShadowkin = часть тела шадовкина
     .desc = { ent-BasePart.desc }
-ent-ChestShadowkin = грудь шадовкина
-    .desc = { ent-BaseChest.desc }
+ent-TorsoShadowkin = грудь шадовкина
+    .desc = { ent-BaseTorso.desc }
 ent-GroinShadowkin = пах шадовкина
     .desc = { ent-BaseGroin.desc }
 ent-HeadShadowkin = голова шадовкина
@@ -21,4 +21,6 @@ ent-RightLegShadowkin = правая нога шадовкина
 ent-LeftFootShadowkin = левая стопа шадовкина
     .desc = { ent-PartShadowkin.desc }
 ent-RightFootShadowkin = правая стопа шадовкина
+    .desc = { ent-PartShadowkin.desc }
+ent-OrganShadowkinEars = уши шадовкина 
     .desc = { ent-PartShadowkin.desc }
