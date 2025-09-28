@@ -94544,10 +94544,15 @@ entities:
       parent: 2
     - type: TechnologyDatabase
       supportedDisciplines:
-      - Industrial
+      - engineering
       - Arsenal
-      - Experimental
-      - CivilianServices
+      - Security
+      - cargo
+      - shaft
+      - Scientific
+      - Robotics
+      - Medical
+      - Service
 - proto: ProximitySensor
   entities:
   - uid: 4726
@@ -98187,10 +98192,15 @@ entities:
       parent: 2
     - type: TechnologyDatabase
       supportedDisciplines:
-      - Industrial
+      - engineering
       - Arsenal
-      - Experimental
-      - CivilianServices
+      - Security
+      - cargo
+      - shaft
+      - Scientific
+      - Robotics
+      - Medical
+      - Service
 - proto: SecurityWhistle
   entities:
   - uid: 7104
@@ -108660,10 +108670,15 @@ entities:
       parent: 2
     - type: TechnologyDatabase
       supportedDisciplines:
-      - Industrial
+      - engineering
       - Arsenal
-      - Experimental
-      - CivilianServices
+      - Security
+      - cargo
+      - shaft
+      - Scientific
+      - Robotics
+      - Medical
+      - Service
 - proto: UniformScrubsColorBlue
   entities:
   - uid: 19025

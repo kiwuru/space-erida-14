@@ -19,25 +19,25 @@
     Plastic: 250
     Gold: 50
 
-## Recipes
+ # Recipes
 
-## Generic
-#- type: latheRecipe
-#  parent: BaseBorgModuleRecipe
-#  id: BorgModuleTool
-#  result: BorgModuleTool
-#
-#- type: latheRecipe
-#  parent: BaseBorgModuleRecipe
-#  id: BorgModuleCable
-#  result: BorgModuleCable
-#
-#- type: latheRecipe
-#  parent: BaseBorgModuleRecipe
-#  id: BorgModuleFireExtinguisher
-#  result: BorgModuleFireExtinguisher
-#
-## Cargo Modules
+ # Generic
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleTool
+  result: BorgModuleTool
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleCable
+  result: BorgModuleCable
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleFireExtinguisher
+  result: BorgModuleFireExtinguisher
+
+# Cargo Modules
 #
 #- type: latheRecipe
 #  parent: BaseGoldBorgModuleRecipe
@@ -46,18 +46,18 @@
 #
 ## Engineering Modules
 #
-#- type: latheRecipe
-#  parent: BaseGoldBorgModuleRecipe
-#  id: BorgModuleAdvancedTool
-#  result: BorgModuleAdvancedTool
-#
-## Janitor Modules
-#
-#- type: latheRecipe
-#  parent: BaseGoldBorgModuleRecipe
-#  id: BorgModuleAdvancedCleaning
-#  result: BorgModuleAdvancedCleaning
-#
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: BorgModuleAdvancedTool
+  result: BorgModuleAdvancedTool
+
+# Janitor Modules
+
+- type: latheRecipe
+  parent: BaseGoldBorgModuleRecipe
+  id: BorgModuleAdvancedCleaning
+  result: BorgModuleAdvancedCleaning
+
 ## Medical Modules
 #
 #- type: latheRecipe
