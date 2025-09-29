@@ -21898,11 +21898,11 @@ entities:
       parent: 2
     - type: TechnologyDatabase
       supportedDisciplines:
-      - engineering
+      - Engineering
       - Arsenal
       - Security
-      - cargo
-      - shaft
+      - Cargo
+      - Shaft
       - Scientific
       - Robotics
       - Medical
@@ -99015,11 +99015,11 @@ entities:
       parent: 2
     - type: TechnologyDatabase
       supportedDisciplines:
-      - engineering
+      - Engineering
       - Arsenal
       - Security
-      - cargo
-      - shaft
+      - Cargo
+      - Shaft
       - Scientific
       - Robotics
       - Medical
@@ -108749,11 +108749,11 @@ entities:
       parent: 2
     - type: TechnologyDatabase
       supportedDisciplines:
-      - engineering
+      - Engineering
       - Arsenal
       - Security
-      - cargo
-      - shaft
+      - Cargo
+      - Shaft
       - Scientific
       - Robotics
       - Medical
