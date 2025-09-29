@@ -52,7 +52,7 @@
     state: icon
   discipline: Shaft
   tier: 1
-  cost: 10000
+  cost: 15000
   recipeUnlocks:
 #   - WeaponPlasmaCutterAdvanced
    - OreBagOfHolding
@@ -102,7 +102,7 @@
     state: icon
   discipline: Shaft
   tier: 1
-  cost: 5500
+  cost: 5000
   recipeUnlocks:
    - HandheldGPSBasic
    - HandHeldMassScanner

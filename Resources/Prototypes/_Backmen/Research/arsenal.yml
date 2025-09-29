@@ -6,7 +6,7 @@
     state: beanbag
   discipline: Arsenal
   tier: 1
-  cost: 2500
+  cost: 5000
   recipeUnlocks:
   - MagazineShotgunBeanbag
   - BoxShellTranquilizer
@@ -31,7 +31,7 @@
     state: slug
   discipline: Arsenal
   tier: 1
-  cost: 5000
+  cost: 10000
   recipeUnlocks:
   - BoxLethalshot
   - BoxShotgunSlug
@@ -67,7 +67,7 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 5000
+  cost: 7500
   recipeUnlocks:
   - WeaponLaserSvalinn
   position: -2,-2
@@ -80,7 +80,7 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 7500
+  cost: 10000
   recipeUnlocks:
   - WeaponLaserCarbine
   technologyPrerequisites:
@@ -120,7 +120,7 @@
     state: uranium
   discipline: Arsenal
   tier: 2
-  cost: 12500
+  cost: 15000
   recipeUnlocks:
   - MagazineRifleUranium
   - MagazinePistolUranium
@@ -144,7 +144,7 @@
     state: payload-explosive-armed
   discipline: Arsenal
   tier: 1
-  cost: 10000
+  cost: 12500
   recipeUnlocks:
   - SignallerAdvanced
   - SignalTrigger
@@ -163,7 +163,7 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 15000
+  cost: 17500
   recipeUnlocks:
   - WeaponAdvancedLaser
   technologyPrerequisites:
@@ -194,7 +194,7 @@
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 10000
+  cost: 15000
   recipeUnlocks:
   - WeaponLaserCannon
   technologyPrerequisites:
@@ -208,8 +208,8 @@
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
     state: icon
   discipline: Arsenal
-  tier: 1
-  cost: 15000
+  tier: 3
+  cost: 20000
   recipeUnlocks:
   - WeaponXrayCannon
   technologyPrerequisites:

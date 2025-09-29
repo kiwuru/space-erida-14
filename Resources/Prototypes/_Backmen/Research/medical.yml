@@ -6,7 +6,7 @@
     state: firstaid
   discipline: Medical
   tier: 1
-  cost: 3500
+  cost: 5000
   recipeUnlocks:
   - Brutepack
   - Ointment
@@ -29,6 +29,7 @@
   - MedkitRadiation
   - MedkitCombat
   - OffsetCane
+  - WhiteCane
   - OffsetCaneWood
   - BodyBag
   - LauncherSyringe
@@ -63,7 +64,7 @@
     state: beakerlarge
   discipline: Medical
   tier: 1
-  cost: 3500
+  cost: 5000
   recipeUnlocks:
   - HandLabeler
   - Beaker
@@ -85,7 +86,7 @@
     state: beakerbluespace
   discipline: Medical
   tier: 1
-  cost: 12000
+  cost: 20000
   recipeUnlocks:
   - BluespaceBeaker
   - SyringeBluespace
@@ -101,7 +102,7 @@
     state: beakernoreact
   discipline: Medical
   tier: 1
-  cost: 7200
+  cost: 6500
   recipeUnlocks:
   - CryostasisBeaker
   - SyringeCryostasis

@@ -6,7 +6,7 @@
     state: icon
   discipline: Shaft
   tier: 1
-  cost: 5200
+  cost: 7500
   recipeUnlocks:
   - OreProcessorMachineCircuitboard
   - SalvageMagnetMachineCircuitboard
@@ -23,7 +23,7 @@
     state: icon
   discipline: Shaft
   tier: 1
-  cost: 7200
+  cost: 12500
   recipeUnlocks:
   - OreProcessorIndustrialMachineCircuitboard
   technologyPrerequisites:

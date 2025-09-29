@@ -6,7 +6,7 @@
    state: pai-base
   discipline: Robotics
   tier: 1
-  cost: 1500
+  cost: 2500
   recipeUnlocks:
   - ProximitySensor
   - PersonalAI
@@ -20,7 +20,7 @@
    state: posibrain
   discipline: Robotics
   tier: 1
-  cost: 4000
+  cost: 5000
   recipeUnlocks:
    - CyborgEndoskeleton
    - LeftArmBorg
@@ -112,7 +112,7 @@
    state: generic
   discipline: Robotics
   tier: 1
-  cost: 2000
+  cost: 2500
   recipeUnlocks:
    - BorgModuleCable
    - BorgModuleFireExtinguisher
@@ -129,7 +129,7 @@
    state: adv-chem-module
   discipline: Robotics
   tier: 1
-  cost: 7500
+  cost: 10000
   recipeUnlocks:
   - BorgModuleAdvancedChemical
   technologyPrerequisites:
@@ -144,7 +144,7 @@
    state: adv-mining-module
   discipline: Robotics
   tier: 1
-  cost: 7500
+  cost: 10000
   recipeUnlocks:
   - BorgModuleAdvancedMining
   technologyPrerequisites:
@@ -180,7 +180,6 @@
   - BorgModuleAdvancedClowning
   technologyPrerequisites:
   - CyborgModules
-#  - CleaningAdvanced
   position: 7,-3
 
 - type: technology

@@ -21,7 +21,7 @@
     state: icon
   discipline: Scientific
   tier: 1
-  cost: 8000
+  cost: 8500
   recipeUnlocks:
   - AnomalyLocatorWide
   - WeaponPistolCHIMP
@@ -37,7 +37,7 @@
     state: icon
   discipline: Scientific
   tier: 1
-  cost: 1500
+  cost: 2500
   recipeUnlocks:
    - ClothingEyesHudSecurity
    - ClothingEyesGlassesChemical
@@ -87,13 +87,28 @@
     state: icon
   discipline: Scientific
   tier: 1
-  cost: 10000
+  cost: 15000
   recipeUnlocks:
   - DeviceQuantumSpinInverter
-  - DeviceDesynchronizer
   technologyPrerequisites:
   - GravityManipulation
   position: 3,3
+
+- type: technology
+  id: DeviceDesynchronizerу
+  name: research-technology-bluespace-time-manipulation
+  icon:
+    sprite: Objects/Devices/desynchronizer.rsi
+    state: icon
+  discipline: Scientific
+  tier: 2
+  cost: 20000
+  recipeUnlocks:
+  - DeviceDesynchronizer
+  technologyPrerequisites:
+  - QuantumLeaping
+  - QuantumMagneticBoots
+  position: 2,4
 
 - type: technology
   id: MagneticBoots
@@ -117,7 +132,7 @@
     state: icon
   discipline: Scientific
   tier: 1
-  cost: 10000
+  cost: 12500
   recipeUnlocks:
   - ClothingShoesBootsSpeed
   technologyPrerequisites:
@@ -134,7 +149,7 @@
     state: holding
   discipline: Scientific
   tier: 1
-  cost: 20000
+  cost: 25000
   recipeUnlocks:
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding

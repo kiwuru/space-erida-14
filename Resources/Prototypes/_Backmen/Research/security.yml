@@ -6,7 +6,7 @@
     state: stunbaton_off
   discipline: Security
   tier: 1
-  cost: 3500
+  cost: 5000
   recipeUnlocks:
   - Stunbaton
   - CombatKnife
@@ -28,7 +28,7 @@
     state: target_c
   discipline: Security
   tier: 1
-  cost: 1200
+  cost: 1000
   recipeUnlocks:
   - TargetClown
   - TargetHuman
@@ -45,7 +45,7 @@
     state: base
   discipline: Security
   tier: 1
-  cost: 4500
+  cost: 7500
   recipeUnlocks:
   - WeaponDisabler
   - HoloprojectorField
@@ -62,7 +62,7 @@
     state: icon
   discipline: Security
   tier: 1
-  cost: 8000
+  cost: 10000
   recipeUnlocks:
   - Truncheon
   - TelescopicShield
@@ -81,7 +81,7 @@
     state: icon
   discipline: Security
   tier: 2
-  cost: 10000
+  cost: 12500
   recipeUnlocks:
   - ClothingBackpackHarmpack
   technologyPrerequisites:
@@ -96,7 +96,7 @@
     state: icon
   discipline: Security
   tier: 1
-  cost: 7000
+  cost: 7500
   recipeUnlocks:
   - ClothingBackpackElectropack
   - WeaponParticleDecelerator
