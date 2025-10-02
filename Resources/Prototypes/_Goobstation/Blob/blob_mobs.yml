@@ -204,8 +204,6 @@
         - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
           state: nautdamage
           shader: unshaded
-      activateSound: null
-      deactivateSound: null
     - type: GuideHelp
       guides:
       - Blob

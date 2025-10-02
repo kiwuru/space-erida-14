@@ -20,11 +20,6 @@
     definitions:
     - prefRoles: [ Blob ]
       allowNonHumans: true
-      jobBlacklist: [ Chaplain ] # Goobstation
-      blacklist:
-        components:
-        - CommandStaff
-        - AntagImmune
       briefing:
         text: blob-carrier-role-greeting
         color: Plum
@@ -43,7 +38,6 @@
     earliestStart: 50
     minimumPlayers: 20
     maxOccurrences: 2
-    eventType: HostilesSpawn
   - type: GameRule
   - type: BlobSpawnRule
     carrierBlobProtos:
