@@ -5,7 +5,7 @@
   description: A bluespace-enhanced rapid construction device that passively generates its own compressed matter.
   components:
   - type: AutoRecharge
-    rechargeDuration: 5
+    rechargeDuration: 30
   - type: Sprite
     sprite: _Erida/Objects/Tools/cercd.rsi
     state: icon
