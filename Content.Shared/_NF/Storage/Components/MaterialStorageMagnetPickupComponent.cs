@@ -10,7 +10,7 @@ public sealed partial class MaterialStorageMagnetPickupComponent : Component
     public TimeSpan NextScan = TimeSpan.Zero;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("range")]
-    public float Range = 0.3f;
+    public float Range = 0.7f;
 
     /// <summary>
     /// Frontier - Is the magnet currently enabled?
