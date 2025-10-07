@@ -1,2 +1,8 @@
 - type: playTimeTracker
-  id: JobBlueShield
+  id: JobCentralCommandBlueShieldOfficer
+
+- type: playTimeTracker
+  id: JobBrigmedic
+
+- type: playTimeTracker
+  id: JobRoboticist

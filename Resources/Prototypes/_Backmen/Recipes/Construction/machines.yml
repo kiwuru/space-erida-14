@@ -1,0 +1,8 @@
+- type: construction
+  id: ConstructionComputerTabletop
+  graph: GraphComputerTabletop
+  startNode: start
+  targetNode: tabletop computer
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false

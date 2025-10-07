@@ -2,7 +2,7 @@
   id: Elkridge
   mapName: 'Elkridge Depot'
   mapPath: /Maps/elkridge.yml
-  minPlayers: 15
+  minPlayers: 10
   maxPlayers: 45
   stations:
     Elkridge:
@@ -21,6 +21,7 @@
           availableJobs: # 46 jobs total w/o latejoins & interns, 61 jobs total w/ latejoins & interns
             #command (7)
             Captain: [ 1, 1 ]
+            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
             ChiefMedicalOfficer: [ 1, 1 ]
@@ -53,8 +54,9 @@
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 3, 4 ]
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 2, 2 ] #intern, not counted
-            Lawyer: [ 1, 1 ]
+            SecurityCadet: [ 2, 2 ]
+            Lawyer: [ 1, 1 ] # Corvax-IAA
+            Brigmedic: [ 1, 1 ] # Corvax-IAA
             #supply (4 - 5)
             SalvageSpecialist: [ 2, 2 ]
             CargoTechnician: [ 2, 3 ]
@@ -66,3 +68,24 @@
             #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
+        - type: StationGoal
+          goals:
+          - Singularity
+          - SolarPanels
+          - Artifacts
+          - Bank
+          - Zoo
+          - MiningOutpost
+          - Tesla
+          - SecurityTraining
+          - ShuttleMed
+          - ShuttleSec
+          - ShuttleRnd
+          - ShuttleSrv
+          - ShuttleEmergency
+          - Theatre
+          - CellAI
+          - Botany
+          - Bunker
+          - XenobiologyRepair
+          - VirusologyAmbusol

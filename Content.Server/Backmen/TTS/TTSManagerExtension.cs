@@ -231,7 +231,7 @@ public static class TTSManagerExtension
         public int SampleRate { get; private set; } = 24000;
 
         [JsonPropertyName("format")]
-        public string Format { get; private set; } = "wav";
+        public string Format { get; private set; } = "ogg";
 
         [JsonPropertyName("effect")]
         public string Effect { get; set; } = "none";

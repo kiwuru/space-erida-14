@@ -173,6 +173,7 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
+    - id: SupermatterFlatpack #backmen 
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
