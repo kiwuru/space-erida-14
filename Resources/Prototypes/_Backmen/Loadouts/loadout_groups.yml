@@ -54,6 +54,8 @@
 - type: loadoutGroup
   id: ClothingUniformJumpsuitBrigmedic
   name: loadout-group-brigmedic-jumpsuit
+  minLimit: 1
+  maxLimit: 1
   loadouts:
   - ClothingUniformJumpsuitBrigmedic
   - ClothingUniformJumpskirtBrigmedic
@@ -78,17 +80,12 @@
 - type: loadoutGroup
   id: ClothingOuterBrigmedic
   name: loadout-group-brigmedic-outer
+  maxLimit: 1
   loadouts:
   - ClothingOuterVestArmorMedSec
   - ClothingOuterCoatAMG
   - ClothingOuterVestSecurityMedic
   - ClothingOuterCoatLabSecurityMedic
-
-- type: loadoutGroup
-  id: ClothingEarBrigmedic
-  name: loadout-group-brigmedic-ear
-  loadouts:
-  - ClothingHeadsetBrigmedic
 
 - type: loadoutGroup
   id: ClothingMaskBrigmedic
