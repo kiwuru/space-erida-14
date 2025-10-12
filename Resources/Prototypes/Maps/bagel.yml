@@ -2,13 +2,14 @@
   id: Bagel
   mapName: 'Bagel Station'
   mapPath: /Maps/bagel.yml
-  minPlayers: 30
+  minPlayers: 35
+  maxPlayers: 80
   stations:
     Bagel:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Багель {1}' # Corvax
+          mapNameTemplate: '{0} Bagel Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
@@ -18,8 +19,6 @@
           availableJobs: # 60 jobs total w/o latejoins & interns, 77 jobs total w/ latejoins & interns
             #command (7)
             Captain: [ 1, 1 ]
-            IAA: [ 1, 1 ] # Corvax-IAA
-            #service
             HeadOfPersonnel: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
             ChiefMedicalOfficer: [ 1, 1 ]
@@ -49,11 +48,10 @@
             ResearchAssistant: [ 4, 4 ] #intern, not counted
             #security (10)
             Warden: [ 1, 1 ]
-            Brigmedic: [ 1, 1 ] # backmen-Brigmedic
             SecurityOfficer: [ 6, 6 ]
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 4, 4 ]
-            Lawyer: [ 2, 2 ] # Corvax-IAA
+            SecurityCadet: [ 4, 4 ] #intern, not counted
+            Lawyer: [ 2, 2 ]
             #supply (6)
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]
@@ -65,24 +63,3 @@
             #silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
-        - type: StationGoal
-          goals:
-          - Singularity
-          - SolarPanels
-          - Artifacts
-          - Bank
-          - Zoo
-          - MiningOutpost
-          - Tesla
-          - SecurityTraining
-          - ShuttleMed
-          - ShuttleSec
-          - ShuttleRnd
-          - ShuttleSrv
-          - ShuttleEmergency
-          - Theatre
-          - CellAI
-          - Botany
-          - Bunker
-          - XenobiologyRepair
-          - VirusologyAmbusol

@@ -2,8 +2,8 @@
   id: Amber
   mapName: 'Amber'
   mapPath: /Maps/amber.yml
-  minPlayers: 30
-  maxPlayers: 70
+  minPlayers: 15
+  maxPlayers: 60
   stations:
     Amber:
       stationProto: StandardNanotrasenStation
@@ -51,9 +51,8 @@
           Warden: [ 1, 1 ]
           SecurityOfficer: [ 4, 6 ]
           Detective: [ 1, 1 ]
-          SecurityCadet: [ 2, 2 ]
+          SecurityCadet: [ 2, 2 ] #intern, not counted
           Lawyer: [ 2, 2 ]
-          Brigmedic: [ 1, 1 ]
           #supply (6 - 7)
           SalvageSpecialist: [ 3, 3 ]
           CargoTechnician: [ 3, 4 ]
@@ -65,24 +64,3 @@
           #silicon (4)
           StationAi: [ 1, 1 ]
           Borg: [ 3, 3 ]
-      - type: StationGoal
-        goals:
-          - Singularity
-          - SolarPanels
-          - Artifacts
-          - Bank
-          - Zoo
-          - MiningOutpost
-          - Tesla
-          - SecurityTraining
-          - ShuttleMed
-          - ShuttleSec
-          - ShuttleRnd
-          - ShuttleSrv
-          - ShuttleEmergency
-          - Theatre
-          - CellAI
-          - Botany
-          - Bunker
-          - XenobiologyRepair
-          - VirusologyAmbusol

@@ -1,0 +1,26 @@
+- type: gameMapPool
+  id: EridaDefaultMapPool
+  maps:
+  - BackmenAspid
+  - BackmenKettle
+  - BackmenBox
+  - BackmenTortuga
+  - BackmenHive
+  - BackmenShoukou
+  - BackmenRook
+  - BackmenDelta
+  - Amber
+  - Bagel
+  - Convex
+  - Elkridge
+  - Exo
+  - Fland
+  - Loop
+  - Marathon
+  - Meta
+  - Oasis
+  - Omega
+  - Packed
+  - Plasma
+  - Train
+  - CorvaxSilly

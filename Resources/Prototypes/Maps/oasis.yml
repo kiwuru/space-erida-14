@@ -2,7 +2,7 @@
   id: Oasis
   mapName: 'Oasis'
   mapPath: /Maps/oasis.yml
-  minPlayers: 35
+  minPlayers: 70
   stations:
     Oasis:
       stationProto: StandardNanotrasenStation
@@ -18,7 +18,6 @@
           availableJobs: # 72 jobs total w/o latejoins & interns, 91 jobs total w/ latejoins & interns
             #command (7)
             Captain: [ 1, 1 ]
-            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
             ChiefMedicalOfficer: [ 1, 1 ]
@@ -50,11 +49,10 @@
             ResearchAssistant: [ 6, 6 ] #intern, not counted
             #security (13)
             Warden: [ 1, 1 ]
-            Brigmedic: [ 1, 1 ] # backmen-Brigmedic
             SecurityOfficer: [ 8, 8 ]
             Detective: [ 1, 1 ]
-            SecurityCadet: [ 4, 4 ]
-            Lawyer: [ 3, 3 ] # Corvax-IAA
+            SecurityCadet: [ 4, 4 ] #intern, not counted
+            Lawyer: [ 3, 3 ]
             #supply (7)
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 4, 4 ]
@@ -66,24 +64,3 @@
             #silicon (3)
             Borg: [ 2, 2 ]
             StationAi: [ 1, 1 ]
-        - type: StationGoal
-          goals:
-          - Singularity
-          - SolarPanels
-          - Artifacts
-          - Bank
-          - Zoo
-          - MiningOutpost
-          - Tesla
-          - SecurityTraining
-          - ShuttleMed
-          - ShuttleSec
-          - ShuttleRnd
-          - ShuttleSrv
-          - ShuttleEmergency
-          - Theatre
-          - CellAI
-          - Botany
-          - Bunker
-          - XenobiologyRepair
-          - VirusologyAmbusol

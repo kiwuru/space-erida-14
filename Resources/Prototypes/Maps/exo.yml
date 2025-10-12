@@ -2,14 +2,14 @@
   id: Exo
   mapName: 'Exo'
   mapPath: /Maps/exo.yml
-  minPlayers: 45
+  minPlayers: 40
   maxPlayers: 80
   stations:
     Exo:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Экзо-шаттл "Захват" EX/O-{1}'
+          mapNameTemplate: 'Exomorph Vessel "Conquest" EXO-{1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
@@ -29,7 +29,6 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            IAA: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
@@ -52,8 +51,6 @@
             Detective: [ 1, 1 ]
             SecurityCadet: [ 4, 4 ]
             Lawyer: [ 2, 2 ]
-            Brigmedic: [ 1, 1 ]
-            CentralCommandBlueShield: [1, 1]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 3 ]
@@ -67,24 +64,3 @@
             #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 2, 2 ]
-        - type: StationGoal
-          goals:
-          - Singularity
-          - SolarPanels
-          - Artifacts
-          - Bank
-          - Zoo
-          - MiningOutpost
-          - Tesla
-          - SecurityTraining
-          - ShuttleMed
-          - ShuttleSec
-          - ShuttleRnd
-          - ShuttleSrv
-          - ShuttleEmergency
-          - Theatre
-          - CellAI
-          - Botany
-          - Bunker
-          - XenobiologyRepair
-          - VirusologyAmbusol
