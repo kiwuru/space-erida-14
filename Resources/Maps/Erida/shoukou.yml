@@ -32981,14 +32981,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -11.5,3.5
       parent: 2
-- proto: ComputerTabletopAlert
+- proto: ComputerAlert
   entities:
   - uid: 5143
     components:
     - type: Transform
       pos: -39.5,-25.5
       parent: 2
-- proto: ComputerTabletopCrewMonitoring
+- proto: ComputerCrewMonitoring
   entities:
   - uid: 5144
     components:
@@ -32996,7 +32996,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 18.5,-0.5
       parent: 2
-- proto: ComputerTabletopPowerMonitoring
+- proto: ComputerPowerMonitoring
   entities:
   - uid: 5145
     components:
@@ -33010,7 +33010,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 29.5,-45.5
       parent: 2
-- proto: ComputerTabletopSurveillanceCameraMonitor
+- proto: ComputerSurveillanceCameraMonitor
   entities:
   - uid: 5147
     components:
@@ -79412,12 +79412,7 @@ entities:
     - type: Transform
       pos: 40.5,-40.5
       parent: 2
-  - uid: 11961
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 18.5,-0.5
-      parent: 2
+
   - uid: 11962
     components:
     - type: Transform
@@ -79438,12 +79433,6 @@ entities:
     components:
     - type: Transform
       pos: -9.5,7.5
-      parent: 2
-  - uid: 11966
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -36.5,-25.5
       parent: 2
 - proto: TableCounterWood
   entities:
@@ -79959,11 +79948,6 @@ entities:
       parent: 2
 - proto: TableReinforced
   entities:
-  - uid: 12058
-    components:
-    - type: Transform
-      pos: -39.5,-25.5
-      parent: 2
   - uid: 12059
     components:
     - type: Transform
@@ -80081,11 +80065,6 @@ entities:
     - type: Transform
       pos: 28.5,-45.5
       parent: 2
-  - uid: 12082
-    components:
-    - type: Transform
-      pos: 29.5,-45.5
-      parent: 2
   - uid: 12083
     components:
     - type: Transform
@@ -80190,11 +80169,6 @@ entities:
     components:
     - type: Transform
       pos: -34.5,-24.5
-      parent: 2
-  - uid: 12102
-    components:
-    - type: Transform
-      pos: -43.5,2.5
       parent: 2
   - uid: 12103
     components:

@@ -40757,7 +40757,7 @@ entities:
     - type: Transform
       pos: 30.5,26.5
       parent: 2
-- proto: ComputerTabletopCrewMonitoring
+- proto: ComputerCrewMonitoring
   entities:
   - uid: 6238
     components:
@@ -85828,12 +85828,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 41.5,39.5
-      parent: 2
-  - uid: 13007
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 42.5,39.5
       parent: 2
 - proto: TableWood
   entities:

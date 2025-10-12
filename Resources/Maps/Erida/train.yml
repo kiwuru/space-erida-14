@@ -39305,7 +39305,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,-365.5
       parent: 2
-- proto: ComputerTabletopCrewMonitoring
+- proto: ComputerCrewMonitoring
   entities:
   - uid: 5980
     components:
@@ -97916,11 +97916,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 4.5,-358.5
-      parent: 2
-  - uid: 14979
-    components:
-    - type: Transform
-      pos: -6.5,-360.5
       parent: 2
   - uid: 14980
     components:
