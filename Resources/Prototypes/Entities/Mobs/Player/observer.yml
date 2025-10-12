@@ -72,6 +72,7 @@
   - type: MovementSpeedModifier # Erida
     baseWalkSpeed : 22
     baseSprintSpeed : 12
+  - type: BkmSupermatterImmune #backmen
 
 # proto for player ghosts specifically
 - type: entity
@@ -82,7 +83,6 @@
   - type: Tag
     tags:
     - AllowGhostShownByEvent
-  - type: UniversalLanguageSpeaker
 
 - type: entity
   parent: BaseMentalAction
