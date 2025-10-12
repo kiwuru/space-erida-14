@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Marathon
+  id: Marathon_Erida
   mapName: 'Marathon Station'
   mapPath: /Maps/Erida/marathon.yml
   # Corvax-start

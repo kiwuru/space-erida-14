@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Fland
+  id: Fland_Erida
   mapName: 'Fland Installation'
   mapPath: /Maps/Erida/fland.yml
   minPlayers: 55 # Corvax

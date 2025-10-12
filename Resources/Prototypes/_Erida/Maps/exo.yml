@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Exo
+  id: Exo_Erida
   mapName: 'Exo'
   mapPath: /Maps/exo.yml
   minPlayers: 45

@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Oasis
+  id: Oasis_Erida
   mapName: 'Oasis'
   mapPath: /Maps/Erida/oasis.yml
   minPlayers: 35

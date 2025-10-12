@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Plasma
+  id: Plasma_Erida
   mapName: 'Plasma'
   mapPath: /Maps/Erida/plasma.yml
   minPlayers: 30

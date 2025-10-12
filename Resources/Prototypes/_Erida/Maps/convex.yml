@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Convex
+  id: Convex_Erida
   mapName: 'Convex'
   mapPath: /Maps/Erida/convex.yml
   minPlayers: 45

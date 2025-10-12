@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Meta
+  id: Meta_Erida
   mapName: 'Meta Station'
   mapPath: /Maps/Erida/meta.yml
   minPlayers: 50

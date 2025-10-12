@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Elkridge
+  id: Elkridge_Erida
   mapName: 'Elkridge Depot'
   mapPath: /Maps/Erida/elkridge.yml
   minPlayers: 10

@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Omega
+  id: Omega_Erida
   mapName: 'Omega'
   mapPath: /Maps/Erida/omega.yml
   # Corvax-start

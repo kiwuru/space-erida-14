@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Amber
+  id: Amber_Erida
   mapName: 'Amber'
   mapPath: /Maps/Erida/amber.yml
   minPlayers: 30
