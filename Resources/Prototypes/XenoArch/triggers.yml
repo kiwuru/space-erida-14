@@ -242,6 +242,7 @@
     - Slime
     - AmmoniaBlood
     - ZombieBlood
+    - ShadowkinBlood
 
 - type: xenoArchTrigger
   id: TriggerThrow
