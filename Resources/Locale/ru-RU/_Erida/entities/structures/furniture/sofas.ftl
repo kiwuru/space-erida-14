@@ -97,3 +97,12 @@ ent-ADTSofaBlueRightCorner = { ent-ADTSofaBlueLeftSide }
 ent-ADTSofaBlueLeftCorner = { ent-ADTSofaBlueLeftSide }
     .suffix = Левый угол
     .desc = { ent-ADTSofaBlackLeftSide.desc }
+
+BlackSofa = Чёрный диван
+RedSofa = Красный диван
+VioletSofa = Фиолетовый диван
+LeatherSofa = Кожаный диван
+WhiteSofa = Белый диван
+BlueSofa = Синий диван
+BrownSofa = Коричневый диван
+Sofa-desc = Выглядит крайне комфортно.

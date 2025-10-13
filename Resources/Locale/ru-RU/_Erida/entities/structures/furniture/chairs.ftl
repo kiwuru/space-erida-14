@@ -18,3 +18,12 @@ ent-ADTArmchairBlue = синее кресло
     .desc = { ent-ADTArmchairWhite.desc }
 ent-ADTArmchairBlue2 = { ent-ADTArmchairBlue }
     .desc = { ent-ADTArmchairWhite.desc }
+
+BlackChair-name = Чёрное кресло
+WhiteArmChair-name = Белое кресло
+BrownArmChair-name = Коричневое кресло
+LeatherChair-name = Кожаное кресло
+BlueArmChair-name = Синее кресло
+RedChair-name = Красное кресло
+VioletChair-name = Фиолетовое кресло
+ArmChair-desc = Выглядит крайне комфортно.
