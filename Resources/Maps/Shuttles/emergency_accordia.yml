@@ -5731,7 +5731,7 @@ entities:
     - type: Transform
       pos: 5.5,13.5
       parent: 1
-- proto: ShotGunCabinetFilledBackmen
+- proto: ShotGunCabinetFilled
   entities:
   - uid: 764
     components:
