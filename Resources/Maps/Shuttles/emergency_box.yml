@@ -822,20 +822,6 @@ entities:
     - type: Transform
       pos: 17.702461,3.5919065
       parent: 1
-- proto: BoxBodyBagNanoTrasen
-  entities:
-  - uid: 33
-    components:
-    - type: Transform
-      pos: 5.189333,-3.730762
-      parent: 1
-- proto: BoxBodyBagRadiation
-  entities:
-  - uid: 34
-    components:
-    - type: Transform
-      pos: 5.772666,-3.730762
-      parent: 1
 - proto: BoxFolderClipboard
   entities:
   - uid: 35
