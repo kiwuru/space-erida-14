@@ -611,7 +611,9 @@ private void SendEntityWhisper(
             //If listener is too far and has no line of sight, they can't identify the whisperer's identity
             else
             {
-                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedUnknownMessage, source, false, session.Channel);
+                var perceivedMessage = FormattedMessage.EscapeText(canUnderstandLanguage ? obfuscatedMessage : languageObfuscatedMessageLongRange); // backmen: language
+                var wrappedPerceivedMessage = WrapWhisperMessage(source, "chat-manager-entity-whisper-unknown-wrap-message", nameIdentity, perceivedMessage, language);
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedPerceivedMessage, source, false, session.Channel);
                 continue; // backmen: language
             }
 
