@@ -62,13 +62,11 @@ public sealed partial class SmartFridgeMenu : FancyWindow
         {
             if (!ent.Comp.ContainedEntries.TryGetValue(item, out var items) || items.Count == 0)
             {
-                listData.Add(new SmartFridgeListData(EntityUid.Invalid, item, 0));
+                continue;
             }
-            else
-            {
-                var representative = _entityManager.GetEntity(items.First());
-                listData.Add(new SmartFridgeListData(representative, item, items.Count));
-            }
+
+            var representative = _entityManager.GetEntity(items.First());
+            listData.Add(new SmartFridgeListData(representative, item, items.Count));
         }
 
         VendingContents.PopulateList(listData);
