@@ -41075,13 +41075,6 @@ entities:
     - type: Transform
       pos: 15.5,-15.5
       parent: 2
-- proto: SpawnPointRoboticist
-  entities:
-  - uid: 6330
-    components:
-    - type: Transform
-      pos: 15.5,-11.5
-      parent: 2
 - proto: SpawnPointSalvageSpecialist
   entities:
   - uid: 6331

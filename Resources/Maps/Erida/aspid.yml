@@ -120163,13 +120163,6 @@ entities:
     - type: Transform
       pos: -1.5,82.5
       parent: 2
-- proto: SpawnPointRoboticist
-  entities:
-  - uid: 16826
-    components:
-    - type: Transform
-      pos: -20.5,33.5
-      parent: 2
 - proto: SpawnPointSalvageSpecialist
   entities:
   - uid: 16827
