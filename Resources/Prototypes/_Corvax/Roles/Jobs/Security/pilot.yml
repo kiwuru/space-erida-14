@@ -36,3 +36,17 @@
     - Flash
     - securityTechnicianRCD    #backmen
    #- MagazinePistol  (backmen)
+
+- type: chameleonOutfit
+  id: SecurityPilotChameleonOutfit
+  job: SecurityPilot
+  equipment:
+    id: PilotPDA
+    ears: ClothingHeadsetSecurity
+    gloves: ClothingHandsGlovesCombat
+    head: ClothingHeadCapSecurityPilot
+    eyes: ClothingEyesSecEngineerVisors
+    jumpsuit: ClothingUniformJumpsuitSecurityPilot
+    outerClothing: ClothingOuterSecurityVestHazard
+    shoes: ClothingShoesBootsMagSecurity
+

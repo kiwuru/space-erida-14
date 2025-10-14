@@ -35,3 +35,18 @@
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
     belt: ClothingBeltMedicalFilled
+
+- type: chameleonOutfit
+  id: BrigmedicChameleonOutfit
+  job: Brigmedic
+  equipment:
+    shoes: ClothingShoesColorRed
+    gloves: ClothingHandsGlovesNitrile
+    eyes: ClothingEyesHudMedical
+    id: BrigmedicPDA
+    ears: ClothingHeadsetBrigmedic
+    jumpsuit: ClothingUniformJumpsuitBrigmedic
+    back: ClothingBackpackBrigmedic
+    head: ClothingHeadHatBeretBrigmedic
+    outerClothing: ClothingOuterVestArmorMedSec
+    mask: ClothingMaskGasSecurity
