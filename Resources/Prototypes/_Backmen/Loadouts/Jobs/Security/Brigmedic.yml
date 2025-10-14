@@ -41,11 +41,6 @@
   equipment:
     head: ClothingHeadHatBeretSecurityMedic
 
-- type: loadout
-  id: ClothingHeadHelmetSecurityMedic
-  equipment:
-    head: ClothingHeadHelmetSecurityMedic
-
 #outerClothing
 - type: loadout
   id: ClothingOuterVestArmorMedSec
@@ -72,11 +67,6 @@
   id: ClothingHeadsetBrigmedic
   equipment:
     ears: ClothingHeadsetBrigmedic
-
-- type: loadout
-  id: ClothingHeadsetAltBrigmedic
-  equipment:
-    ears: ClothingHeadsetAltBrigmedic
 
 #mask
 - type: loadout
