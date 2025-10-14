@@ -57,6 +57,7 @@
             SecurityCadet: [ 3, 3 ]
             Lawyer: [ 1, 2 ] # Corvax-IAA
             Brigmedic: [ 1, 1 ] # backmen-Brigmedic
+            CentralCommandBlueShieldOfficer: [ 1, 1 ] #erida
             #supply (6)
             SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]

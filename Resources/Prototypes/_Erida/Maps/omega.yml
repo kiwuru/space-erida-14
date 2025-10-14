@@ -28,6 +28,7 @@
             ChiefEngineer: [ 1, 1 ]
             ResearchDirector: [ 1, 1 ]
             Quartermaster: [ 1, 1 ]
+            CentralCommandBlueShieldOfficer: [ 1, 1 ] #erida
             #service (9 - 10)
             Bartender: [ 1, 1 ]
             Botanist: [ 2, 2 ]

@@ -17,7 +17,7 @@
         - type: StationJobs
           availableJobs:
             # security
-            Pilot: [ 1, 1 ]
+            SecurityPilot: [ 1, 1 ]
             IAA: [ 1, 1 ]
             SecurityOfficer: [ 6, 6 ]
             Warden: [ 1, 1 ]
