@@ -940,11 +940,3 @@
   components:
   - type: Label
     currentLabel: holopad-service-clown-mime
-
-- type: entity
-  parent: HolopadCentCommBase
-  id: HolopadCentCommEvac
-  suffix: Centcomm, Evac room
-  components:
-  - type: Label
-    currentLabel: holopad-centomm-evac
