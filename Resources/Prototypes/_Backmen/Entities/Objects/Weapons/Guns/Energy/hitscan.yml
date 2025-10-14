@@ -56,7 +56,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 17
+        Heat: 15
 
 - type: entity
   id: BulletImpactEffectRedDisabler
