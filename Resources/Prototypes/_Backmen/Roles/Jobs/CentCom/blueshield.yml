@@ -53,7 +53,7 @@
 
 - type: chameleonOutfit
   id: BlueShieldChameleonOutfit
-  job: BlueShield
+  job: CentralCommandBlueShieldOfficer
   hasMindShield: true
   equipment:
     head: ClothingHeadHatLightBeretBlueShield

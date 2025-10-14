@@ -9,8 +9,6 @@
   - type: Clothing
     sprite: Backmen/Clothing/Head/Helmets/centcom_sec_helmet.rsi
   - type: Armor
-    coverage:
-    - Head
     modifiers:
       coefficients:
         Blunt: 0.8

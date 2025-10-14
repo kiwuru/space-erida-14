@@ -20,13 +20,22 @@
     - id: ClothingMaskBreath
 
 - type: entity
-  id: SuitStorageCentcomCarporatHardsuit
+  id: SuitStoragePilot
   parent: SuitStorageBase
-  suffix: CentCom Corparat
+  suffix: Pilot
   components:
-  - type: StorageFill
-    contents:
-        - id: NitrogenTankFilled
-        - id: OxygenTankFilled
-        - id: ClothingOuterHardsuitCentcomCarporate
-        - id: ClothingMaskBreath
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillPilotHardsuit
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entityTable
+  id: FillPilotHardsuit
+  table: !type:AllSelector
+    children:
+    - id: ClothingOuterHardsuitSecurityPilot
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: ClothingMaskBreath

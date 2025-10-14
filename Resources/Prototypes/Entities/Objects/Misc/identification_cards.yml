@@ -913,4 +913,4 @@
           color: "#cb0000"
         - state: idpilot
     - type: PresetIdCard
-      job: Pilot
+      job: SecurityPilot

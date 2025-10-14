@@ -116,8 +116,6 @@
   - type: Clothing
     sprite: Backmen/Clothing/Head/Helmets/men.rsi
   - type: Armor
-    coverage:
-    - Head
     modifiers:
       coefficients:
         Blunt: 0.80

@@ -5,12 +5,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: BaseInteQUplinkRadio
     - id: ClothingBackpackChameleonFill
     - id: SecurityTechFabCircuitboard
     - id: AngleGrinder
-  - type: AccessReader
-    access: [["InteQVanguardLeader"]]
 
 - type: entity
   parent: LockerInteQVanguardLeader

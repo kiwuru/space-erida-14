@@ -16,7 +16,7 @@
   name: pilot
   components:
   - type: SpawnPoint
-    job_id: Pilot
+    job_id: SecurityPilot
   - type: Sprite
     layers:
     - state: green
