@@ -54,6 +54,7 @@ namespace Content.IntegrationTests.Tests
             "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
             "/Maps/Erida/WonderDelta.yml", // Contains LSE-1200c
+            "/Maps/Erida/bagel.yml", // Contains mime stamp
         };
 
         private static readonly string[] GameMaps =
