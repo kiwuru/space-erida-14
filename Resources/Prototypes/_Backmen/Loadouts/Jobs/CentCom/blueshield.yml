@@ -4,7 +4,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
-      role: JobCentralCommandBlueShieldOfficer
+      role: JobBlueShieldOfficer
       time: 288000 #80 hrs
 
 #suit

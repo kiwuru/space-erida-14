@@ -51,7 +51,7 @@
             SecurityOfficer: [ 4, 6 ]
             SecurityCadet: [ 3, 4 ]
             Brigmedic: [ 1, 1 ]
-            CentralCommandBlueShieldOfficer: [1, 1]
+            BlueShieldOfficer: [1, 1]
             #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 4, 4 ]
