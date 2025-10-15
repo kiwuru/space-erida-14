@@ -20,7 +20,6 @@
           #Service
             Passenger: [ -1, -1 ]
             ServiceWorker: [ 1, 1]
-            IAA: [ 1, 1 ]
             Bartender: [ 1, 1 ]
             Botanist: [ 1, 1 ]
             Chef: [ 1, 1 ]
@@ -48,7 +47,6 @@
             Warden: [ 1, 1 ]
             SecurityCadet: [ 1, 2 ]
             Brigmedic: [ 1, 1 ]
-            CentralCommandBlueShieldOfficer: [ 1, 1 ] #erida
           #Science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 2, 3 ]

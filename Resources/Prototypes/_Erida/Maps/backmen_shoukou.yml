@@ -21,7 +21,6 @@
             Passenger: [ -1, -1 ]
             ServiceWorker: [ 1, 2]
             Reporter: [ 0, 1 ]
-            IAA: [ 1, 1 ]
             Bartender: [ 1, 2 ]
             Botanist: [ 1, 2 ]
             Chef: [ 1, 2 ]

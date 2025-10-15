@@ -18,7 +18,6 @@
           availableJobs:
             # security
             SecurityPilot: [ 1, 1 ]
-            IAA: [ 1, 1 ]
             SecurityOfficer: [ 6, 6 ]
             Warden: [ 1, 1 ]
             SecurityCadet: [ 3, 3 ]

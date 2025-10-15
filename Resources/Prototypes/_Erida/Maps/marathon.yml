@@ -21,7 +21,6 @@
           availableJobs: # 61 jobs total w/o latejoins & interns, 76 jobs total w/ latejoins & interns
             #command (7)
             Captain: [ 1, 1 ]
-            IAA: [ 1, 1 ] # Corvax-IAA
             HeadOfPersonnel: [ 1, 1 ]
             HeadOfSecurity: [ 1, 1 ]
             ChiefMedicalOfficer: [ 1, 1 ]

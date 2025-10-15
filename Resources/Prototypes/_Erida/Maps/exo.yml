@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Exo_Erida
+  id: Exo
   mapName: 'Exo'
   mapPath: /Maps/exo.yml
   minPlayers: 45
@@ -29,7 +29,6 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            IAA: [ 1, 1 ]
             #engineering
             ChiefEngineer: [ 1, 1 ]
             AtmosphericTechnician: [ 3, 3 ]
