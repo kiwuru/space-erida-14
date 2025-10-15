@@ -21,7 +21,7 @@
     damageCoefficient: 0.9
   - type: GroupExamine
   - type: Contraband
-    allowedJobs: [ CentralCommandBlueShieldOfficer ]
+    allowedJobs: [ BlueShieldOfficer ]
 
 - type: entity
   parent: [ClothingOuterBase, AllowSuitStorageClothing]
