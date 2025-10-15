@@ -2,7 +2,7 @@
   id: BackmenBox
   mapName: 'Federation Box'
   mapPath: /Maps/Erida/box.yml
-  minPlayers: 30 # Corvax
+  minPlayers: 8 # Erida
   stations:
     Boxstation:
       stationProto: StandardNanotrasenStation

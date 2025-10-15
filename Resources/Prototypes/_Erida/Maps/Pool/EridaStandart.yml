@@ -24,3 +24,11 @@
   - Plasma_Erida
   - Train
   - CorvaxSilly
+
+
+- type: gameMapPool # Delete this after remapping other maps
+  id: EridaTempMapPool
+  maps:
+  - BackmenBox
+  - BackmenDelta
+  - BackmenShoukou
