@@ -53,8 +53,6 @@ namespace Content.IntegrationTests.Tests
             "/Maps/Shuttles/ShuttleEvent/honki.yml", // Contains golden honker, clown's rubber stamp
             "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
-            "/Maps/Erida/WonderDelta.yml", // Contains LSE-1200c
-            "/Maps/Erida/bagel.yml", // Contains mime stamp
         };
 
         private static readonly string[] GameMaps =
@@ -77,28 +75,6 @@ namespace Content.IntegrationTests.Tests
             "Relic",
             "dm01-entryway",
             "Exo",
-            "BackmenAspid",
-            "BackmenKettle",
-            "BackmenBox",
-            "BackmenTortuga",
-            "BackmenHive",
-            "BackmenShoukou",
-            "BackmenRook",
-            "BackmenDelta",
-            "Amber_Erida",
-            "Bagel_Erida",
-            "Convex_Erida",
-            "Elkridge_Erida",
-            "Fland_Erida",
-            "Loop_Erida",
-            "Marathon_Erida",
-            "Meta_Erida",
-            "Oasis_Erida",
-            "Omega_Erida",
-            "Packed_Erida",
-            "Plasma_Erida",
-            "Train",
-            "CorvaxSilly",
         };
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
