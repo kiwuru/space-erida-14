@@ -598,11 +598,6 @@ namespace Content.Server.Ghost
             if (ghost == null)
                 return false;
 
-            if (_minds.TryGetSession(mind, out var mindSession))
-            {
-                EntityManager.SystemOrNull<Backmen.Ghost.GhostReJoinSystem>()?.AttachGhost(ghost.Value, mindSession); // backmen: ReturnToRound
-            }
-
             return true;
         }
     }
