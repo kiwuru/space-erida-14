@@ -21,11 +21,11 @@
     maxAngle: 0
     angleIncrease: -6
   - type: Gun
-    fireRate: 6
+    fireRate: 5
     angleDecay: 60
     angleIncrease: 8
     cameraRecoilScalar: 5
-    minAngle: 24
+    minAngle: 20
     maxAngle: 45
     soundGunshot:
       path: /Audio/Weapons/Guns64/Snipers/garand.ogg

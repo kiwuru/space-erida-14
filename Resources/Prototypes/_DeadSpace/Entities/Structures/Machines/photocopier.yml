@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMachinePowered
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
   id: PhotocopierBase
   name: копировальный аппарат
   description: ЦК закупило их чтобы сэкономить на ручках для юридического отдела.

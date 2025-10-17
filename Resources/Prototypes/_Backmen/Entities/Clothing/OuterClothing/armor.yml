@@ -11,14 +11,33 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.3
-        Heat: 0.4
-  - type: StaminaResistance
-    damageCoefficient: 0.80
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.7
+#  - type: StaminaResistance
+#    damageCoefficient: 0.80 // убрано до баланса всего
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.9
   - type: GroupExamine
   - type: Contraband
-    allowedJobs: [ BlueShield ]
+    allowedJobs: [ BlueShieldOfficer ]
+
+- type: entity
+  parent: [ClothingOuterBase, AllowSuitStorageClothing]
+  id: ClothingOuterArmorKendoBogu
+  name: bogu
+  description: A set of armor used in Kendo. It covers the waist, torso, and hands.
+  components:
+  - type: Sprite
+    sprite: Backmen/Clothing/OuterClothing/Armor/bogu.rsi
+  - type: Clothing
+    sprite: Backmen/Clothing/OuterClothing/Armor/bogu.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.85
