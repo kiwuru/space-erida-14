@@ -42,3 +42,13 @@
     components:
     - type: OwOAccent
     
+- type: trait
+  id: EnglishAccent
+  name: trait-english-name
+  description: trait-english-desc
+  category: Accents
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+  components:
+    - type: English

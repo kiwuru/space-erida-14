@@ -24,3 +24,6 @@ trait-dogligments-desc = Так или иначе, теперь вы спосо�
 
 trait-VulpJumpAbility-name = Прыжок вульпы 
 trait-VulpJumpAbility-desc = Теперь вы можете кидаться на других существ, как настоящая вульпа
+
+trait-english-name = Английский акцент
+trait-english-desc = О, вы из Англии?
