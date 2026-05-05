@@ -41,7 +41,7 @@
   - !type:AddCompsEffect
     components:
     - type: OwOAccent
-    
+
 - type: trait
   id: EnglishAccent
   name: trait-english-name
