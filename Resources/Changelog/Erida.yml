@@ -671,3 +671,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/357
   avatar_url: https://avatars.githubusercontent.com/u/184319116?v=4
   title: translation French accent
+- author: Tiwulovoe
+  changes:
+    - type: Add
+      message: Добавлено веселье для ивента.
+  id: 59
+  time: '2026-05-06T20:04:45.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/360
+  avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
+  title: Ee
