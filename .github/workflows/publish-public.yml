@@ -62,7 +62,7 @@ jobs:
       run: dotnet run --project Content.Packaging client --no-wipe-release
 
     - name: Publish version
-      run: python -u Tools/Wizards/publish_multi_request.py --fork-id dspublicfobos
+      run: python -u Tools/Wizards/publish_multi_request.py --fork-id dserida
       env:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_PUBLIC_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
