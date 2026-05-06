@@ -20,6 +20,15 @@ public sealed class ReadminLogging : EntitySystem
     private bool _readminInfoActive;
     private Dictionary<string, DateTime> _adminTimeStats = [];
 
+    // Sorry, but shitcode
+    private readonly List<string> _adminRankWhitelist =
+    [
+        "Руководитель Администрациии",
+        "Старший Администратор",
+        "Администратор",
+        "Младший Администратор"
+    ];
+
     public override void Initialize()
     {
         base.Initialize();
@@ -61,6 +70,18 @@ public sealed class ReadminLogging : EntitySystem
     internal void TryDiscordLog(ICommonSession session, bool isAdmin)
     {
         if (!_readminInfoActive || _webhookId == null)
+            return;
+
+        if (!_adminManager.IsAdmin(session))
+            return;
+
+        var adminData = _adminManager.GetAdminData(session);
+        var rankName = adminData?.Title;
+
+        if (rankName == null)
+            return;
+
+        if (!_adminRankWhitelist.Contains(rankName!))
             return;
 
         var adminnedTime = TimeSpan.Zero;

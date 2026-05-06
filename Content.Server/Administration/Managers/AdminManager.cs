@@ -718,4 +718,3 @@ public record struct NoPermissionError(CommandSpec Command) : IConError
     public Vector2i? IssueSpan { get; set; }
     public StackTrace? Trace { get; set; }
 }
-
