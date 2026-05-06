@@ -662,3 +662,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/359
   avatar_url: https://avatars.githubusercontent.com/u/279228227?v=4
   title: FixTrain
+- author: Pexel250
+  changes:
+    - type: Fix
+      message: Французский акцент
+  id: 58
+  time: '2026-05-06T18:15:03.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/357
+  avatar_url: https://avatars.githubusercontent.com/u/184319116?v=4
+  title: translation French accent
