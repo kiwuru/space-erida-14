@@ -680,3 +680,14 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/360
   avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
   title: Ee
+- author: vanomorodellefake
+  changes:
+    - type: Tweak
+      message: Кошмар больше не видит сквозь стены в джаунте
+    - type: Fix
+      message: Кошмар больше не спотыкается об стулья
+  id: 60
+  time: '2026-05-07T16:44:47.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/362
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: NightmareUpdate
