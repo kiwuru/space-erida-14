@@ -691,3 +691,16 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/362
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: NightmareUpdate
+- author: vanomorodellefake
+  changes:
+    - type: Tweak
+      message: Изменено стартовое снаряжение АВД
+    - type: Tweak
+      message: Фелениды больше не носят насильно OwO акцент
+    - type: Fix
+      message: Клоны теперь копируют голос
+  id: 61
+  time: '2026-05-08T16:56:58.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/363
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: IAA + felinid + clone update
