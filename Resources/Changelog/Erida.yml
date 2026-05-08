@@ -704,3 +704,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/363
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: IAA + felinid + clone update
+- author: vanomorodellefake
+  changes:
+    - type: Add
+      message: Из лисы Капитана при разделке вновь падают телекристаллы
+  id: 62
+  time: '2026-05-08T21:34:06.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/366
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: Make Renault Great Again
