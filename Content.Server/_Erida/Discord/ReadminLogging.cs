@@ -73,10 +73,7 @@ public sealed class ReadminLogging : EntitySystem
         if (!_readminInfoActive || _webhookId == null)
             return;
 
-        if (!_adminManager.IsAdmin(session))
-            return;
-
-        var adminData = _adminManager.GetAdminData(session);
+        var adminData = _adminManager.GetAdminData(session, true);
         var rankName = adminData?.Title;
 
         if (rankName == null)
