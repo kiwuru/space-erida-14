@@ -752,3 +752,14 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/369
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: Armor rebalance
+- author: vanomorodellefake
+  changes:
+    - type: Add
+      message: Добавил крылья от Evgenimation
+    - type: Tweak
+      message: Заменены текстуры людей и феленидов на новые от Evgenimation
+  id: 66
+  time: '2026-05-11T19:19:09.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/371
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: New Wings and Textures for felinid and human
