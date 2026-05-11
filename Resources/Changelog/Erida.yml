@@ -763,3 +763,18 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/371
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: New Wings and Textures for felinid and human
+- author: Cat_L
+  changes:
+    - type: Add
+      message: >-
+        У ИИ и админ-госта добавлен интерфейс атмосферной сигнализации и
+        контроля питании
+    - type: Add
+      message: 'Ядро ИИ способен воспроизводить MIDI файлы  '
+    - type: Add
+      message: Добавлен предсмертный звук ИИ
+  id: 67
+  time: '2026-05-11T19:26:10.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/370
+  avatar_url: https://avatars.githubusercontent.com/u/215692115?v=4
+  title: '[Add] AI Increased capabilities'
