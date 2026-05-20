@@ -84,7 +84,7 @@ public sealed partial class RadiationSystem : SharedRadiationSystem
         _activeReceivers.Remove(uid);
     }
 
-    protected override void UpdateSource(Entity<RadiationSourceComponent> entity)
+    private void UpdateSource(Entity<RadiationSourceComponent> entity)
     {
         var (uid, component) = entity;
         var xform = Transform(uid);

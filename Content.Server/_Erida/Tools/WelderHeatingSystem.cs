@@ -37,7 +37,7 @@ public sealed class WelderHeatingSystem : EntitySystem
         if (!HasComp<ItemComponent>(args.Target))
             return;
 
-        if (!TryComp<SolutionContainerManagerComponent>(target, out var container))
+        if (!TryComp<SolutionManagerComponent>(target, out var container))
             return;
 
         if (!TryComp<HandsComponent>(args.User, out var hands) || !_sharedHandsSystem.IsHolding((args.User, hands), args.Target))
@@ -64,7 +64,7 @@ public sealed class WelderHeatingSystem : EntitySystem
             return;
 
         var target = args.Args.Target.Value;
-        if (!TryComp<SolutionContainerManagerComponent>(target, out var container))
+        if (!TryComp<SolutionManagerComponent>(target, out var container))
             return;
 
         foreach (var (_, soln) in _solutionContainer.EnumerateSolutions((target, container)))

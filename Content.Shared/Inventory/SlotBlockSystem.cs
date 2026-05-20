@@ -86,7 +86,7 @@ public sealed partial class SlotBlockSystem : EntitySystem
 
     private void UnequippedAttempt(Entity<SlotBlockComponent> ent, ref GotUnequippedEvent args)
     {
-        UpdateSlotsBlocking(args.Equipee);
+        UpdateSlotsBlocking(args.EquipTarget);
     }
     // Erida end
 }

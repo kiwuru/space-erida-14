@@ -92,16 +92,16 @@ public sealed class LeashSystem : EntitySystem
         if (args.Slot != "neck")
             return;
 
-        component.Wearer = args.Equipee;
-        var wearer = EnsureComp<CollarWearerComponent>(args.Equipee);
+        component.Wearer = args.EquipTarget;
+        var wearer = EnsureComp<CollarWearerComponent>(args.EquipTarget);
         wearer.Collar = uid;
-        _alerts.ShowAlert(args.Equipee, component.Alert);
+        _alerts.ShowAlert(args.EquipTarget, component.Alert);
     }
 
     private void OnCollarUnequipAttempt(EntityUid uid, CollarComponent component, BeingUnequippedAttemptEvent args)
     {
         if (args.Slot != "neck" ||
-            args.UnEquipTarget != args.Unequipee ||
+            args.UnEquipTarget != args.User ||
             component.Wearer != args.UnEquipTarget ||
             _allowedCollarUnequips.Contains(uid))
         {
@@ -117,14 +117,14 @@ public sealed class LeashSystem : EntitySystem
     {
         DetachLeashFromCollar(uid, component);
 
-        if (TryComp<CollarWearerComponent>(args.Equipee, out var wearer) &&
+        if (TryComp<CollarWearerComponent>(args.EquipTarget, out var wearer) &&
             wearer.Collar == uid)
         {
-            RemCompDeferred<CollarWearerComponent>(args.Equipee);
+            RemCompDeferred<CollarWearerComponent>(args.EquipTarget);
         }
 
         component.Wearer = null;
-        _alerts.ClearAlert(args.Equipee, component.Alert);
+        _alerts.ClearAlert(args.EquipTarget, component.Alert);
     }
 
     private void OnCollarTerminating(EntityUid uid, CollarComponent component, ref EntityTerminatingEvent args)

@@ -41,7 +41,6 @@ using Robust.Shared.Containers;
 using Robust.Shared.Timing;
 using Content.Shared._Goobstation.Weapons;
 using Content.Shared.Damage.Systems;
-using Content.Shared.Weapons.Ranged.Upgrades.Components;
 
 namespace Content.Shared._Lavaland.Weapons.Ranged.Upgrades;
 
