@@ -1,4 +1,4 @@
-﻿﻿roles-antag-changeling-name = Генокрад
+roles-antag-changeling-name = Генокрад
 roles-antag-changeling-objective = Умный хищник, приобретающий личности своих жертв.
 
 changeling-devour-attempt-failed-cannot-devour = Мы не можем поглотить это!
