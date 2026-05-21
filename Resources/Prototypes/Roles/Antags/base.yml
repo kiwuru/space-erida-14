@@ -11,6 +11,29 @@
   - ERTMedical
   - ERTJanitor
   - CBURN
+  # Erida/fork roles that used the removed JobPrototype.canBeAntag field.
+  - IAA
+  - Brigmedic
+  - BlueShieldOfficer
+  - SecurityPilot
+  - InteQVanguardLeader
+  - InteQVanguard
+  - CentralCommandIntendant
+  - CentralCommandClerc
+  - ChiefOfStaffCentralCommand
+  - CentralCommandEngineer
+  - CentralCommandHoS
+  - CentralCommandOfficer
+  - CentralCommandOperator
+  - OSO
+  - CentralCommandSecurity
+  - NanoTrasenNavyCaptain
+  - NanoTrasenNavyEngineer
+  - NanoTrasenNavyMedical
+  - NanoTrasenNavyOfficer
+  - NanoTrasenNavySailor
+  - NanoTrasenNavyWarrantOfficerEngineer
+  - NanoTrasenNavyWarrantOfficerMedical
   blacklist:
     components:
     - AntagImmune

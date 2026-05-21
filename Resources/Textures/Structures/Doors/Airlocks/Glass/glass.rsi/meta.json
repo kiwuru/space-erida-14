@@ -100,6 +100,19 @@
       ]
     },
     {
+      "name": "closing-panel",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
+        ]
+      ]
+    },
+    {
       "name": "deny_unlit",
       "delays": [
         [
@@ -117,6 +130,9 @@
     },
     {
       "name": "panel_open"
+    },
+    {
+      "name": "panel_closed"
     },
     {
       "name": "opening",
@@ -172,6 +188,19 @@
     },
     {
       "name": "panel_opening",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.07,
+          0.07,
+          0.07,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "opening-panel",
       "delays": [
         [
           0.1,
