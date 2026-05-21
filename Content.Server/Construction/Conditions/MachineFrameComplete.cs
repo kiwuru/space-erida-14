@@ -51,6 +51,19 @@ namespace Content.Server.Construction.Conditions
 
             args.PushMarkup(Loc.GetString("construction-condition-machine-frame-requirement-label"));
 
+            foreach (var (partType, required) in machineFrame.Requirements)
+            {
+                var amount = required - machineFrame.Progress[partType];
+
+                if(amount == 0)
+                    continue;
+
+                var part = protoManager.Index(partType);
+                args.PushMarkup(Loc.GetString("construction-condition-machine-frame-required-element-entry",
+                                           ("amount", amount),
+                                           ("elementName", Loc.GetString(part.Name))));
+            }
+
             foreach (var (material, required) in machineFrame.MaterialRequirements)
             {
                 var amount = required - machineFrame.MaterialProgress[material];

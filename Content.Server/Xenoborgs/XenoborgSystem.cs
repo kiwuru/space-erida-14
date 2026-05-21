@@ -30,7 +30,7 @@ public sealed partial class XenoborgSystem : EntitySystem
         SubscribeLocalEvent<MothershipCoreComponent, DestructionEventArgs>(OnCoreDestroyed);
 
         SubscribeLocalEvent<XenoborgComponent, MindAddedMessage>(OnXenoborgMindAdded);
-        SubscribeLocalEvent<XenoborgComponent, MindRemovedMessage>(OnXenoborgMindRemoved);
+        SubscribeLocalEvent<XenoborgComponent, BeforeMindRemovedMessage>(OnXenoborgMindRemoved);
     }
 
     private void OnXenoborgDestroyed(EntityUid uid, XenoborgComponent component, DestructionEventArgs args)
@@ -82,6 +82,9 @@ public sealed partial class XenoborgSystem : EntitySystem
 
     private void OnXenoborgMindAdded(EntityUid ent, XenoborgComponent comp, MindAddedMessage args)
     {
+        if (_roles.MindHasRole<XenoborgRoleComponent>(args.Mind.Owner))
+            _roles.MindRemoveRole<XenoborgRoleComponent>(args.Mind.Owner);
+
         _roles.MindAddRole(args.Mind, comp.MindRole, silent: true);
 
         if (!TryComp<ActorComponent>(ent, out var actorComp))
@@ -94,10 +97,16 @@ public sealed partial class XenoborgSystem : EntitySystem
         );
     }
 
-    private void OnXenoborgMindRemoved(EntityUid ent, XenoborgComponent comp, MindRemovedMessage args)
+    private void OnXenoborgMindRemoved(EntityUid ent, XenoborgComponent comp, BeforeMindRemovedMessage args)
     {
         // We don't need to update the mind if the mind is being fully detached!
-        if (args.TransferEntity != null)
-            _roles.MindRemoveRole(args.Mind.Owner, comp.MindRole);
+        if (args.TransferEntity == null)
+            return;
+
+        // Direct xenoborg-to-xenoborg transfers are normalized after the new entity owns the mind.
+        if (HasComp<XenoborgComponent>(args.TransferEntity.Value))
+            return;
+
+        _roles.MindRemoveRole(args.Mind.Owner, comp.MindRole);
     }
 }

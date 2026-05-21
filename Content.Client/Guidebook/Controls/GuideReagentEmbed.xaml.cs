@@ -126,7 +126,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         }
         else
         {
-            RecipesContainer.Visible = false;
+            RemoveSection(RecipesContainer);
         }
         #endregion
 
@@ -179,7 +179,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         }
         else
         {
-            EffectsContainer.Visible = false;
+            RemoveSection(EffectsContainer);
         }
         #endregion
 
@@ -212,7 +212,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         }
         else
         {
-            PlantMetabolismsContainer.Visible = false;
+            RemoveSection(PlantMetabolismsContainer);
         }
         #endregion
 
@@ -250,7 +250,7 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         var sources = _chemistryGuideData.GetReagentSources(reagent.ID);
         if (sources.Count == 0)
         {
-            SourcesContainer.Visible = false;
+            RemoveSection(SourcesContainer);
             return;
         }
         SourcesContainer.Visible = true;
@@ -286,4 +286,11 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
             }
         }
     }
+
+#pragma warning disable CS0618 // Disposing detached UI controls avoids processing hidden guidebook sections.
+    private static void RemoveSection(Control section)
+    {
+        section.Dispose();
+    }
+#pragma warning restore CS0618
 }

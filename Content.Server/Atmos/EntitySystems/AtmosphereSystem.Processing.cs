@@ -577,6 +577,8 @@ namespace Content.Server.Atmos.EntitySystems
                 num--;
             if (!ExcitedGroups)
                 num--;
+            if (!DeltaPressureDamage)
+                num--;
             if (!Superconduction)
                 num--;
             return num * AtmosTime;
@@ -748,6 +750,18 @@ namespace Content.Server.Atmos.EntitySystems
                     return AtmosphereProcessingCompletionState.Continue;
                 case AtmosphereProcessingState.HighPressureDelta:
                     if (!ProcessHighPressureDelta((ent, ent)))
+                    {
+                        atmosphere.ProcessingPaused = true;
+                        return AtmosphereProcessingCompletionState.Return;
+                    }
+
+                    atmosphere.ProcessingPaused = false;
+                    atmosphere.State = DeltaPressureDamage
+                        ? AtmosphereProcessingState.DeltaPressure
+                        : AtmosphereProcessingState.Hotspots;
+                    return AtmosphereProcessingCompletionState.Continue;
+                case AtmosphereProcessingState.DeltaPressure:
+                    if (!ProcessDeltaPressure(ent))
                     {
                         atmosphere.ProcessingPaused = true;
                         return AtmosphereProcessingCompletionState.Return;

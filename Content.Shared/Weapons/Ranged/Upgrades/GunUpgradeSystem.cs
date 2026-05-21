@@ -4,7 +4,6 @@ using Content.Shared.Database;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
-using Content.Shared.Projectiles;
 using Content.Shared.Tag;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
@@ -34,10 +33,6 @@ public sealed partial class GunUpgradeSystem : EntitySystem
 
         SubscribeLocalEvent<UpgradeableGunComponent, GunRefreshModifiersEvent>(RelayEvent);
         SubscribeLocalEvent<UpgradeableGunComponent, GunShotEvent>(RelayEvent);
-
-        SubscribeLocalEvent<GunUpgradeFireRateComponent, GunRefreshModifiersEvent>(OnFireRateRefresh);
-        SubscribeLocalEvent<GunUpgradeSpeedComponent, GunRefreshModifiersEvent>(OnSpeedRefresh);
-        SubscribeLocalEvent<GunUpgradeDamageComponent, GunShotEvent>(OnDamageGunShot);
     }
 
     private void RelayEvent<T>(Entity<UpgradeableGunComponent> ent, ref T args) where T : notnull
@@ -90,25 +85,6 @@ public sealed partial class GunUpgradeSystem : EntitySystem
         _gun.RefreshModifiers(ent.Owner);
 
         _adminLog.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(args.User):player} inserted gun upgrade {ToPrettyString(args.Used)} into {ToPrettyString(ent.Owner)}.");
-    }
-
-    private void OnFireRateRefresh(Entity<GunUpgradeFireRateComponent> ent, ref GunRefreshModifiersEvent args)
-    {
-        args.FireRate *= ent.Comp.Coefficient;
-    }
-
-    private void OnSpeedRefresh(Entity<GunUpgradeSpeedComponent> ent, ref GunRefreshModifiersEvent args)
-    {
-        args.ProjectileSpeed *= ent.Comp.Coefficient;
-    }
-
-    private void OnDamageGunShot(Entity<GunUpgradeDamageComponent> ent, ref GunShotEvent args)
-    {
-        foreach (var (ammo, _) in args.Ammo)
-        {
-            if (TryComp<ProjectileComponent>(ammo, out var proj))
-                proj.Damage += ent.Comp.Damage;
-        }
     }
 
     /// <summary>

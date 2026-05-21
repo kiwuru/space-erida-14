@@ -167,7 +167,7 @@ public sealed partial class CCVars
     /// </summary>
     // TODO: Needs CVARs for global configuration, like min pressure, max damage, etc.
     public static readonly CVarDef<bool> DeltaPressureDamage =
-        CVarDef.Create("atmos.delta_pressure_damage", false, CVar.SERVERONLY);
+        CVarDef.Create("atmos.delta_pressure_damage", true, CVar.SERVERONLY);
 
     /// <summary>
     /// Number of entities to submit for parallel processing per processing run.

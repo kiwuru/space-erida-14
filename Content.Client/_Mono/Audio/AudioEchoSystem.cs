@@ -448,7 +448,7 @@ public sealed partial class AreaEchoSystem : EntitySystem
             }
 
             if (bestPreset != null)
-                _audioEffectSystem.TryAddEffect(entity, DistancePresets[0].Item2);
+                _audioEffectSystem.TryAddEffect(entity, bestPreset.Value);
         }
         else
             _audioEffectSystem.TryRemoveEffect(entity);
