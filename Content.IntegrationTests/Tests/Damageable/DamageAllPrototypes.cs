@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using Content.IntegrationTests.Fixtures;
 using Content.IntegrationTests.Fixtures.Attributes;
 using Content.IntegrationTests.Utility;
+using Content.Shared._Lavaland.Megafauna.Components;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Prototypes;
@@ -33,6 +34,10 @@ public sealed class DamageAllPrototypesTest : GameTest
 
         // Intentionally cannot take damage, ignore it.
         if (SEntMan.HasComponent<GodmodeComponent>(entity))
+            return;
+
+        // Lavaland megafauna only accepts damage with an actor origin, while this test applies raw no-origin damage.
+        if (SEntMan.HasComponent<MegafaunaGodmodeComponent>(entity))
             return;
 
         var canBeDamaged = false;
