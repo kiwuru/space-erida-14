@@ -11,12 +11,12 @@ using Content.Shared.Hands.Components;
 
 namespace Content.Server._Erida.Tools.WelderHeating;
 
-public sealed class WelderHeatingSystem : EntitySystem
+public sealed partial class WelderHeatingSystem : EntitySystem
 {
-    [Dependency] private readonly SharedSolutionContainerSystem _solutionContainer = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedHandsSystem _sharedHandsSystem = default!;
+    [Dependency] private SharedSolutionContainerSystem _solutionContainer = default!;
+    [Dependency] private PopupSystem _popup = default!;
+    [Dependency] private SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private SharedHandsSystem _sharedHandsSystem = default!;
     public override void Initialize()
     {
         base.Initialize();

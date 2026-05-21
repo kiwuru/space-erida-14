@@ -20,7 +20,7 @@ public sealed partial class SlotBlockSystem : EntitySystem
         SubscribeLocalEvent<SlotBlockComponent, ClothingGotEquippedEvent>(EquippedAttempt);
     }
 
-    [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private InventorySystem _inventorySystem = default!;
 
     private void UpdateSlotsBlocking(EntityUid uid)
     {
