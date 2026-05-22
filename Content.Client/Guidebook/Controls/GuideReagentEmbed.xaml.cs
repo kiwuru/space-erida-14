@@ -287,10 +287,10 @@ public sealed partial class GuideReagentEmbed : BoxContainer, IDocumentTag, ISea
         }
     }
 
-#pragma warning disable CS0618 // Disposing detached UI controls avoids processing hidden guidebook sections.
+    // Erida start
     private static void RemoveSection(Control section)
     {
-        section.Dispose();
+        section.Orphan();
     }
-#pragma warning restore CS0618
+    // Erida end
 }
