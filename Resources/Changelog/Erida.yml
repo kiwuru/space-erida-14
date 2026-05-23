@@ -816,3 +816,28 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/375
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: Return of Old Textures Customization Lizard
+- author: Spectrum2k
+  changes:
+    - type: Tweak
+      message: Дракон немного ослаблен.
+    - type: Add
+      message: >-
+        Добавлена возможность отключить HRTF Audio в настройках (нужно если вам
+        не нравится звук после обновления).
+    - type: Fix
+      message: Автозамена сокращений снова работает.
+    - type: Fix
+      message: Черты внешности снова работают.
+    - type: Fix
+      message: >-
+        Меню персонализации теперь нормально сохраняется, и не запрашивает
+        сохранение при каждом закрытии.
+    - type: Fix
+      message: >-
+        Меню персонализации теперь не меняет размер превью персонажа во время
+        его настройки.
+  id: 71
+  time: '2026-05-23T16:47:21.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/377
+  avatar_url: https://avatars.githubusercontent.com/u/49170788?v=4
+  title: Upstream fixes
