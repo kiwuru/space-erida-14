@@ -66,7 +66,11 @@ async function main() {
         title: title
     };
 
-    writeChangelog(entry);
+    // Erida start
+    if (!writeChangelog(entry)) {
+        return;
+    }
+    // Erida end
 
     console.log(`Changelog updated with changes from PR #${process.env.PR_NUMBER}`);
 }
@@ -140,6 +144,14 @@ function writeChangelog(entry) {
 
     data ??= { Entries: [] };
     data.Entries ??= [];
+
+    // Erida start
+    if (data.Entries.some((existing) => existing.url === entry.url)) {
+        console.log(`Changelog already contains changes from PR #${process.env.PR_NUMBER}, skipping`);
+        return false;
+    }
+    // Erida end
+
     data.Entries.push(entry);
 
     const metadata = { ...data };
@@ -154,6 +166,8 @@ function writeChangelog(entry) {
         "Entries:\n" +
         yaml.dump(data.Entries, { indent: 2 }).replace(/^---\n?/, "")
     );
+
+    return true;
 }
 
 main();
