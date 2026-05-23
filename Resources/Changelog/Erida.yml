@@ -1,4 +1,4 @@
-Order: -1 # Erida edit
+Order: -1
 Entries:
 - author: Sidzaru
   changes:
@@ -807,3 +807,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/373
   avatar_url: https://avatars.githubusercontent.com/u/215692115?v=4
   title: '[Fix] Omega fixs'
+- author: vanomorodellefake
+  changes:
+    - type: Tweak
+      message: Возвращены старые текстуры кастомизации унатхов
+  id: 70
+  time: '2026-05-23T13:50:03.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/375
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: Return of Old Textures Customization Lizard
