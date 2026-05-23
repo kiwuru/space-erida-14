@@ -47,8 +47,12 @@ jobs:
 
       - name: Commit Changelog
         run: |
-          git pull origin master
-          git add *.yml
+          git pull --rebase origin master
+          git add "$CHANGELOG_DIR"
+          if git diff --cached --quiet; then
+            echo "No changelog changes to commit."
+            exit 0
+          fi
           git commit -m "${{ vars.CHANGELOG_MESSAGE }} (#${{ env.PR_NUMBER }})"
           git push
         shell: bash

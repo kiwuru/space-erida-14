@@ -14,9 +14,8 @@ if (!process.env.CHANGELOG_DIR) {
 const ChangelogFilePath = `../../../${process.env.CHANGELOG_DIR}`
 
 // Regexes
-const HeaderRegex = /^\s*(?::cl:|🆑) *([a-z0-9а-я_\-,& ]+)?/img;
-// const HeaderRegex = /^\s*(?::cl:|🆑) *([a-z0-9_\-, ]+)?/img; // :cl: or 🆑 [0] followed by optional author name [1]
-const EntryRegex = /^ *[*-]? *(add|remove|tweak|fix): *([^\n\r]+)\r?$/img; // * or - followed by change type [0] and change message [1]
+const HeaderRegex = /^\s*(?::cl:|🆑) *([a-z0-9а-яё_\-,& ]+)?/img;
+const EntryRegex = /^ *[*-]? *(add|remove|tweak|fix|добавлено|удалено|изменено|исправлено): *([^\n\r]+)\r?$/img;
 const CommentRegex = /<!--.*?-->/gs; // HTML comments
 
 // Main function
@@ -24,7 +23,7 @@ async function main() {
     const pr = await axios.get(`https://api.github.com/repos/${process.env.GITHUB_REPOSITORY}/pulls/${process.env.PR_NUMBER}`);
     const { merged_at, body, user, title } = pr.data;
 
-    commentlessBody = body.replace(CommentRegex, '');
+    let commentlessBody = (body || "").replace(CommentRegex, '');
 
     const headerMatch = HeaderRegex.exec(commentlessBody);
     if (!headerMatch) {
@@ -43,6 +42,10 @@ async function main() {
     commentlessBody = commentlessBody.slice(HeaderRegex.lastIndex);
 
     const entries = getChanges(commentlessBody);
+    if (entries.length <= 0) {
+        console.log("PR has a changelog header but no valid entries. Either remove the changelog completely, or use entries like '- Добавлено: текст' / '- add: text'.");
+        return process.exit(1);
+    }
 
     let time = merged_at;
     if (time) {
@@ -87,15 +90,19 @@ function getChanges(body) {
 
         switch (entry[0].toLowerCase()) {
             case "add":
+            case "добавлено":
                 type = "Add";
                 break;
             case "remove":
+            case "удалено":
                 type = "Remove";
                 break;
             case "tweak":
+            case "изменено":
                 type = "Tweak";
                 break;
             case "fix":
+            case "исправлено":
                 type = "Fix";
                 break;
             default:
@@ -131,12 +138,21 @@ function writeChangelog(entry) {
         data = yaml.load(file);
     }
 
+    data ??= { Entries: [] };
+    data.Entries ??= [];
     data.Entries.push(entry);
+
+    const metadata = { ...data };
+    delete metadata.Entries;
+    const metadataYaml = Object.keys(metadata).length > 0
+        ? yaml.dump(metadata, { indent: 2 }).replace(/^---\n?/, "")
+        : "";
 
     fs.writeFileSync(
         ChangelogFilePath,
+        metadataYaml +
         "Entries:\n" +
-        yaml.dump(data.Entries, { indent: 2 }).replace(/^---/, "")
+        yaml.dump(data.Entries, { indent: 2 }).replace(/^---\n?/, "")
     );
 }
 
