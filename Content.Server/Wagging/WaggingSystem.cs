@@ -59,7 +59,7 @@ public sealed partial class WaggingSystem : EntitySystem
         if (args.Handled)
             return;
 
-        TryToggleWagging(ent.AsNullable());
+        args.Handled = TryToggleWagging(ent.AsNullable()); // Erida edit
     }
 
     private void OnMobStateChanged(Entity<WaggingComponent> ent, ref MobStateChangedEvent args)
