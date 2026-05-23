@@ -19,7 +19,7 @@ namespace Content.Client.Changelog
         [Dependency] private IConfigurationManager _configManager = default!;
 
         private const string SawmillName = "changelog";
-        public const string MainChangelogName = "Changelog";
+        public const string MainChangelogName = "Erida"; // Erida edit
 
         private ISawmill _sawmill = default!;
 
@@ -69,7 +69,7 @@ namespace Content.Client.Changelog
                 return;
             }
 
-            var changelog = changelogs[0];
+            var changelog = mainChangelogs[0]; // Erida edit
             if (mainChangelogs.Length > 1)
             {
                 _sawmill.Error($"More than one file found in Resource/Changelog with name {MainChangelogName}");

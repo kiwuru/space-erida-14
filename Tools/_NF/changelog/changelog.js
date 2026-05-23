@@ -138,12 +138,21 @@ function writeChangelog(entry) {
         data = yaml.load(file);
     }
 
+    data ??= { Entries: [] };
+    data.Entries ??= [];
     data.Entries.push(entry);
+
+    const metadata = { ...data };
+    delete metadata.Entries;
+    const metadataYaml = Object.keys(metadata).length > 0
+        ? yaml.dump(metadata, { indent: 2 }).replace(/^---\n?/, "")
+        : "";
 
     fs.writeFileSync(
         ChangelogFilePath,
+        metadataYaml +
         "Entries:\n" +
-        yaml.dump(data.Entries, { indent: 2 }).replace(/^---/, "")
+        yaml.dump(data.Entries, { indent: 2 }).replace(/^---\n?/, "")
     );
 }
 
