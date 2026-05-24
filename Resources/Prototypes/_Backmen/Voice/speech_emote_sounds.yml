@@ -141,7 +141,7 @@
     DefaultDeathgasp:
       collection: FemaleDeathGasp
     Moan:
-      collection: FemaleMoan
+      collection: FemaleSneezes # Erida Edit
     Wurble:
       collection: Wurble
     Yawn:
