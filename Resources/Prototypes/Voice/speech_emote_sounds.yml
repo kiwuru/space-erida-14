@@ -297,7 +297,7 @@
     Yawn:
       path: /Audio/Voice/Vox/vox_sigh.ogg
     Whistle:
-      /Audio/Voice/Vox/vox_cough.oggн # Erida end
+      /Audio/Voice/Vox/vox_cough.ogg # Erida end
   params:
     variation: 0.125
     # TODO: We need vox sounds for the other emotes
