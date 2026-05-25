@@ -100,10 +100,12 @@
     tags:
     - AirSensor
     - ForceFixRotations
-  - type: RCDDeconstructable # Erida start
+# Erida start
+  - type: RCDDeconstructable
     cost: 2
     delay: 2
-    fx: EffectRCDDeconstruct2 # Erida end
+    fx: EffectRCDDeconstruct2
+# Erida end
 
 - type: entity
   parent: BaseItem

@@ -13,7 +13,8 @@
       path: /Audio/Voice/Moth/moth_chitter.ogg
     Squeak:
       path: /Audio/Voice/Moth/moth_squeak.ogg
-    Yawn: # Erida start
+# Erida start
+    Yawn:
       collection: MaleYawn
     Snore:
       collection: Snores
@@ -24,7 +25,8 @@
     Crying:
       collection: MaleCry
     Whistle:
-      collection: Whistles # Erida end
+      collection: Whistles
+# Erida end
     Weh:
       collection: Weh
     Hew:
