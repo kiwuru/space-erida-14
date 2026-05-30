@@ -860,3 +860,14 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/379
   avatar_url: https://avatars.githubusercontent.com/u/215692115?v=4
   title: '[Fix] Bug report response №1'
+- author: Tiwulovoe
+  changes:
+    - type: Tweak
+      message: Кроваво-красный скафандр теперь имеет адекватные резисты 60 -> 50
+    - type: Tweak
+      message: Резисты скафандра БЩ немного повышены
+  id: 73
+  time: '2026-05-30T20:45:25.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/374
+  avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
+  title: f
