@@ -920,3 +920,20 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/384
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: Reflect System Changes
+- author: Tiwulovoe
+  changes:
+    - type: Tweak
+      message: Скафандр БЩ получил взрывозащиту 30% и терморезист 30 -> 35
+    - type: Tweak
+      message: Некрозол теперь выводит 2 радиационного урона
+    - type: Fix
+      message: Пожарный топор вновь снимает покрытие
+    - type: Fix
+      message: Дионы снова обладают тау-цети и языком корней
+    - type: Fix
+      message: 'Резисты жилета синего щита приравнены к шинели '
+  id: 77
+  time: '2026-06-23T23:02:13.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/392
+  avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
+  title: Багфикс и Блющилд
