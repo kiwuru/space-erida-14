@@ -871,3 +871,26 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/374
   avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
   title: f
+- author: Spectrum2k
+  changes:
+    - type: Add
+      message: В аплинк добавлены плазменный меч и коса.
+    - type: Add
+      message: РСУ теперь может создавать камеры.
+    - type: Add
+      message: Из манифеста теперь можно быстро копировать записи.
+    - type: Fix
+      message: Исправлен метаболизм плафеимов.
+    - type: Fix
+      message: Слаймолюды снова могут менять цвет своих глаз.
+    - type: Fix
+      message: Анимации шлюзов снова адекватные (надеюсь).
+    - type: Fix
+      message: Станционный ИИ снова может управлять боргами (наверное?).
+    - type: Fix
+      message: Исправлено немного внутренних багов.
+  id: 74
+  time: '2026-06-23T22:45:43.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/394
+  avatar_url: https://avatars.githubusercontent.com/u/49170788?v=4
+  title: И снова мы тут
