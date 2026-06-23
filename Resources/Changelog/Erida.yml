@@ -937,3 +937,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/392
   avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
   title: Багфикс и Блющилд
+- author: Tiwulovoe
+  changes:
+    - type: Add
+      message: Портирован свадебный контент с ADT
+  id: 78
+  time: '2026-06-23T23:14:57.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/391
+  avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
+  title: What is love?
