@@ -955,3 +955,16 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/385
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: Double Energy Sword Craft
+- author: Evgenimation
+  changes:
+    - type: Add
+      message: Пистолет ГП и пистолет СЩ. Стеклянные шлюзы ксеноборгов.
+    - type: Tweak
+      message: Спрайты оружия и банеров.
+    - type: Fix
+      message: Шлюзы ксеноборгов.
+  id: 80
+  time: '2026-06-24T13:04:46.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/396
+  avatar_url: https://avatars.githubusercontent.com/u/275415539?v=4
+  title: Fix gan bs
