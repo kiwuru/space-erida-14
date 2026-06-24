@@ -1,0 +1,57 @@
+# SPDX-FileCopyrightText: 2026 Evgenimation <jickson900@gmail.com>
+# SPDX-License-Identifier: MIT
+
+- type: entity
+  parent: BaseWeaponBatterySmall
+  id: WeaponMiniatureEnergyGun
+  name: миниатюрный лазерный пистолет
+  description: Специальный пистолет для кармана, его использование разрешено только в красный код и только в случае прямой угрозы главе.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/Objects/Weapons/Guns/Battery/minipistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: BatteryAmmoProvider
+    proto: RedMiniLaser
+    fireCost: 62.5
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: RedMiniLaser
+      fireCost: 62.5
+    - proto: BulletDisabler
+      fireCost: 62.5
+  - type: Appearance
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: Tag
+    tags:
+    - Sidearm
+  # Erida-start
+  - type: DualWeaponsBonus
+    minAngle: 0
+    maxAngle: 3
+    angleIncrease: 0
+  # Erida-end
+
+- type: entity
+  parent: BasicHitscan
+  id: RedMiniLaser
+  name: лазерный средний заряд
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 10

@@ -140,6 +140,13 @@
     sprite: Structures/Doors/Airlocks/Standard/shuttle_syndicate.rsi
 
 - type: entity
+  id: AirlockGlassShuttleXenoborg
+  parent: AirlockGlassShuttle
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/shuttle_xenoborg.rsi
+
+- type: entity
   parent: AirlockShuttle
   id: AirlockShuttleXenoborg
   components:
