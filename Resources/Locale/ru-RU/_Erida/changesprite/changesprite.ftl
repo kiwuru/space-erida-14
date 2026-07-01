@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 vanomorodellefake <vanomorodellefake29@gmail.com>
+# SPDX-License-Identifier: MIT
+
 changesprite-no-change = Оставить без изменений
 changesprite-ratqueen-name = Королева крыс
 changesprite-ringmaster-name = Мастер Кольца

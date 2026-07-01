@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 vanomorodellefake <vanomorodellefake29@gmail.com>
+// SPDX-License-Identifier: MIT
+
 using Content.Shared.Actions;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
