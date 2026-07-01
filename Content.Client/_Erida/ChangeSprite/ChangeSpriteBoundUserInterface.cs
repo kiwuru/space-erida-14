@@ -1,24 +1,8 @@
-using System.Linq;
-using Content.Client.Gameplay;
-using Content.Client.UserInterface.Systems.MenuBar;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._Erida.ChangeSprite;
 using JetBrains.Annotations;
-using Robust.Client.Player;
-using Robust.Client.UserInterface.Controllers;
 using Robust.Shared.Prototypes;
-using Content.Shared.Chat;
-using Content.Shared.Chat.Prototypes;
-using Content.Shared.Input;
-using Content.Shared.Speech;
-using Content.Shared.Whitelist;
-using Robust.Shared.Input.Binding;
-using Robust.Shared.Utility;
-using Robust.Client.UserInterface.Controls;
 using Content.Shared._Erida.ChangeSprite.Components;
-using Content.Client.Stylesheets.Palette;
-using Content.Shared.Changeling.Components;
-using Content.Shared.Changeling.Systems;
 using Robust.Client.UserInterface;
 using Robust.Client.GameObjects;
 

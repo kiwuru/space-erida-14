@@ -2,10 +2,8 @@ using Content.Server.Actions;
 using Content.Shared._Erida.ChangeSprite;
 using Content.Shared._Erida.ChangeSprite.Components;
 using Content.Shared.Actions;
-using Content.Shared.Actions.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Utility;
 
 namespace Content.Server._Erida.ChangeSprite;
 
@@ -45,9 +43,6 @@ public sealed partial class ChangeSpriteSystem : EntitySystem
         if (!TryComp<UserInterfaceComponent>(ent, out var userInterfaceComp))
             return;
 
-        if (!HasComp<ChangeSpriteComponent>(ent))
-            return;
-
         if (!_ui.IsUiOpen((ent, userInterfaceComp), ChangeSpriteUiKey.Key, args.Performer))
         {
             _ui.OpenUi((ent, userInterfaceComp), ChangeSpriteUiKey.Key, args.Performer);
@@ -66,9 +61,6 @@ public sealed partial class ChangeSpriteSystem : EntitySystem
 
         if (!_proto.HasIndex(args.ProtoId))
             return;
-
-        //while (_appearance.TryGetData(ent, byte : 0, out var _, appearanceComp))
-        //   _appearance.RemoveData(ent, 0, appearanceComp);
 
         _appearance.SetData(ent, ChangeSpriteVisuals.SpriteId, args.ProtoId, appearanceComp);
     }
