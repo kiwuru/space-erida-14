@@ -1,0 +1,27 @@
+- type: changeSprite
+  id: ratqueen
+  name: changesprite-ratqueen-name
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen }
+  layers:
+    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen }
+
+- type: changeSprite
+  id: ringmaster
+  name: changesprite-ringmaster-name
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ringmaster }
+  layers:
+    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ringmaster }
+
+- type: changeSprite
+  id: ratqueen_fat
+  name: changesprite-ratqueen_fat-name
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen_fat }
+  layers:
+    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen_fat }
+
+- type: changeSprite
+  id: regalrat
+  name: changesprite-regalrat-name
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: regalrat }
+  layers:
+    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: regalrat }
