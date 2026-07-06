@@ -9,6 +9,7 @@
     - sprite: { sprite: "/Textures/_Erida/Mobs/Animals/ratqueen.rsi", state: ratqueen }
       layerKey: Base
       visible: true
+      stateId: ratqueen
   aliveStateBase: "ratqueen"
   criticalStateBase: "dead"
   deadStateBase: "dead"
