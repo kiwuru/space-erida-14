@@ -3,6 +3,7 @@
 
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Robust.Shared.Graphics;
 
 namespace Content.Shared._Erida.ChangeSprite;
 
@@ -19,5 +20,36 @@ public sealed partial class ChangeSpritePrototype : IPrototype
     public SpriteSpecifier Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/Actions/scream.png"));
 
     [DataField(required: true)]
-    public List<SpriteSpecifier> Layers = default!;
+    public List<ChangeSpriteLayer> Layers = default!;
+
+    [DataField]
+    public string? AliveStateBase = null;
+    [DataField]
+    public string? AliveStateBaseUnshaded = null;
+
+    [DataField]
+    public string? CriticalStateBase = null;
+    [DataField]
+    public string? CriticalStateBaseUnshaded = null;
+
+    [DataField]
+    public string? DeadStateBase = null;
+    [DataField]
+    public string? DeadStateBaseUnshaded = null;
+}
+
+[DataDefinition]
+public sealed partial class ChangeSpriteLayer
+{
+    [DataField(required: true)]
+    public SpriteSpecifier Sprite = default!;
+
+    [DataField(required: true)]
+    public string LayerKey = default!;
+
+    [DataField]
+    public bool Visible = true;
+
+    [DataField]
+    public string StateId = default!;
 }

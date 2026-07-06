@@ -4,27 +4,50 @@
 - type: changeSprite
   id: ratqueen
   name: changesprite-ratqueen-name
-  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen }
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratqueen.rsi", state: ratqueen }
   layers:
-    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen }
+    - sprite: { sprite: "/Textures/_Erida/Mobs/Animals/ratqueen.rsi", state: ratqueen }
+      layerKey: Base
+      visible: true
+  aliveStateBase: "ratqueen"
+  criticalStateBase: "dead"
+  deadStateBase: "dead"
 
 - type: changeSprite
   id: ringmaster
   name: changesprite-ringmaster-name
-  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ringmaster }
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratqueen.rsi", state: ringmaster }
   layers:
-    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ringmaster }
+    - sprite: { sprite: "/Textures/_Erida/Mobs/Animals/ratqueen.rsi", state: ringmaster }
+      layerKey: Base
+      visible: true
+      stateId: ringmaster
+  aliveStateBase: "ringmaster"
+  criticalStateBase: "dead"
+  deadStateBase: "dead"
 
 - type: changeSprite
   id: ratqueen_fat
   name: changesprite-ratqueen_fat-name
-  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen_fat }
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratqueen.rsi", state: ratqueen_fat }
   layers:
-    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: ratqueen_fat }
+    - sprite: { sprite: "/Textures/_Erida/Mobs/Animals/ratqueen.rsi", state: ratqueen_fat }
+      layerKey: Base
+      visible: true
+      stateId: ratqueen_fat
+  aliveStateBase: "ratqueen_fat"
+  criticalStateBase: "dead"
+  deadStateBase: "dead"
 
 - type: changeSprite
   id: regalrat
   name: changesprite-regalrat-name
-  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: regalrat }
+  icon: { sprite: "/Textures/_Erida/Mobs/Animals/ratking.rsi", state: alive }
   layers:
-    - { sprite: "/Textures/_Erida/Mobs/Animals/ratkings.rsi", state: regalrat }
+    - sprite: { sprite: "/Textures/_Erida/Mobs/Animals/ratking.rsi", state: alive }
+      layerKey: Base
+      visible: true
+      stateId: alive
+  aliveStateBase: "alive"
+  criticalStateBase: "dead"
+  deadStateBase: "dead"

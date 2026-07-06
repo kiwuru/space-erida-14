@@ -20,14 +20,7 @@
             "directions": 4
         },
         {
-            "name": "ratqueen_dead"
-        },
-        {
-            "name": "regalrat",
-            "directions": 4
-        },
-        {
-            "name": "regalrat_dead"
+            "name": "dead"
         }
     ]
 }
