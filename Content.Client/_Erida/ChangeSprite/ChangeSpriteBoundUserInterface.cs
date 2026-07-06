@@ -5,7 +5,6 @@ using Content.Client.UserInterface.Controls;
 using Content.Shared._Erida.ChangeSprite;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
-using Content.Client._Erida.ChangeSprite;
 using Robust.Client.UserInterface;
 using Robust.Client.GameObjects;
 using Content.Shared._Erida.ChangeSprite.Components;

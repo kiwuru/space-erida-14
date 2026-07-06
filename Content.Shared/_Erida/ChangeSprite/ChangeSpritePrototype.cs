@@ -3,7 +3,6 @@
 
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Robust.Shared.Graphics;
 
 namespace Content.Shared._Erida.ChangeSprite;
 

@@ -7,9 +7,7 @@ using Content.Shared._Erida.ChangeSprite;
 using Content.Shared._Erida.ChangeSprite.Components;
 using Content.Shared.Mobs;
 using Robust.Client.GameObjects;
-using Robust.Client.ResourceManagement;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Utility;
 
 namespace Content.Client._Erida.ChangeSprite;
 
@@ -17,7 +15,6 @@ public sealed partial class ChangeSpriteVisualizerSystem : VisualizerSystem<Chan
 {
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private SpriteSystem _spriteSystem = default!;
-    [Dependency] private IResourceCache _resourceCache = default!;
 
     protected override void OnAppearanceChange(EntityUid uid, ChangeSpriteComponent comp, ref AppearanceChangeEvent args)
     {
