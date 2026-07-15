@@ -45,19 +45,13 @@ public sealed partial class ChangeSpriteVisualizerSystem : VisualizerSystem<Chan
         if (!TryComp<DamageStateVisualsComponent>(uid, out var damageStateComp))
             return;
 
-        if (prototype.AliveStateBase != null)
-            damageStateComp.States[MobState.Alive][DamageStateVisualLayers.Base] = prototype.AliveStateBase;
-        if (prototype.AliveStateBaseUnshaded != null)
-            damageStateComp.States[MobState.Alive][DamageStateVisualLayers.BaseUnshaded] = prototype.AliveStateBaseUnshaded;
+        foreach (var (mobState, damageStateLayers) in prototype.DamageStateVisualLayers)
+            foreach (var (damageStateString, state) in damageStateLayers)
+            {
+                if (!Enum.TryParse<DamageStateVisualLayers>(damageStateString, true, out var damageState))
+                    continue;
 
-        if (prototype.CriticalStateBase != null)
-            damageStateComp.States[MobState.Critical][DamageStateVisualLayers.Base] = prototype.CriticalStateBase;
-        if (prototype.CriticalStateBaseUnshaded != null)
-            damageStateComp.States[MobState.Critical][DamageStateVisualLayers.BaseUnshaded] = prototype.CriticalStateBaseUnshaded;
-
-        if (prototype.DeadStateBase != null)
-            damageStateComp.States[MobState.Dead][DamageStateVisualLayers.Base] = prototype.DeadStateBase;
-        if (prototype.DeadStateBaseUnshaded != null)
-            damageStateComp.States[MobState.Dead][DamageStateVisualLayers.BaseUnshaded] = prototype.DeadStateBaseUnshaded;
+                damageStateComp.States[mobState][damageState] = state;
+            }
     }
 }

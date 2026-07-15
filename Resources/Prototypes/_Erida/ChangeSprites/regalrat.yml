@@ -10,9 +10,13 @@
       layerKey: Base
       visible: true
       stateId: ratqueen
-  aliveStateBase: "ratqueen"
-  criticalStateBase: "dead"
-  deadStateBase: "dead"
+  damageStateVisualLayers:
+    Alive:
+      Base: "ratqueen"
+    Critical:
+      Base: "dead"
+    Dead:
+      Base: "dead"
 
 - type: changeSprite
   id: ringmaster
@@ -23,9 +27,13 @@
       layerKey: Base
       visible: true
       stateId: ringmaster
-  aliveStateBase: "ringmaster"
-  criticalStateBase: "dead"
-  deadStateBase: "dead"
+  damageStateVisualLayers:
+    Alive:
+      Base: "ringmaster"
+    Critical:
+      Base: "dead"
+    Dead:
+      Base: "dead"
 
 - type: changeSprite
   id: ratqueen_fat
@@ -36,9 +44,13 @@
       layerKey: Base
       visible: true
       stateId: ratqueen_fat
-  aliveStateBase: "ratqueen_fat"
-  criticalStateBase: "dead"
-  deadStateBase: "dead"
+  damageStateVisualLayers:
+    Alive:
+      Base: "ratqueen_fat"
+    Critical:
+      Base: "dead"
+    Dead:
+      Base: "dead"
 
 - type: changeSprite
   id: regalrat
@@ -49,6 +61,10 @@
       layerKey: Base
       visible: true
       stateId: alive
-  aliveStateBase: "alive"
-  criticalStateBase: "dead"
-  deadStateBase: "dead"
+  damageStateVisualLayers:
+    Alive:
+      Base: "alive"
+    Critical:
+      Base: "dead"
+    Dead:
+      Base: "dead"

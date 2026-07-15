@@ -1,6 +1,8 @@
 // SPDX-FileCopyrightText: 2026 vanomorodellefake <vanomorodellefake29@gmail.com>
 // SPDX-License-Identifier: MIT
 
+using Content.Shared.Mobs;
+using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -22,19 +24,7 @@ public sealed partial class ChangeSpritePrototype : IPrototype
     public List<ChangeSpriteLayer> Layers = default!;
 
     [DataField]
-    public string? AliveStateBase = null;
-    [DataField]
-    public string? AliveStateBaseUnshaded = null;
-
-    [DataField]
-    public string? CriticalStateBase = null;
-    [DataField]
-    public string? CriticalStateBaseUnshaded = null;
-
-    [DataField]
-    public string? DeadStateBase = null;
-    [DataField]
-    public string? DeadStateBaseUnshaded = null;
+    public Dictionary<MobState, Dictionary<string, string>> DamageStateVisualLayers = new();
 }
 
 [DataDefinition]
