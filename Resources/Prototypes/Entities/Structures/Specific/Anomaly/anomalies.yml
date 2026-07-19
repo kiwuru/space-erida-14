@@ -38,6 +38,7 @@
   - type: InteractionOutline
   - type: Clickable
   - type: Appearance
+  - type: Damageable # Erida edit
   - type: AnimationPlayer
   - type: GuideHelp
     guides:
