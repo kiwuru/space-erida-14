@@ -10,7 +10,7 @@ namespace Content.Shared._Erida.ChangeSprite.Components;
 public sealed partial class ChangeSpriteComponent : Component
 {
     [DataField]
-    public List<ProtoId<ChangeSpritePrototype>> Sprites = default!;
+    public List<ProtoId<ChangeSpritePrototype>>? Sprites = default!;
 
     [DataField]
     public EntProtoId ChangeSpriteAction = "ActionChangeSprite";

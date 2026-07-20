@@ -29,6 +29,12 @@ public sealed partial class ChangeSpriteSystem : EntitySystem
 
     private void OnChangeSpriteInit(Entity<ChangeSpriteComponent> ent, ref ComponentInit args)
     {
+        if (ent.Comp.Sprites == null)
+        {
+            RemComp(ent.Owner, ent.Comp);
+            return;
+        }
+
         _action.AddAction(ent, ref ent.Comp.ChangeSpriteActionEntity, ent.Comp.ChangeSpriteAction);
 
         if (ent.Comp.ChangeSpriteActionEntity is { } actionEnt)
@@ -55,7 +61,8 @@ public sealed partial class ChangeSpriteSystem : EntitySystem
     {
         RemoveChangeSpriteAction(ent.Comp);
 
-        if (!ent.Comp.Sprites.Contains(args.ProtoId))
+        if (ent.Comp.Sprites == null
+            || !ent.Comp.Sprites.Contains(args.ProtoId))
             return;
 
         if (!TryComp<AppearanceComponent>(ent, out var appearanceComp))

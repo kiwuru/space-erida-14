@@ -5,7 +5,6 @@ using System.Linq;
 using Content.Client.DamageState;
 using Content.Shared._Erida.ChangeSprite;
 using Content.Shared._Erida.ChangeSprite.Components;
-using Content.Shared.Mobs;
 using Robust.Client.GameObjects;
 using Robust.Shared.Prototypes;
 

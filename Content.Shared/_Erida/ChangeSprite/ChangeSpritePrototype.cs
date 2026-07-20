@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: MIT
 
 using Content.Shared.Mobs;
-using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -24,7 +23,7 @@ public sealed partial class ChangeSpritePrototype : IPrototype
     public List<ChangeSpriteLayer> Layers = default!;
 
     [DataField]
-    public Dictionary<MobState, Dictionary<string, string>> DamageStateVisualLayers = new();
+    public Dictionary<MobState, Dictionary<string, string>> DamageStateVisualLayers = [];
 }
 
 [DataDefinition]

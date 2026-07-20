@@ -41,25 +41,9 @@ public sealed partial class ChangeSpriteBoundUserInterface(EntityUid owner, Enum
         _menu.SetButtons(models);
     }
 
-    private IEnumerable<RadialMenuOptionBase> ConvertToButtons(EntityUid currentSprite, IEnumerable<ProtoId<ChangeSpritePrototype>> changeSpritePrototypes)
+    private IEnumerable<RadialMenuOptionBase> ConvertToButtons(EntityUid currentSprite, IEnumerable<ProtoId<ChangeSpritePrototype>>? changeSpritePrototypes)
     {
         var list = new List<RadialMenuOptionBase>();
-
-        foreach (var changeProtoIDSprite in changeSpritePrototypes)
-        {
-            if (!_prototypeManager.TryIndex<ChangeSpritePrototype>(changeProtoIDSprite, out var changeSprite))
-                continue;
-
-            if (changeSprite == null)
-                continue;
-
-            var option = new RadialMenuActionOption<ProtoId<ChangeSpritePrototype>>(SendNewSpriteSelected, changeProtoIDSprite)
-            {
-                IconSpecifier = RadialMenuIconSpecifier.With(changeSprite.Icon),
-                ToolTip = Loc.GetString(changeSprite.Name)
-            };
-            list.Add(option);
-        }
 
         if (_entityManager.TryGetComponent<SpriteComponent>(currentSprite, out var spriteComponent))
         {
@@ -70,6 +54,23 @@ public sealed partial class ChangeSpriteBoundUserInterface(EntityUid owner, Enum
             };
 
             list.Add(nullOption);
+        }
+
+        if (changeSpritePrototypes == null)
+            return list;
+
+        foreach (var changeProtoIDSprite in changeSpritePrototypes)
+        {
+
+            if (!_prototypeManager.TryIndex(changeProtoIDSprite, out var changeSprite))
+                continue;
+
+            var option = new RadialMenuActionOption<ProtoId<ChangeSpritePrototype>>(SendNewSpriteSelected, changeProtoIDSprite)
+            {
+                IconSpecifier = RadialMenuIconSpecifier.With(changeSprite.Icon),
+                ToolTip = Loc.GetString(changeSprite.Name)
+            };
+            list.Add(option);
         }
 
         return list;
