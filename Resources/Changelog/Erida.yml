@@ -1023,3 +1023,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/410
   avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
   title: '[Fix] Minor fixes'
+- author: Lytheriia
+  changes:
+    - type: Fix
+      message: 'Изменение роста дворфов, феленидов, резоми '
+  id: 86
+  time: '2026-07-20T18:07:10.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/412
+  avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
+  title: '[Fix] Height bug fix'
