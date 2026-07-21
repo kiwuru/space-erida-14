@@ -1032,3 +1032,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/412
   avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
   title: '[Fix] Height bug fix'
+- author: CyberBobeks
+  changes:
+    - type: Add
+      message: Блоб.
+  id: 87
+  time: '2026-07-21T15:01:08.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/390
+  avatar_url: https://avatars.githubusercontent.com/u/89313903?v=4
+  title: Блёбовое
