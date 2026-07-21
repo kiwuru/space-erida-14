@@ -1041,3 +1041,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/390
   avatar_url: https://avatars.githubusercontent.com/u/89313903?v=4
   title: Блёбовое
+- author: Lytheriia
+  changes:
+    - type: Tweak
+      message: Ребаланс ноктюрина и гипоручки
+  id: 88
+  time: '2026-07-21T21:42:07.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/414
+  avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
+  title: Hypopen and nocturine changes
