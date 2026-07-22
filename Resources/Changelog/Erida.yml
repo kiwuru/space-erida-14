@@ -1050,3 +1050,28 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/414
   avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
   title: Hypopen and nocturine changes
+- author: vanomorodellefake
+  changes:
+    - type: Add
+      message: >-
+        новые черты, которые убирают вас из пулла целей для агентов и
+        парадоксальных клонов
+    - type: Tweak
+      message: >-
+        парадоксальный клон больше не умирает в конце раунда, так что
+        необязательно убивать цель, попытка популизировать
+    - type: Tweak
+      message: >-
+        Синий Щит теперь считается игрой комманд стаффом, на него чаще будут
+        падать цели агентов и он становится целью ревы
+    - type: Fix
+      message: нюкеры больше не будут целями агентов
+    - type: Fix
+      message: >-
+        щитспавн персонажи на АА больше не должны ставновиться целями агентов и
+        парадоксальных клонов
+  id: 89
+  time: '2026-07-22T21:48:57.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/408
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: NoTarget+NoClone+BlueShieldCommandStaff
