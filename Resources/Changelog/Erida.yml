@@ -1125,3 +1125,16 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/382
   avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
   title: Atmos holoprojector rework
+- author: OpenWendor
+  changes:
+    - type: Add
+      message: 'Новая раса КПБ '
+    - type: Add
+      message: Кастомизация КПБ
+    - type: Add
+      message: Промышленный зарядник КПБ
+  id: 94
+  time: '2026-07-25T16:34:48.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/417
+  avatar_url: https://avatars.githubusercontent.com/u/178937366?v=4
+  title: Ipc
