@@ -1147,3 +1147,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/401
   avatar_url: https://avatars.githubusercontent.com/u/92030026?v=4
   title: '[PORT] Goobstation grabs port'
+- author: Lytheriia
+  changes:
+    - type: Tweak
+      message: Гриншифт вернулся в пулл голосований
+  id: 96
+  time: '2026-07-25T19:54:55.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/423
+  avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
+  title: Added greenshift to game votes
