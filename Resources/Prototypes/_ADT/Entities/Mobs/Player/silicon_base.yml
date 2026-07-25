@@ -28,6 +28,8 @@
     - type: Injurable
       damageContainer: Inorganic
     - type: InteractionOutline
+    - type: InteractionWhitelist
+      lactation: false
     - type: Fixtures
       fixtures:
         fix1:
@@ -304,6 +306,9 @@
       sprite: Objects/Misc/ensnare.rsi
     - type: Speech
       speechSounds: Pai
+      audioParams:
+        volume: -2
+        rolloffFactor: 1.5
     - type: Vocal
       sounds:
         Male: MaleHuman
