@@ -113,7 +113,7 @@
     unlockTime: 5
     breakOnAccessBreaker: false
   - type: BatterySlotRequiresLock # erida edit: removed MobIpc component
-    itemSlot: cell_slot
+    itemSlot: cell_slot   # Могли бы и hashset поставить, а не string ;c
   - type: InteractionPopup
     successChance: 1
     interactSuccessString: hugging-success-generic
@@ -210,8 +210,13 @@
     boardName: "ipc-board-name"
     layoutId: IPC
   - type: WiresPanel
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
   - type: EncryptionKeyHolder
     keySlots: 3
+    examineWhileLocked: false
     keysExtractionMethod: Cutting
   - type: ActiveRadio
   - type: IntrinsicRadioReceiver
@@ -257,6 +262,15 @@
       enum.StoreUiKey.Key:
         type: StoreBoundUserInterface
   - type: Posing
+  - type: LanguageSpeaker
+    currentLanguage: TauCetiBasic
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Binary
+    understands:
+    - TauCetiBasic
+    - Binary
 
 - type: entity
   parent: OrganBase
