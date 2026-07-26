@@ -8,6 +8,8 @@
 
 using Robust.Shared.GameStates;
 using Content.Shared.Damage;
+using Content.Shared.Tag;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._White.Grab;
 
@@ -21,4 +23,10 @@ public sealed partial class GrabThrownComponent : Component
     public float? StaminaDamageOnCollide;
 
     public List<EntityUid> IgnoreEntity = new();
+
+    // Erida edit
+    public HashSet<ProtoId<TagPrototype>> SmallEntityTags = [
+        "VimPilot",
+        "Trash"
+    ];
 }

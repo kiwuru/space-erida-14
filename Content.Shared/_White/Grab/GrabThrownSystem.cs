@@ -17,6 +17,8 @@ using Robust.Shared.Player;
 using System.Numerics;
 using Content.Shared.Standing;
 using Content.Shared.Stunnable;
+using Content.Shared.Tag;
+using System.Linq;
 
 namespace Content.Shared._White.Grab;
 
@@ -54,19 +56,23 @@ public sealed partial class GrabThrownSystem : EntitySystem
         if (!HasComp<DamageableComponent>(uid))
             RemComp<GrabThrownComponent>(uid);
 
+        var isSmallEntity = TryComp<TagComponent>(uid, out var tagComp)
+            && tagComp.Tags.Overlaps(component.SmallEntityTags);
+
         component.IgnoreEntity.Add(args.OtherEntity);
 
         var speed = args.OurBody.LinearVelocity.Length();
 
         if (component.StaminaDamageOnCollide != null)
-            _stamina.TakeStaminaDamage(uid, component.StaminaDamageOnCollide.Value);
+            _stamina.TakeStaminaDamage(uid, value: component.StaminaDamageOnCollide.Value);
 
-        var damageScale = speed;
+        var damageScale = !isSmallEntity ? speed : 0;
 
         if (component.WallDamageOnCollide != null)
             _damageable.TryChangeDamage(args.OtherEntity, component.WallDamageOnCollide * damageScale);
 
-        _sharedStunSystem.KnockdownOrStun(args.OtherEntity, TimeSpan.FromSeconds(1), true);
+        if (!isSmallEntity)
+            _sharedStunSystem.KnockdownOrStun(args.OtherEntity, TimeSpan.FromSeconds(1), true);
 
         _color.RaiseEffect(Color.Red, new List<EntityUid>() { uid }, Filter.Pvs(uid, entityManager: EntityManager));
     }
