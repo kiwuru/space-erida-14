@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Content.IntegrationTests.Fixtures;
 using Content.IntegrationTests.Utility;
@@ -84,7 +84,7 @@ public sealed class AllGamePresetsStartTest : GameTest
                 if (ruleId == GameTicker.DummyGameRule)
                     continue;
 
-                if (!protoMan.Resolve(ruleId, out var rule ))
+                if (!protoMan.Resolve(ruleId, out var rule))
                     continue; // Bruh moment
 
                 // Ignore non-antag game-rules.
@@ -163,12 +163,6 @@ public sealed class AllGamePresetsStartTest : GameTest
                 {
                     var session = players[j++];
 
-                    // erida edit: IPC has ZombieImmune, incompatible with InitialInfected
-                    if (!mind.TryGetMind(session, out var mindEnt, out var mindComp))
-                        continue;
-                    if (mindComp.CurrentEntity == null || !entMan.EntityExists(mindComp.CurrentEntity))
-                        continue;
-
                     AssertAntagInitialized(antag, session);
                 }
             }
@@ -181,7 +175,7 @@ public sealed class AllGamePresetsStartTest : GameTest
 
         // Clear game preset and return to lobby
         await Pair.WaitCommand("golobby");
-        ticker.SetGamePreset((GamePresetPrototype) null);
+        ticker.SetGamePreset((GamePresetPrototype)null);
         await Pair.RunUntilSynced();
         void AssertAntagInitialized(AntagSpecifierPrototype antag, ICommonSession session)
         {
