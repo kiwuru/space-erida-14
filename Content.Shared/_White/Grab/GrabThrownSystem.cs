@@ -16,6 +16,7 @@ using Robust.Shared.Physics.Events;
 using Robust.Shared.Player;
 using System.Numerics;
 using Content.Shared.Standing;
+using Content.Shared.Stunnable;
 
 namespace Content.Shared._White.Grab;
 
@@ -26,7 +27,7 @@ public sealed partial class GrabThrownSystem : EntitySystem
     [Dependency] private SharedStaminaSystem _stamina = default!;
     [Dependency] private ThrowingSystem _throwing = default!;
     [Dependency] private INetManager _netMan = default!;
-    [Dependency] private StandingStateSystem _standing = default!;
+    [Dependency] private SharedStunSystem _sharedStunSystem = default!;
 
     public override void Initialize()
     {
@@ -65,7 +66,7 @@ public sealed partial class GrabThrownSystem : EntitySystem
         if (component.WallDamageOnCollide != null)
             _damageable.TryChangeDamage(args.OtherEntity, component.WallDamageOnCollide * damageScale);
 
-        _standing.Down(args.OtherEntity, dropHeldItems: true);
+        _sharedStunSystem.KnockdownOrStun(args.OtherEntity, TimeSpan.FromSeconds(1), true);
 
         _color.RaiseEffect(Color.Red, new List<EntityUid>() { uid }, Filter.Pvs(uid, entityManager: EntityManager));
     }
@@ -104,6 +105,6 @@ public sealed partial class GrabThrownSystem : EntitySystem
         comp.WallDamageOnCollide = damageToWall;
         comp.IgnoreEntity.Add(thrower);
 
-        _standing.Down(uid, dropHeldItems: true);
+        _sharedStunSystem.KnockdownOrStun(uid, TimeSpan.FromSeconds(1), true);
     }
 }
