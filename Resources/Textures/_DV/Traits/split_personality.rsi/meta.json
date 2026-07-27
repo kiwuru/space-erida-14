@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "Icons8 Free License (Requires Attribution)",
+  "copyright": "Icons8 (https://icons8.com)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    }
+  ]
+}

@@ -100,21 +100,18 @@ trait-language-slime-desc = Добавляет персонажу знание �
 trait-language-freespeak-name = Фриспик
 trait-language-freespeak-desc = Добавляет персонажу знание языка воксов.
 
-split-personality-action-name = Сменить личность
-split-personality-action-desc = Переключиться между вашими личностями.
+ent-ActionSplitPersonalityToggle-name = Сменить личность
+ent-ActionSplitPersonalityToggle-description = Переключиться между вашими личностями.
 
 split-personality-switch-alter = Что-то внутри вас меняется...
 split-personality-switch-primary = Вы снова чувствуете себя собой.
 split-personality-too-soon = Пока не время. Подождите ещё немного.
 
-## Настройка (после того как черту добавил админ)
 split-personality-not-configured = Вторая личность ещё не настроена.
 split-personality-configured = Вторая личность настроена.
 
-## Окно выбора персонажа
 split-personality-picker-title = Вторая личность: { $name }
 split-personality-picker-hint = Выберите один из ваших персонажей — его имя и внешность (волосы/рога) станут второй личностью.
 split-personality-picker-confirm = Подтвердить
 
-## Консольная команда
 split-personality-command-added = Черта "раздвоение личности" добавлена. Если к кукле подключён игрок, ему открыто окно выбора персонажа.

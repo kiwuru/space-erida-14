@@ -1,13 +1,11 @@
-# Action used to switch between your two personas.
-# `icon` points at a placeholder sprite from the base game - swap it for whatever fits.
 - type: entity
-  parent: BaseAction
   id: ActionSplitPersonalityToggle
-  name: split-personality-action-name
-  description: split-personality-action-desc
+  name: action-split-personality-toggle-name
+  noSpawn: true
   components:
   - type: Action
-    icon: Interface/Actions/actions_mind.rsi/mindswap.png # placeholder, change to taste
-    useDelay: 1
   - type: InstantAction
+    icon:
+      sprite: Textures/_DV/Traits/split_personality.rsi
+      state: icon
     event: !type:SplitPersonalityToggleEvent
