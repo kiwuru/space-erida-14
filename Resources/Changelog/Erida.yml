@@ -1156,3 +1156,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/423
   avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
   title: Added greenshift to game votes
+- author: OpenWendor
+  changes:
+    - type: Add
+      message: Добавлен антагонист "Еретик"
+  id: 97
+  time: '2026-07-25T19:54:55.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/406
+  avatar_url: https://avatars.githubusercontent.com/u/178937366?v=4
+  title: Heretic
