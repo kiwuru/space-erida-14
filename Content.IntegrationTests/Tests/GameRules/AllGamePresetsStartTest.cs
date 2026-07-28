@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using Content.IntegrationTests.Fixtures;
 using Content.IntegrationTests.Utility;
@@ -84,7 +84,7 @@ public sealed class AllGamePresetsStartTest : GameTest
                 if (ruleId == GameTicker.DummyGameRule)
                     continue;
 
-                if (!protoMan.Resolve(ruleId, out var rule ))
+                if (!protoMan.Resolve(ruleId, out var rule))
                     continue; // Bruh moment
 
                 // Ignore non-antag game-rules.
@@ -161,7 +161,9 @@ public sealed class AllGamePresetsStartTest : GameTest
             {
                 for (var count = 0; count < amount; count++)
                 {
-                    AssertAntagInitialized(antag, players[j++]);
+                    var session = players[j++];
+
+                    AssertAntagInitialized(antag, session);
                 }
             }
         });
@@ -173,7 +175,7 @@ public sealed class AllGamePresetsStartTest : GameTest
 
         // Clear game preset and return to lobby
         await Pair.WaitCommand("golobby");
-        ticker.SetGamePreset((GamePresetPrototype) null);
+        ticker.SetGamePreset((GamePresetPrototype)null);
         await Pair.RunUntilSynced();
         void AssertAntagInitialized(AntagSpecifierPrototype antag, ICommonSession session)
         {
