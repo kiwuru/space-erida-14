@@ -1,7 +1,6 @@
 - type: entity
   id: ActionSplitPersonalityToggle
   name: action-split-personality-toggle-name
-  noSpawn: true
   components:
   - type: Action
   - type: InstantAction
