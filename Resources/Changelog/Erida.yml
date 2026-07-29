@@ -1165,3 +1165,16 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/406
   avatar_url: https://avatars.githubusercontent.com/u/178937366?v=4
   title: Heretic
+- author: Lytheriia
+  changes:
+    - type: Add
+      message: Автоматические голосования за режим и карту
+    - type: Add
+      message: Добавлено чередование режимов при онлайне выше 15
+    - type: Tweak
+      message: Голосование за режим поделено на 2 типа
+  id: 98
+  time: '2026-07-29T17:24:40.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/427
+  avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
+  title: '[Add] Base of automatic votes'
