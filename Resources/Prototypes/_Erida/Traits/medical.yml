@@ -57,6 +57,9 @@
   - !type:IsSpeciesCondition
     species: IPC
     invert: true
+  - !type:IsSpeciesCondition
+    species: Shadowkin
+    invert: true
   effects:
   - !type:AddCompsEffect
     removeExisting: true
