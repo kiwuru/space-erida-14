@@ -6,6 +6,7 @@ using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Events;
+using Content.Server.GameTicking.Presets;
 using Content.Server.Voting;
 using Content.Server.Voting.Managers;
 using Content.Shared.CCVar;
@@ -74,7 +75,6 @@ public sealed partial class AutoVotesSystem : EntitySystem
                             continue;
 
                         options.Options.Add((Loc.GetString(x.Label), x));
-                        break;
                     }
                     break;
                 }
@@ -114,8 +114,6 @@ public sealed partial class AutoVotesSystem : EntitySystem
             _chatManager.DispatchServerAnnouncement(
                 Loc.GetString("ui-vote-gamemode-win", ("winner", Loc.GetString(winner.Label))));
         }
-
-        _previousChoosedMainOption = winner;
 
         _adminLog.Add(LogType.Vote, LogImpact.Medium, $"Preset vote finished: {winner.Label}");
 
@@ -182,6 +180,48 @@ public sealed partial class AutoVotesSystem : EntitySystem
     private void OnRoundStarting(RoundStartingEvent _)
     {
         _voteTriggered = false;
+
+        if (_gameTicker.CurrentPreset == null)
+            return;
+
+
+        foreach (var main in _prototypeManager.EnumeratePrototypes<AutoVotesPrototype>())
+        {
+            if (!main.ShouldBeInFirstVote)
+                continue;
+
+            foreach (var option in main.Options)
+                if (DoesOptionLeadToPreset(option, _gameTicker.CurrentPreset.ID))
+                {
+                    _previousChoosedMainOption = option;
+                    break;
+                }
+        }
+    }
+
+    private bool DoesOptionLeadToPreset(AutoVoteOptionData option, ProtoId<GamePresetPrototype> presetId)
+    {
+        switch (option.AnswerData.Action)
+        {
+            case AutoVoteOptionAction.GameModeStart:
+                return option.AnswerData.GamePresetProto.Id == presetId.Id;
+
+            case AutoVoteOptionAction.NextVote:
+                foreach (var nextProtoId in option.AnswerData.NextVoteProto)
+                {
+                    if (!_prototypeManager.TryIndex(nextProtoId, out var nextProto))
+                        continue;
+
+                    foreach (var childOption in nextProto.Options)
+                        if (DoesOptionLeadToPreset(childOption, presetId))
+                            return true;
+                }
+
+                return false;
+
+            default:
+                return false;
+        }
     }
 
     private void OnRoundRestartCleanup(RoundRestartCleanupEvent _)
