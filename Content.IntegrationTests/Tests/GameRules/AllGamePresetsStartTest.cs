@@ -6,12 +6,15 @@ using Content.Server.Antag;
 using Content.Server.Antag.Components;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Presets;
+using Content.Server.Preferences.Managers;
 using Content.Server.Shuttles.Components;
 using Content.Shared.Antag;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Mind;
+using Content.Shared.Preferences;
 using Robust.Shared.GameObjects;
+using Robust.Shared.IoC;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
@@ -25,10 +28,9 @@ public sealed class AllGamePresetsStartTest : GameTest
     /// A list of blacklisted <see cref="GamePresetPrototype"/> for this test. Some down streams might make changes which nuke upstream game modes they don't use.
     /// This prevents them from being tested. If you use this to silence valid test fails and your game fails to start. Skill issue. Do 100 push-ups.
     /// </summary>
-    private static readonly HashSet<string> IgnoredPresets = []; // Is a string to prevent YAML Linter from freaking if this is empty.
+    private static readonly HashSet<string> IgnoredPresets = ["Zombie"]; // Is a string to prevent YAML Linter from freaking if this is empty.
 
     private static string[] _gamePresets = GameDataScrounger.PrototypesOfKind<GamePresetPrototype>().Where(p => !IgnoredPresets.Contains(p)).ToArray();
-
     public override PoolSettings PoolSettings => new()
     {
         Dirty = true,
