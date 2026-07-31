@@ -36,6 +36,7 @@ public sealed partial class AutoVotesSystem : EntitySystem
     private List<string> _previousGamerules = [];
     private AutoVoteOptionData _previousChoosedMainOption = new();
     private TimeSpan _startAfter = TimeSpan.Zero;
+    private bool _autovoteEnabled;
     private bool _voteTriggered;
 
     public override void Initialize()
@@ -49,8 +50,16 @@ public sealed partial class AutoVotesSystem : EntitySystem
                     _startAfter = value;
             }, true);
 
+        _cfg.OnValueChanged(CCVars.AutomaticVoteEnabled,
+            value =>
+            {
+                _autovoteEnabled = value;
+            }, true);
+
+
         SubscribeLocalEvent<RoundStartingEvent>(OnRoundStarting);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
+        SubscribeLocalEvent<RoundStartedEvent>(OnRoundStarted);
     }
 
     private void FindAndStartMainVotes()
@@ -153,6 +162,7 @@ public sealed partial class AutoVotesSystem : EntitySystem
             {
                 if (option.AnswerData.Action == AutoVoteOptionAction.GameModeStart
                     && _previousGamerules.Count != 0
+                    && protoData.Options.Count > 1
                     && option.AnswerData.GamePresetProto.Id == _previousGamerules[_previousGamerules.Count - 1])
                     continue;
 
@@ -224,6 +234,51 @@ public sealed partial class AutoVotesSystem : EntitySystem
         }
     }
 
+    private void OnRoundStarted(RoundStartedEvent _)
+    {
+        if (_gameTicker.CurrentPreset == null)
+            return;
+
+
+        foreach (var main in _prototypeManager.EnumeratePrototypes<AutoVotesPrototype>())
+        {
+            if (!main.ShouldBeInFirstVote)
+                continue;
+
+            foreach (var option in main.Options)
+                if (DoesOptionLeadPreset(option, _gameTicker.CurrentPreset.ID))
+                {
+                    _previousChoosedMainOption = option;
+                    break;
+                }
+        }
+    }
+
+    private bool DoesOptionLeadPreset(AutoVoteOptionData option, ProtoId<GamePresetPrototype> presetId)
+    {
+        switch (option.AnswerData.Action)
+        {
+            case AutoVoteOptionAction.GameModeStart:
+                return option.AnswerData.GamePresetProto.Id == presetId.Id;
+
+            case AutoVoteOptionAction.NextVote:
+                foreach (var nextProtoId in option.AnswerData.NextVoteProto)
+                {
+                    if (!_prototypeManager.TryIndex(nextProtoId, out var nextProto))
+                        continue;
+
+                    foreach (var childOption in nextProto.Options)
+                        if (DoesOptionLeadPreset(childOption, presetId))
+                            return true;
+                }
+
+                return false;
+
+            default:
+                return false;
+        }
+    }
+
     private void OnRoundRestartCleanup(RoundRestartCleanupEvent _)
     {
         _voteTriggered = false;
@@ -234,6 +289,9 @@ public sealed partial class AutoVotesSystem : EntitySystem
         base.Update(frameTime);
 
         if (_gameTicker.RunLevel != GameRunLevel.PreRoundLobby)
+            return;
+
+        if (!_autovoteEnabled)
             return;
 
         if (_voteTriggered)
