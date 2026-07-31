@@ -1178,3 +1178,18 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/427
   avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
   title: '[Add] Base of automatic votes'
+- author: Lytheriia
+  changes:
+    - type: Fix
+      message: Звуки эмоций вновь работают
+    - type: Fix
+      message: Исправлено падение сервера из-за 2 расширов подряд
+    - type: Fix
+      message: Чередование режимов более не изменяется неудачным стартом
+    - type: Fix
+      message: Исправный суицид кпб
+  id: 99
+  time: '2026-07-31T10:41:33.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/429
+  avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
+  title: tests
