@@ -61,6 +61,15 @@
     containers:
       board: [ DoorElectronicsNTNavyMedical ]
 
+- type: entity
+  parent: AirlockShuttle
+  id: AirlockShuttleNTNavyLocked
+  suffix: Nanotrasen navy, Docking, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTNavy ]
+
 # Glass
 - type: entity
   parent: AirlockNTNavyCaptainGlass
@@ -124,3 +133,21 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsNTNavyMedical ]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockGlassNTNavyShuttleLocked
+  suffix: Nanotrasen navy, Glass, Docking, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTNavy ]
+
+- type: entity
+  parent: WindoorSecureUranium
+  id: UraniumWindoorSecureNTNavyLocked
+  suffix: Nanotrasen navy, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsInteQVanguard ]

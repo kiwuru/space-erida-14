@@ -20,3 +20,16 @@ ent-ClothingUniformJumpskirtYukataRed = красная юката
 ent-ClothingUniformJumpskirtYukataViolet = фиолетовая юката
 ent-ClothingUniformJumpskirtYukataYellow = жёлтая юката
 ent-ClothingUniformJumpskirtKimonoMiku = кимоно мику
+
+ent-ClothingUniformJumpskirtNTNavyCaptain = юбка-комбинезон капитана ВКФ NT
+   .desc = Чёрная юбка-комбинезон с золотыми нашивками, указывающими на звание капитана ВКФ NT.
+ent-ClothingUniformJumpskirtNTNavyCapFormalDress = торжественное платье капитана ВКФ NT
+   .desc = Платье для особых случаев.
+ent-ClothingUniformJumpskirtNTNavyOfficer = юбка-комбинезон офицера ВКФ NT
+   .desc = Чёрная юбка-комбинезон с серебряными нашивками, указывающими на звание офицера ВКФ NT
+ent-ClothingUniformJumpskirtNTNavyWOEngi = юбка-комбинезон УО инженера ВКФ NT
+   .desc = Тёмно-зелёная юбка-комбинезон с оранжевыми нашивками, указывающими на звание УО инженера ВКФ NT.
+ent-ClothingUniformJumpskirtNTNavyWOMed = юбка-комбинезон УО медика ВКФ NT
+   .desc = Белая юбка-комбинезон с синими нашивками, указывающими на звание УО медика ВКФ NT.
+ent-ClothingUniformJumpskirtNTNavyMed = юбка-комбинезон медика ВКФ NT
+   .desc = Она изготовлена из специального волокна, обеспечивающего слабую защиту от биологических опасностей. На груди имеется крест, обозначающий, что носитель является медицинским работником.

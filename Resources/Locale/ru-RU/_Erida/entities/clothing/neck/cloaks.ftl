@@ -24,3 +24,10 @@ ent-ClothingNeckOSOCloak = плащ офицера специальных опе
 ent-ClothingNeckCloakEnglishBlue = синяя английская накидка
 ent-ClothingNeckCloakEnglishViolet = фиолетовая английская накидка
 ent-ClothingNeckCloakEnglishRed = красная английская накидка
+
+ent-ClothingNeckCloakNTNavyCaptain = плащ капитана ВКФ NT
+   .desc = Помпезный и удобный чёрный плащ с красивой золотой окантовкой, хотя и не самый ценный предмет вашего снаряжения, но очень красивый.
+ent-ClothingNeckCloakNTNavyCapFormal = торжественный плащ капитана ВКФ NT
+   .desc = Роскошно украшенный плащ для особых случаев.
+ent-ClothingNeckCloakNTNavyOfficer = плащ капитана ВКФ NT
+   .desc = Помпезный и удобный чёрный плащ с красивой серебряной окантовкой.

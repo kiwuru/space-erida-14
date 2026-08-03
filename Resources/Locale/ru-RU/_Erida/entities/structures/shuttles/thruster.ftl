@@ -56,3 +56,19 @@ ent-SyndicateThrusterMedium = большой ракетный двигатель
 ent-SyndicateOmniThrusterMachineCircuitboard = омни-двигатель Синдиката (машинная плата)
 
 ent-SyndicateOmniThruster = омни-двигатель Синдиката
+
+ent-ShuttleGunNavyTurbolaserBlueMachineGunCircuitboard = турболазер (машинная плата)
+    .desc = Печатная плата турболазера.
+    .suffix = Синий, НЕ МАППИТЬ, Машинная плата
+
+ent-ShuttleGunNavyTurbolaserBlue = турболазер
+    .desc = Мощный стационарный турболазер. Для стрельбы необходимо закрепить.
+    .suffix = Синий, НЕ МАППИТЬ
+
+ent-ShuttleGunNavyTurbolaserRedMachineGunCircuitboard = турболазер (машинная плата)
+    .desc = Печатная плата турболазера.
+    .suffix = Красный, НЕ МАППИТЬ, Машинная плата
+
+ent-ShuttleGunNavyTurbolaserRed = турболазер
+    .desc = Мощный стационарный турболазер. Для стрельбы необходимо закрепить.
+    .suffix = Красный, НЕ МАППИТЬ

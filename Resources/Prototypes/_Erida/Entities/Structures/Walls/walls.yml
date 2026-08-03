@@ -30,3 +30,30 @@
         - !type:PlaySoundBehavior
           sound:
             collection: MetalSlam
+
+- type: entity
+  parent: WallPlastitanium
+  id: WallPlasclock
+  name: plasclock wall
+  components:
+  - type: Sprite
+    sprite: _Erida/Structures/Walls/plasclock.rsi
+  - type: Icon
+    sprite: _Erida/Structures/Walls/plasclock.rsi
+  - type: IconSmooth
+    key: walls
+    base: plastitanium
+
+- type: entity
+  parent: WallPlastitaniumDiagonal
+  id: WallPlasclockDiagonal
+  name: plasclock wall
+  suffix: diagonal
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _Erida/Structures/Walls/plasclock_diagonal.rsi
+    state: state0
+  - type: Icon
+    sprite: _Erida/Structures/Walls/plasclock_diagonal.rsi
+    state: state0
