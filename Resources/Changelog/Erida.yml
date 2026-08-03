@@ -1230,3 +1230,14 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/424
   avatar_url: https://avatars.githubusercontent.com/u/275415539?v=4
   title: navy-translate-3
+- author: Lytheriia
+  changes:
+    - type: Add
+      message: Еретик добавлен в секрет
+    - type: Fix
+      message: Инженерные борги могут носить баллоны с воздухом
+  id: 103
+  time: '2026-08-03T18:47:33.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/431
+  avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
+  title: Minor tasks
