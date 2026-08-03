@@ -1202,3 +1202,18 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/420
   avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
   title: NRIR
+- author: vanomorodellefake
+  changes:
+    - type: Fix
+      message: теперь флаеры не растут бесконечно в дальности
+    - type: Tweak
+      message: Уменьшена красная граница света для Кошмара
+    - type: Tweak
+      message: Кошмар получает в 2 раза меньше урона от света
+    - type: Tweak
+      message: Кошмар вернулся в геймрулы
+  id: 101
+  time: '2026-08-03T18:12:41.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/421
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: Nightmare another update
