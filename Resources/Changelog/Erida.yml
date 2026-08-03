@@ -1193,3 +1193,12 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/429
   avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
   title: tests
+- author: Tiwulovoe
+  changes:
+    - type: Add
+      message: Украдена Ядерная энергетика с LP
+  id: 100
+  time: '2026-08-03T17:48:27.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/420
+  avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
+  title: NRIR
