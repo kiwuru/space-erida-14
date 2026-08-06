@@ -3,15 +3,18 @@
 #   parent: ClothingBeltNTNavyCaptainWebbing
 #   suffix: Filled
 #   components:
+#   - type: ContainerFill
+#     containers:
+#       item:
+#       - CaptainNTNavySabre
 #   - type: EntityTableContainerFill
 #     containers:
 #       storagebase: !type:AllSelector
 #         children:
-#         # - id: CaptainNTNavySabre
 #         - id: HandHeldMassScanner
 #         - id: JawsOfLife
 #         - id: CombatKnifeSpetsnaz
-#         - id: Omnitool
+#         - id: PowerDrill
 #         - id: WeaponGrapplingGun
 
 - type: entity
@@ -26,7 +29,7 @@
         - id: HandHeldMassScanner
         - id: JawsOfLife
         - id: CombatKnifeSpetsnaz
-        - id: Omnitool
+        - id: PowerDrill
         - id: WeaponGrapplingGun
 
 - type: entity

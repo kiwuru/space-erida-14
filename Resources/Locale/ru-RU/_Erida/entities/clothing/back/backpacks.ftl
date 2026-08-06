@@ -1,0 +1,10 @@
+ent-ClothingBackpackNTNavyCaptain = рюкзак капитана ВКФ NT
+   .desc = Это особый рюкзак, изготавливаемый исключительно для капитана ВКФ NT.
+ent-ClothingBackpackNTNavyWOEngi = рюкзак УО инженера ВКФ NT
+   .desc = Это крепкий рюкзак на все случаи жизни на флоте.
+ent-ClothingBackpackNTNavy = рюкзак ВКФ NT
+   .desc = Это очень робастный рюкзак.
+ent-ClothingBackpackNTNavyEngi = рюкзак инженера ВКФ NT
+   .desc = Это крепкий рюкзак на все случаи жизни на флоте.
+ent-ClothingBackpackNTNavyMed = рюкзак медика ВКФ NT
+   .desc = Это особый рюкзак, разработанный для работы в стерильных условиях.

@@ -1,3 +1,25 @@
 ent-SpawnPointGhostNightmare = Спавнер роли призрак
     .suffix = Кошмар
     .desc = { ent-MarkerBase.desc }
+
+ent-RandomHumanoidSpawnerNTNavyCaptain = ВКФ NT капитан
+    .suffix = Гост роль
+    .desc = { ent-MarkerBase.desc }
+ent-RandomHumanoidSpawnerNTNavyOfficer = ВКФ NT офицер
+    .suffix = Гост роль
+    .desc = { ent-MarkerBase.desc }
+ent-RandomHumanoidSpawnerNTNavyWOEngi = ВКФ NT УО инженер
+    .suffix = Гост роль
+    .desc = { ent-MarkerBase.desc }
+ent-RandomHumanoidSpawnerNTNavyWOMed = ВКФ NT УО медик
+    .suffix = Гост роль
+    .desc = { ent-MarkerBase.desc }
+ent-RandomHumanoidSpawnerNTNavySailor = ВКФ NT матрос
+    .suffix = Гост роль
+    .desc = { ent-MarkerBase.desc }
+ent-RandomHumanoidSpawnerNTNavyEngineer = ВКФ NT инженер
+    .suffix = Гост роль
+    .desc = { ent-MarkerBase.desc }
+ent-RandomHumanoidSpawnerNTNavyMedical = ВКФ NT медик
+    .suffix = Гост роль
+    .desc = { ent-MarkerBase.desc }

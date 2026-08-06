@@ -34,3 +34,48 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsInteQVanguardLeader ]
+
+- type: entity
+  parent: AirlockShuttleSyndicate
+  id: AirlockExternalShuttleInteQLocked
+  suffix: Docking, InteQ, Vanguard, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsInteQVanguard ]
+
+- type: entity
+  parent: AirlockGlassShuttleSyndicate
+  id: AirlockExternalGlassShuttleInteQLocked
+  suffix: Docking, InteQ, Vanguard, Locked, Glass
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsInteQVanguard ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureInteQLocked
+  suffix: InteQ, Vanguard, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsInteQVanguard ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureInteQLocked
+  suffix: InteQ, Vanguard, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsInteQVanguard ]
+
+- type: entity
+  parent: WindoorSecureUranium
+  id: UraniumWindoorSecureInteQLocked
+  suffix: InteQ, Vanguard, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsInteQVanguard ]

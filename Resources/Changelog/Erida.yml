@@ -1193,3 +1193,51 @@ Entries:
   url: https://github.com/dead-space-server/space-erida-14/pull/429
   avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
   title: tests
+- author: Tiwulovoe
+  changes:
+    - type: Add
+      message: Украдена Ядерная энергетика с LP
+  id: 100
+  time: '2026-08-03T17:48:27.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/420
+  avatar_url: https://avatars.githubusercontent.com/u/250869396?v=4
+  title: NRIR
+- author: vanomorodellefake
+  changes:
+    - type: Fix
+      message: теперь флаеры не растут бесконечно в дальности
+    - type: Tweak
+      message: Уменьшена красная граница света для Кошмара
+    - type: Tweak
+      message: Кошмар получает в 2 раза меньше урона от света
+    - type: Tweak
+      message: Кошмар вернулся в геймрулы
+  id: 101
+  time: '2026-08-03T18:12:41.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/421
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: Nightmare another update
+- author: Evgenimation
+  changes:
+    - type: Add
+      message: >-
+        титанолатунные стены, стыковочные порты и раздвижные окна авангарда
+        интек
+    - type: Tweak
+      message: локализация флота
+  id: 102
+  time: '2026-08-03T18:23:33.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/424
+  avatar_url: https://avatars.githubusercontent.com/u/275415539?v=4
+  title: navy-translate-3
+- author: Lytheriia
+  changes:
+    - type: Add
+      message: Еретик добавлен в секрет
+    - type: Fix
+      message: Инженерные борги могут носить баллоны с воздухом
+  id: 103
+  time: '2026-08-03T18:47:33.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/431
+  avatar_url: https://avatars.githubusercontent.com/u/289052288?v=4
+  title: Minor tasks

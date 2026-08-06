@@ -1,0 +1,10 @@
+ent-ClothingBackpackDuffelNTNavyCaptain = вещмешок капитана ВКФ NT
+   .desc = Большой вещмешок для хранения дополнительных капитанских вещей.
+ent-ClothingBackpackDuffelNTNavyWOEngi = вещмешок УО инженера ВКФ NT
+   .desc = Большой вещмешок для хранения дополнительных инструментов и припасов.
+ent-ClothingBackpackDuffelNTNavy = вещмешок ВКФ NT
+   .desc = Большой вещмешок для хранения дополнительных припасов.
+ent-ClothingBackpackDuffelNTNavyEngi = вещмешок инженера ВКФ NT
+   .desc = Большой вещмешок для хранения дополнительных инструментов и припасов.
+ent-ClothingBackpackDuffelNTNavyMed = вещмешок медика ВКФ NT
+   .desc = Большой вещмешок для хранения дополнительных медицинских припасов.
